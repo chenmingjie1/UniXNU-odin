@@ -1,0 +1,15 @@
+version = 1
+[boot]
+timeout = 0
+fallback_timeout = -1
+default = "odin-desktop"
+[ui]
+title = "MIX 4 - UniXNU / resident core7"
+[kits]
+autoload = false
+[[entry]]
+id = "odin-desktop"
+title = "iOS 16.5 RAM desktop candidate"
+type = "xnu"
+path = "Payloads/kernel.macho"
+args = "-v serial=0 cpus=1 rd=md0 odin-init-path=/sbin/launchd.ios dyld_flags=8 odin-data-mount=1 odin-gop-display=1 odin-gop-ready=1 odin-gop-pm=1 odin-gop-cpu=1 odin-gop-dirty=1 odin-key-events=1 odin-sb-ui=1 odin-sb-pathvars=1 odin-surface-inspect=1 odin-key-state=1 odin-ui-sample=1 odin-touch=1 odin-touch-bus=1 odin-gpu=1 odin-gpu-selftest=1"

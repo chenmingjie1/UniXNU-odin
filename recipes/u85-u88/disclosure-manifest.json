@@ -1,0 +1,242 @@
+{
+  "captured_on": "2026-11-07",
+  "scope": "Source-only u85/u88 build disclosure; no clean-room full rebuild claimed",
+  "files": [
+    {
+      "path": "configs/runtime/u85-u88-artifacts.json",
+      "bytes": 3353,
+      "sha256": "ab4753e123cb967aa98edcca84433fbdcc16ded30fff1b15572324198cd97586"
+    },
+    {
+      "path": "configs/runtime/u85-unixnu.toml",
+      "bytes": 628,
+      "sha256": "73e272c6bc887114e01adb388a30f986e95ff63f061706672c794afd86a4740c"
+    },
+    {
+      "path": "configs/runtime/u88-unixnu.toml",
+      "bytes": 628,
+      "sha256": "73e272c6bc887114e01adb388a30f986e95ff63f061706672c794afd86a4740c"
+    },
+    {
+      "path": "docs/BUILD-U85-U88.md",
+      "bytes": 14080,
+      "sha256": "87855b86e6c24095a2308eaf4b27fd785b721f45510e89bacaadcedfdd46532f"
+    },
+    {
+      "path": "docs/BUILD.md",
+      "bytes": 2949,
+      "sha256": "b2b6a17d5ce26bd7b39a07f23f7ce64b9b81fc4439afb11a1df36b2f631fb656"
+    },
+    {
+      "path": "licenses/UniXNU-LICENSE",
+      "bytes": 2673,
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b"
+    },
+    {
+      "path": "licenses/XnuPrelink-LICENSE",
+      "bytes": 2673,
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b"
+    },
+    {
+      "path": "profiles/os/ios-16.5-20F66/profile.toml",
+      "bytes": 10563,
+      "sha256": "2c1a8c14d03064f5e6d922accde75a683030bad6c9914e378daeec52a0e7a83f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8708,
+      "sha256": "41e0281ebc5410d1472f996c3e5cc868c5d8bbd1d450cf11b3e5df3d8fd8ccc5"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/ArmCpu.compile-command.json",
+      "bytes": 7741,
+      "sha256": "b2f2467729c03f8e22dbcc8f88dab0b7209507e094677b4188872a9b206f6c49"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/ArmDTPlatform.compile-command.json",
+      "bytes": 7770,
+      "sha256": "32f4c0d954250a26a6b93367446c07b4d5d24b8ca5c3d7ebc9620381078730f0"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/IOPlatformExpert.cpo.json",
+      "bytes": 8232,
+      "sha256": "e2a78fc90f1803ab1a1b25aeb954cb4ac5d2f4702e479c5e207c46f34f5f9435"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/kern_exec.o.json",
+      "bytes": 7429,
+      "sha256": "d272a62332a10b8d294c94712a89fc885de87ac4722af91a8fbea6c164501f95"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinAdrenoCore.c.command.json",
+      "bytes": 7261,
+      "sha256": "954d42e9d7550e6c16d59edb19d86b8bd6f2b02cd089635a48c4dc39b9141dd9"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinStTouch.cpp.command.json",
+      "bytes": 8046,
+      "sha256": "0ebfade8a5f8b6f945e3c28d8e2da19980164b46185aac7d2d5d06748ca62932"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinUIThreadState.c.command.json",
+      "bytes": 7126,
+      "sha256": "95def8f5e0a74c08eac1534e1f68e37f3e86cc9e4fe125d8501ceb4409e87f46"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/thread.o.json",
+      "bytes": 7641,
+      "sha256": "a510afebdeefdd897b8bfc0400288336948011736d899977760308b128af0f34"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/framebuffer-layout.json",
+      "bytes": 613,
+      "sha256": "a269a208a097141b3f6b11a0e29a68e6eb871b2c2cb8a4f318735882d197e5fa"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u85-kernel-crypto-seal.txt",
+      "bytes": 83,
+      "sha256": "8fe350155cd462688076c139c81d0f34679c197b2a7b97ab990de7ffef0aebee"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u85-prelink-attempt.json",
+      "bytes": 1759,
+      "sha256": "f83fd59d0ecb42e58156dadeb828e9614c0ac529e0f88d9976ea94fa720ae78f"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u88-framebuffer.txt",
+      "bytes": 71,
+      "sha256": "e2a15090f7af00b99a3398f5f2e5a15d493f40c5721793c236c43d8cc0cf5a2e"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/xnu-source-receipt.json",
+      "bytes": 301,
+      "sha256": "a24f62f331920d04c2d828608fdf02039430d85e96050a6f8b89abb881d6cfd5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/bin/xcrun",
+      "bytes": 999,
+      "sha256": "8b268810fb429537ca0097a0b78ad67e72079dae23ac4aa21414561d6b9e8bdb"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_crypto_archive_import.py",
+      "bytes": 1654,
+      "sha256": "7b6173cd17d75d457cdb2db4fa4743287132ee53f61e6049fd6253ae030cda99"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_offline_kernel.sh",
+      "bytes": 2472,
+      "sha256": "009f5ff37a31934373a817188d1be66fb4877f711b67ee3a1c41a8428c84e1b5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_pthread_archive_import.py",
+      "bytes": 2133,
+      "sha256": "94147b6f4b5b80ce24a8e26fd475d1fad5a3624b3d59b232d1199f4da355916b"
+    },
+    {
+      "path": "recipes/u85-u88/guest/crypto-import.json",
+      "bytes": 203037,
+      "sha256": "4d8d05e8ee44660a9c672d9e2ca729ade53e8c674664eac5ac5af71c401aebee"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/compile_gpu_guest.py",
+      "bytes": 2428,
+      "sha256": "077d906d0d2660042cf1f14ddb7668cf6b341ca996f6ed0c862f877e369d9f14"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/link_gpu_guest.py",
+      "bytes": 2191,
+      "sha256": "3a77dfe577a693ef070fe5f405def96dbfff18421207bfa506f8b12753356baf"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/link_kernel.sh",
+      "bytes": 2731,
+      "sha256": "fffd81642c74761d0075df470c147cca4fe64ef1a0a66a2d76745575a07ba4fe"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-touch-u75/link_kernel.sh",
+      "bytes": 2654,
+      "sha256": "11c182ef18f083e9a74e1e11cbd26841a6ff5b91ad6dffcfb3e15821323812b5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/iig-tools/iig-8796-cached",
+      "bytes": 717,
+      "sha256": "7ac32cad7f1e4a106a4218c387da7437f11a7e2294f6a5b2ecdfa6410c03be75"
+    },
+    {
+      "path": "recipes/u85-u88/guest/native_prelink.py",
+      "bytes": 12723,
+      "sha256": "5bd80b8c63deec29b747c28253e02308a56d5f8cdb37c9d315e7c8af7012d017"
+    },
+    {
+      "path": "recipes/u85-u88/guest/pthread-import.json",
+      "bytes": 21940,
+      "sha256": "a8ed419756f19490aa744546d5a7d0b137f44f4d48b0d6b4eba523e5341649a6"
+    },
+    {
+      "path": "recipes/u85-u88/guest/record-clang",
+      "bytes": 740,
+      "sha256": "57d392dd6d4318c2951b87578f7a26a0421e044cb1aaedde0ce36d7798862fcc"
+    },
+    {
+      "path": "recipes/u85-u88/guest/record-clang++",
+      "bytes": 373,
+      "sha256": "6ad549b2d6aab2fc5f57ad5b39602c7f275b08fca235f00ebf24be4978c24ffc"
+    },
+    {
+      "path": "recipes/u85-u88/README.md",
+      "bytes": 3273,
+      "sha256": "4b2fd0cc8c82c6354deecb0c131b56ea054298eda6610589c0f47b383f121672"
+    },
+    {
+      "path": "recipes/u85-u88/reference-nx769j/os-profiles/ios-16.5-20F66/profile.toml",
+      "bytes": 10324,
+      "sha256": "6461621f22f56d0d95d76b3e3d04e8196784726f81bff04d966f061af3c3fb7e"
+    },
+    {
+      "path": "recipes/u85-u88/reference-nx769j/scripts/emit-prelink-nx769j.py",
+      "bytes": 5941,
+      "sha256": "554dbc92b13f7d042fbb3d0a1845cc93270917e3ca249d2df1abf414eac511c7"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/build-arm-driver.py",
+      "bytes": 7259,
+      "sha256": "bf3cbcf7de988a611f43994f2ef39805fa90ded9aebcb4f27e5348a301863fd5"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/build-xnu-4k-baseline.sh",
+      "bytes": 44811,
+      "sha256": "758342ed1b72afd6e1d914b5764ff43ab77e8815d4d5b73000cdcd6e53831ad1"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/components.toml",
+      "bytes": 17352,
+      "sha256": "a39b7f2f0510dcdd6fa4ad0384c9094cf755a86e8774a5e224f291a3ce6be71c"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/kernel_target.py",
+      "bytes": 1394,
+      "sha256": "f2351aebc029a69673ead76e1a0b49845fd940e285da82cd693a89084991c4bf"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/seal-source-crypto-kernel.py",
+      "bytes": 7519,
+      "sha256": "b8f304c8d88ffa3f49277f407d1aa72734944cacd59c58d010609744af24c0a3"
+    },
+    {
+      "path": "scripts/prepare_source_publication.py",
+      "bytes": 2537,
+      "sha256": "e6d97ab4b59e05e7b641d5e4d50af45c59c0586c052615ed9128a579d26ffd89"
+    },
+    {
+      "path": "SOURCE-NOTICE.md",
+      "bytes": 2179,
+      "sha256": "f12b03f4f341743bbc30dcbd161ae51cbffaf5293505188d16c54a2ae238709c"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 21192,
+      "sha256": "a0367271004d3a6b34edecfbc91ebd41e8a6cdc87c73ce2212e4850f88051380"
+    }
+  ],
+  "notes": "Excludes itself and the source-manifest generated afterwards. Guest scripts retain original paths. Receipt workstation paths removed."
+}

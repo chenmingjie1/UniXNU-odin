@@ -1,0 +1,7 @@
+{
+  "name": "XNU8796-reference",
+  "repository": "https://github.com/apple-oss-distributions/xnu",
+  "revision": "aca3beaa3dfbd42498b42c5e5ce20a938e6554e5",
+  "archive_sha256": "b1715dd64ba8b1c7a06211ae7be50fa60aaacac45713d5f45491b281aa37dc14",
+  "selected_automatically_for_hardware": false
+}

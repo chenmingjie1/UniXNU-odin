@@ -1,0 +1,2 @@
+framebuffer: 1080:2400:4320:1:10368000
+Finished. Total time: 0.000s

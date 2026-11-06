@@ -90,7 +90,8 @@
     "ios": "16.5",
     "build": "20F66",
     "cmdline": "bootcpu=7 cpus=1 touchscreen=4 buttons=0 cpufreq=0 gpu=1 wifi=0 adsp=0 ufs=0 ufs_native=0 ufs_write=0 var_store=0 hv_wdt_pet=0 loader_return_after=0 adreno_speed=1 odin_touch_limit_ms=3600000 odin_touch_spi_lanes=1",
-    "system_crc32": "aea79a53"
+    "system_crc32": "aea79a53",
+    "scope": "Historical HakiOS runtime baseline; NOT the u85/u88 UniXNU source-kernel command line. Use source_kernel_runtime_configs."
   },
   "input_files": [
     {
@@ -387,5 +388,13 @@
     }
   ],
   "github_review": "research/github-20261103/review.json",
-  "prelink_verification": "build/ios16-prelink/independent-audit.json"
+  "prelink_verification": "build/ios16-prelink/independent-audit.json",
+  "source_kernel_runtime_configs": {
+    "u85": "configs/runtime/u85-unixnu.toml",
+    "u88": "configs/runtime/u88-unixnu.toml",
+    "kernel_sha256": "3f95a57bbd346cf8a8c493d365cd98299ce17d21255fa3f5400c133f72bd9d1b",
+    "artifact_hashes": "configs/runtime/u85-u88-artifacts.json",
+    "documentation": "docs/BUILD-U85-U88.md",
+    "profile": "profiles/os/ios-16.5-20F66/profile.toml"
+  }
 }

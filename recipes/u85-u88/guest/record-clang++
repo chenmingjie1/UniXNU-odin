@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -e
+args=("$@")
+driver=xnu-clang
+case "$0" in *++) driver=xnu-clang++;; esac
+record=
+compile=0
+for ((i=0; i<${#args[@]}; i++)); do
+  if [ "${args[i]}" = -c ]; then compile=1; fi
+  if [ "${args[i]}" = -o ]; then record="${args[i+1]}.json"; fi
+done
+if [ "$compile" = 1 ] && [ -n "$record" ]; then
+  args+=(-MJ "$record")
+fi
+exec "$driver" "${args[@]}"

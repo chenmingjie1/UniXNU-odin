@@ -1,0 +1,15 @@
+{
+  "scope": "Measured development fixture; not a universal physical address for every odin firmware",
+  "physical_base": "0xea600000",
+  "row_bytes": 4320,
+  "width": 1080,
+  "height": 2400,
+  "bits_per_pixel": 32,
+  "bytes": 10368000,
+  "mapping_start": "0xea600000",
+  "mapping_end_exclusive": "0xeb000000",
+  "mapping_bytes": 10485760,
+  "runtime_geometry_evidence": "u88-framebuffer.txt",
+  "base_evidence": "scripts/install_kernel_mmu_diagnostics.py and patches/xnu/odin-mmu-diagnostics.patch; geometry-only USB response does not expose the base",
+  "relaxed_base_check_implemented": false
+}

@@ -1,6 +1,6 @@
 {
-  "release": "u89-candidate",
-  "scope": "source-only development snapshot; not a complete system image",
+  "release": "u89-source-with-u85-u88-build-disclosure",
+  "scope": "source-only development snapshot with preserved historical build recipes; not a complete system image",
   "files": [
     {
       "path": ".gitignore",
@@ -8,9 +8,19 @@
       "sha256": "57d1f55bf98d357fd667e5882e18d534ca61606fc9db513640d9f0004eb96c23"
     },
     {
+      "path": "README.md",
+      "bytes": 8708,
+      "sha256": "41e0281ebc5410d1472f996c3e5cc868c5d8bbd1d450cf11b3e5df3d8fd8ccc5"
+    },
+    {
+      "path": "SOURCE-NOTICE.md",
+      "bytes": 2179,
+      "sha256": "f12b03f4f341743bbc30dcbd161ae51cbffaf5293505188d16c54a2ae238709c"
+    },
+    {
       "path": "board.toml",
-      "bytes": 810,
-      "sha256": "9cd8d3d9354f2cfaa7a834cce204969b923e7335961f637ebdd1b44f6d230bb8"
+      "bytes": 790,
+      "sha256": "f6eb4a3ebfc6bf04924c0b0d027c09892b0be331a1a5b9896b4585ba0bc76469"
     },
     {
       "path": "configs/odin-desktop-handoff.toml",
@@ -19,8 +29,8 @@
     },
     {
       "path": "configs/odin_defconfig",
-      "bytes": 451,
-      "sha256": "28c968e639c51f1acf965029c48dc2a1fb54424505a8ec9f11b01eb0e90d2256"
+      "bytes": 438,
+      "sha256": "c2392b773bf123eea7da6ff2b266f3c007d660294ce8def19ff7928ba693be90"
     },
     {
       "path": "configs/original-driver-policy.toml",
@@ -28,9 +38,29 @@
       "sha256": "83309e0b43a6d3a8bb573260556f88108fb544c359f896ffbd0411ba45c4c613"
     },
     {
+      "path": "configs/runtime/u85-u88-artifacts.json",
+      "bytes": 3353,
+      "sha256": "ab4753e123cb967aa98edcca84433fbdcc16ded30fff1b15572324198cd97586"
+    },
+    {
+      "path": "configs/runtime/u85-unixnu.toml",
+      "bytes": 628,
+      "sha256": "73e272c6bc887114e01adb388a30f986e95ff63f061706672c794afd86a4740c"
+    },
+    {
+      "path": "configs/runtime/u88-unixnu.toml",
+      "bytes": 628,
+      "sha256": "73e272c6bc887114e01adb388a30f986e95ff63f061706672c794afd86a4740c"
+    },
+    {
+      "path": "docs/BUILD-U85-U88.md",
+      "bytes": 14080,
+      "sha256": "87855b86e6c24095a2308eaf4b27fd785b721f45510e89bacaadcedfdd46532f"
+    },
+    {
       "path": "docs/BUILD.md",
-      "bytes": 2793,
-      "sha256": "132a88438eb0567f5df819e4f646e113833dc68dacb992b0e3a56183fd884a65"
+      "bytes": 2949,
+      "sha256": "b2b6a17d5ce26bd7b39a07f23f7ce64b9b81fc4439afb11a1df36b2f631fb656"
     },
     {
       "path": "docs/GPU-INTEGRATION.md",
@@ -38,9 +68,14 @@
       "sha256": "bfba94ff509cb893a33d05bbb485e335d47684bcc9c099b585146fa71f76413e"
     },
     {
+      "path": "docs/STATUS.md",
+      "bytes": 6052,
+      "sha256": "4e6ca09a726345d2701987dc05a6f8f78c7782fda135860773b3c5fe718b3e73"
+    },
+    {
       "path": "docs/history/README-through-u62.md",
-      "bytes": 19780,
-      "sha256": "5400f6bea04b97fd292c627d11b0b9c008bc77944e42d68712b4e52e0e9733f3"
+      "bytes": 19583,
+      "sha256": "f511be7f2196f35f78ae9bb123362e9a72468e7c330491723a8cb5c1ff24b50f"
     },
     {
       "path": "docs/history/u89-respring-and-gpu-import.json",
@@ -48,29 +83,24 @@
       "sha256": "4af0f27c1530e0a3fd64e5bdfdf6d1c079b6f29a6c1eaf3f17a44cc8991a5e87"
     },
     {
-      "path": "docs/STATUS.md",
-      "bytes": 6052,
-      "sha256": "4e6ca09a726345d2701987dc05a6f8f78c7782fda135860773b3c5fe718b3e73"
-    },
-    {
       "path": "drivers/OdinAdreno/OdinAdrenoApi.h",
-      "bytes": 1263,
-      "sha256": "3101b49b7cecf58086154c83360f923746bcd01118015029ac2af6f0228f7e30"
+      "bytes": 1233,
+      "sha256": "4b89e5f230b0fdb8b1c53af85f9186dfa854c03a83b419f4a03621d78d7a8fbe"
     },
     {
       "path": "drivers/OdinAdreno/OdinAdrenoCore.c",
-      "bytes": 192844,
-      "sha256": "5ef115be52f55a91b897cd548aeb25426e75874751b886ac42b45ce8b517c138"
+      "bytes": 188596,
+      "sha256": "db937a3bf03702927d9dd0437a50e99a7995e0fd48d62d8b1a58e9c741836ac5"
     },
     {
       "path": "drivers/OdinAdreno/OdinAdrenoOwner.cpp",
-      "bytes": 2941,
-      "sha256": "15dd393642923bdd9f2436a8fdd53a08c8154bf0ae450bcb9cc609d7acf41c98"
+      "bytes": 2882,
+      "sha256": "c212541968168f429932b62f7a07adb6543a1969cb44d2447113db54cb1c3f01"
     },
     {
       "path": "drivers/OdinAdreno/OdinAdrenoService.cpp",
-      "bytes": 46391,
-      "sha256": "9084cc1ad643b1c0da28d314085b88f89fad5e69ed859ffca873164f76c419ec"
+      "bytes": 45139,
+      "sha256": "e63b2079b628dc7d524ba9961d30629a377de0b1cf0722bea8cd3926fe035a62"
     },
     {
       "path": "drivers/OdinAdreno/OdinUIPolicy.c",
@@ -89,13 +119,8 @@
     },
     {
       "path": "drivers/OdinAdreno/provenance.json",
-      "bytes": 1357,
-      "sha256": "c6039f887fc5528aeec5a8cb84b3cd8cb831d94974206c799e464c89f3f32761"
-    },
-    {
-      "path": "drivers/OdinDisplay/interface-contract.json",
-      "bytes": 45417,
-      "sha256": "ba2522293f0b89a622476ad3853dedb2855a4fb2a68766f13ff475d73d697b08"
+      "bytes": 1318,
+      "sha256": "0a95cc588ea598e37781872932ca8162c4241d4cd76b72e4a7b708d3815e811b"
     },
     {
       "path": "drivers/OdinDisplay/LICENSE",
@@ -104,8 +129,8 @@
     },
     {
       "path": "drivers/OdinDisplay/OdinDisplayABIAnnotation.cpp",
-      "bytes": 2583,
-      "sha256": "135af7b56f6387946f98d237ee5ddc46660b04c01758669808495f4d288e107e"
+      "bytes": 2548,
+      "sha256": "d79c876c14211928ba946cbaa61e15da83e0a4cbf2f5f8d1f646f8572587e148"
     },
     {
       "path": "drivers/OdinDisplay/OdinDisplayOwner.cpp",
@@ -119,18 +144,18 @@
     },
     {
       "path": "drivers/OdinDisplay/OdinLegacyGOPDisplay.cpp",
-      "bytes": 19279,
-      "sha256": "37204c7436abf460a91422500936bce5b2a445ed1ca99184ab9cf403dcedbf05"
+      "bytes": 18954,
+      "sha256": "e72d558f3296f54ef904e216c69a26a5ed490c0078d45566f16c03635b7751f4"
     },
     {
       "path": "drivers/OdinDisplay/OdinScanoutCopy.h",
-      "bytes": 2142,
-      "sha256": "b5b3b61e2e991caf9c4ee551d3e48a814449fce97c13056deb1c322ed9c49255"
+      "bytes": 2088,
+      "sha256": "878cde05f65517907afb92154649d38b66afd6f189f1556ad18bc20a9afdb4f2"
     },
     {
       "path": "drivers/OdinDisplay/OriginalLegacyFramebufferABI.h",
-      "bytes": 19676,
-      "sha256": "e9e508f389bb6ed558bb3467d7e2279035634a7c2e062f8058012958c2f907e0"
+      "bytes": 19445,
+      "sha256": "bdbf6cc6e09609f9912e3195c612758cfb19ecefb367adb80a532c3cbbbd80ac"
     },
     {
       "path": "drivers/OdinDisplay/OriginalSurface16.h",
@@ -139,8 +164,13 @@
     },
     {
       "path": "drivers/OdinDisplay/README.md",
-      "bytes": 3596,
-      "sha256": "facf57d62759d0501cf847304bf410c7aec6c77d883605f52d723fd4b0223209"
+      "bytes": 3539,
+      "sha256": "027133f7ae636961e224fbbde173e5d6f02448494d22bed8bf615ec9b734ce9c"
+    },
+    {
+      "path": "drivers/OdinDisplay/interface-contract.json",
+      "bytes": 43368,
+      "sha256": "7254650d4674e23ab38b89a144f6875837a069a7df4843002d0b9a577447f61b"
     },
     {
       "path": "drivers/OdinPlatformPower/OdinPlatformPower.cpp",
@@ -159,8 +189,8 @@
     },
     {
       "path": "drivers/OdinStTouch/OriginalHidDeviceABI.h",
-      "bytes": 4365,
-      "sha256": "c4eb45a1f584a45f93c2c0a2db4ea495f6228a30ca33004ad47fbcde0cca0cf7"
+      "bytes": 4300,
+      "sha256": "15bbecac5192f702781ca240c8daad18b2a4c02ede9b6bb756d7f289d9a164fe"
     },
     {
       "path": "drivers/RamBlock/AGENTS.md",
@@ -179,18 +209,13 @@
     },
     {
       "path": "drivers/RamBlock/NativeRamBlock.cpp",
-      "bytes": 25252,
-      "sha256": "fb89f9d91e77902fd9ce162ee561c1cbdb197271a4f58ae2dc2a990847a7a020"
-    },
-    {
-      "path": "drivers/RamBlock/odin-adaptation.json",
-      "bytes": 359,
-      "sha256": "220f9d7f34b141d707eb31be70918a28ad954eb1a3ad9e115c917b0100b0f664"
+      "bytes": 24777,
+      "sha256": "2a40b34edec43c6e788101510d4b4891446e5bded1ee91a022e0f1a058990fbf"
     },
     {
       "path": "drivers/RamBlock/OdinIOSTarget.h",
-      "bytes": 386,
-      "sha256": "31040125de4c3e9fc71a699b691cfbe1d9625843a6bddc1450341fe717c32f4a"
+      "bytes": 373,
+      "sha256": "b0c9d869df528676ab4477beb23f9222ffb82ea5255d4af2a204f61a2511ba18"
     },
     {
       "path": "drivers/RamBlock/PersistOverlay.h",
@@ -206,11 +231,6 @@
       "path": "drivers/RamBlock/SeedDisk.h",
       "bytes": 3933,
       "sha256": "d8a654529b5d56703bcf491c3834b407590995eebcb7a26004448990c200e4a0"
-    },
-    {
-      "path": "drivers/RamBlock/source-receipt.json",
-      "bytes": 420,
-      "sha256": "5b625ebd1eb6a00f6db096426b6641de055cca7ccf5f9c3e654e4c6ca582a441"
     },
     {
       "path": "drivers/RamBlock/SparseDisk.h",
@@ -248,14 +268,24 @@
       "sha256": "715f5579020260b40905229b5c245ec42c27c2312962496909bea73bc06226ff"
     },
     {
+      "path": "drivers/RamBlock/odin-adaptation.json",
+      "bytes": 352,
+      "sha256": "72355d78ca621ef15001816364c702b9a99c1c51e0bc7564798b53aeb3b6d2fe"
+    },
+    {
+      "path": "drivers/RamBlock/source-receipt.json",
+      "bytes": 412,
+      "sha256": "8a55f315409884f95f95508ecd699ff4c0ab129fa991362648b706b631f3b0c1"
+    },
+    {
       "path": "dts/odin.dts",
-      "bytes": 278,
-      "sha256": "5173489adee48be6356989ef9e2aa397b7c1493578eb30dff5cbe12dd3b6fae9"
+      "bytes": 270,
+      "sha256": "395b2676f6ae2ab98deecc2716b576f201682be01bc820f474376887f40c11f9"
     },
     {
       "path": "feeds.toml",
-      "bytes": 65,
-      "sha256": "a03a925c4921cd6c052746f2f0303c58d52348037e3bdda0cb72654cf1310ca7"
+      "bytes": 61,
+      "sha256": "5a4d595c0ca10743f7edaeece83228f218792f9e9f855690b1e7483f58757eee"
     },
     {
       "path": "firmware/OdinDesktopMedia.h",
@@ -264,13 +294,13 @@
     },
     {
       "path": "firmware/OdinKernelReadback.h",
-      "bytes": 14146,
-      "sha256": "5c715bb35fb9b0f0f9a91efeb754caa1c4f8ab1e9cba8daed095f3725870b387"
+      "bytes": 13850,
+      "sha256": "4b26d38e4173b61704c4cff751a541da5bba9b568610d9009b313af5b036b7ed"
     },
     {
       "path": "firmware/OdinRemoteMedia.c",
-      "bytes": 19122,
-      "sha256": "90d9a9bde30f0d9d40ef5be197dc01a17ea05ca0f2ed8654cddf9404850b663e"
+      "bytes": 18772,
+      "sha256": "721a4a161b168658ec2770ac1af50cc570b9ac86a8622bacd3f38361f5cc076d"
     },
     {
       "path": "firmware/OdinRemoteProtocol.h",
@@ -298,19 +328,9 @@
       "sha256": "d11ea452397373074357773a27c3cb90fb46873f34a8d5d0cb94856ace1115fc"
     },
     {
-      "path": "host-input/host_swipe.c",
-      "bytes": 12872,
-      "sha256": "dc190d3b1a1dae19c13e71a41c016a900223ee74adddabcfa28bef8879a9c870"
-    },
-    {
-      "path": "host-input/host_ui_unlock.c",
-      "bytes": 2839,
-      "sha256": "9889e82e3bc0ff2d1878e1c1040a97f3b83bf57779bb8328fc36344cc71e56ab"
-    },
-    {
       "path": "host-input/LICENSE.HakiOS",
-      "bytes": 2099,
-      "sha256": "f5e3823525007469375ba0c64166a3c26ef00baf856e67ec8d5aa5131d0b58e4"
+      "bytes": 2059,
+      "sha256": "861a70c4175cbd49dc10be7ddb060300728175d353d4fd3b8263823bc28f61a0"
     },
     {
       "path": "host-input/OdinSurfaceImport.c",
@@ -323,9 +343,19 @@
       "sha256": "d04e1b4898998628f63e52a91bb279f69c6a19145f807bef1d170e2a3b9d844c"
     },
     {
+      "path": "host-input/host_swipe.c",
+      "bytes": 12872,
+      "sha256": "dc190d3b1a1dae19c13e71a41c016a900223ee74adddabcfa28bef8879a9c870"
+    },
+    {
+      "path": "host-input/host_ui_unlock.c",
+      "bytes": 2839,
+      "sha256": "9889e82e3bc0ff2d1878e1c1040a97f3b83bf57779bb8328fc36344cc71e56ab"
+    },
+    {
       "path": "host-input/sb_idle_policy.c",
-      "bytes": 6628,
-      "sha256": "8c0b122ff9528223a70fed8e7516860bd9ff68399f0dfe636fa2d2e7f43a7855"
+      "bytes": 6491,
+      "sha256": "31c13e81d940a7ffcb07a9e87a344339e87c6800a933daebea229609b124c44b"
     },
     {
       "path": "host-input/sb_ui_unlock.c",
@@ -358,9 +388,14 @@
       "sha256": "3d58ecd1f6b17474cec4bcfd33774df7bdbf44733878ca6dc69bbde3aba16da5"
     },
     {
-      "path": "package/OdinStTouch/odin_st_touch_core.h",
-      "bytes": 7456,
-      "sha256": "4cbf12ecc06b0cd939574ec19fa424c9a11ee1e6e267c2276c9ffe2210972048"
+      "path": "licenses/UniXNU-LICENSE",
+      "bytes": 2673,
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b"
+    },
+    {
+      "path": "licenses/XnuPrelink-LICENSE",
+      "bytes": 2673,
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b"
     },
     {
       "path": "package/OdinStTouch/OdinStHidBridge.c",
@@ -378,14 +413,19 @@
       "sha256": "d2673212c1c63d4706311ccac3ae2ce82e3bd8ab3cd8df2e33f8bb0e171424bf"
     },
     {
-      "path": "patches/libpthread/explicit-kernel-address.patch",
-      "bytes": 4483,
-      "sha256": "e07db8de4ca0bd7f827fd0340482496e5ece1c47e02175771f123e6603aea26d"
+      "path": "package/OdinStTouch/odin_st_touch_core.h",
+      "bytes": 7456,
+      "sha256": "4cbf12ecc06b0cd939574ec19fa424c9a11ee1e6e267c2276c9ffe2210972048"
     },
     {
       "path": "patches/libpthread/README.md",
       "bytes": 3035,
       "sha256": "4768c8bd1433f290886b2de9c8a1120744f87aab84ee8077d8d4aab250d3354f"
+    },
+    {
+      "path": "patches/libpthread/explicit-kernel-address.patch",
+      "bytes": 4483,
+      "sha256": "e07db8de4ca0bd7f827fd0340482496e5ece1c47e02175771f123e6603aea26d"
     },
     {
       "path": "patches/libpthread/xnu-8796-no-jit-entitlement.patch",
@@ -394,18 +434,18 @@
     },
     {
       "path": "patches/ram-block/odin-data-descriptor.patch",
-      "bytes": 4821,
-      "sha256": "b2ac8f9f20a82e4b9476941908506684ba84c6d7dbb0ac43b6d277f4b9e66ae7"
+      "bytes": 4726,
+      "sha256": "d2567707bb8b97a8eb01fa060cf03618828fdda91f40e1d39b7607caca93dd10"
     },
     {
       "path": "patches/root-media/mkapfs-resource-map.json",
-      "bytes": 464,
-      "sha256": "37e0f2e4643372aff169368b4dd1745b48ff32e092bbda67c2db87e6f7fdeb31"
+      "bytes": 455,
+      "sha256": "ff10cb500b3c18ec15c3b7158071fea1e682123addf3a256047589e7ea3464fc"
     },
     {
       "path": "patches/root-media/mkapfs-resource-map.patch",
-      "bytes": 684,
-      "sha256": "3fddd558c4ea0073da7afd88c1518beb0f8b98ef8a78fe18010d9c8c87dbd58e"
+      "bytes": 672,
+      "sha256": "1d274e0007bba63ea96c175e7ae1297e158dfcdf61a71ae9ab1c5061e373bc58"
     },
     {
       "path": "patches/xnu/apple-only-cpu-tunables.patch",
@@ -709,8 +749,8 @@
     },
     {
       "path": "patches/xnu/series",
-      "bytes": 2371,
-      "sha256": "265c2989e0dcba618a97349ee9975f1f9821eab974fc479296c814a7fa19f785"
+      "bytes": 2297,
+      "sha256": "2378083bd17ede72c3ccd2cf207f8d47ff27b6869a3658de7c15aa7d9008b0e2"
     },
     {
       "path": "patches/xnu/sheng-platform-power.patch",
@@ -788,19 +828,219 @@
       "sha256": "a02c48a697db6bdf56699bb77398285f2c63e6d823520a3f3eeaadb168d01150"
     },
     {
-      "path": "README.md",
-      "bytes": 3553,
-      "sha256": "d864bb44d8c76e1f93f4fc3ff9dd9100207ae8c50d58c52675910743916d4e5f"
+      "path": "profiles/os/ios-16.5-20F66/profile.toml",
+      "bytes": 10563,
+      "sha256": "2c1a8c14d03064f5e6d922accde75a683030bad6c9914e378daeec52a0e7a83f"
     },
     {
       "path": "recipes/gpu-u85/compile_gpu_guest.py",
+      "bytes": 2391,
+      "sha256": "aaa6fa3d1b4b51bf26cf0fc2159ccd32939a0926f90a6f7d46ec9a8891993bee"
+    },
+    {
+      "path": "recipes/gpu-u85/link_gpu_guest.py",
+      "bytes": 2163,
+      "sha256": "03d7c422f4252b84424570d288e1b6cc3f0f4e1d2aa244a049488f3eac3d3979"
+    },
+    {
+      "path": "recipes/u85-u88/README.md",
+      "bytes": 3273,
+      "sha256": "4b2fd0cc8c82c6354deecb0c131b56ea054298eda6610589c0f47b383f121672"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/ArmCpu.compile-command.json",
+      "bytes": 7741,
+      "sha256": "b2f2467729c03f8e22dbcc8f88dab0b7209507e094677b4188872a9b206f6c49"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/ArmDTPlatform.compile-command.json",
+      "bytes": 7770,
+      "sha256": "32f4c0d954250a26a6b93367446c07b4d5d24b8ca5c3d7ebc9620381078730f0"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/IOPlatformExpert.cpo.json",
+      "bytes": 8232,
+      "sha256": "e2a78fc90f1803ab1a1b25aeb954cb4ac5d2f4702e479c5e207c46f34f5f9435"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinAdrenoCore.c.command.json",
+      "bytes": 7261,
+      "sha256": "954d42e9d7550e6c16d59edb19d86b8bd6f2b02cd089635a48c4dc39b9141dd9"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinStTouch.cpp.command.json",
+      "bytes": 8046,
+      "sha256": "0ebfade8a5f8b6f945e3c28d8e2da19980164b46185aac7d2d5d06748ca62932"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/OdinUIThreadState.c.command.json",
+      "bytes": 7126,
+      "sha256": "95def8f5e0a74c08eac1534e1f68e37f3e86cc9e4fe125d8501ceb4409e87f46"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/kern_exec.o.json",
+      "bytes": 7429,
+      "sha256": "d272a62332a10b8d294c94712a89fc885de87ac4722af91a8fbea6c164501f95"
+    },
+    {
+      "path": "recipes/u85-u88/compile-records/thread.o.json",
+      "bytes": 7641,
+      "sha256": "a510afebdeefdd897b8bfc0400288336948011736d899977760308b128af0f34"
+    },
+    {
+      "path": "recipes/u85-u88/disclosure-manifest.json",
+      "bytes": 8950,
+      "sha256": "d3167add9d6d7e475fec6bf61baca61dc38de984b05f3465081362ecf70648ea"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/framebuffer-layout.json",
+      "bytes": 613,
+      "sha256": "a269a208a097141b3f6b11a0e29a68e6eb871b2c2cb8a4f318735882d197e5fa"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u85-kernel-crypto-seal.txt",
+      "bytes": 83,
+      "sha256": "8fe350155cd462688076c139c81d0f34679c197b2a7b97ab990de7ffef0aebee"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u85-prelink-attempt.json",
+      "bytes": 1759,
+      "sha256": "f83fd59d0ecb42e58156dadeb828e9614c0ac529e0f88d9976ea94fa720ae78f"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/u88-framebuffer.txt",
+      "bytes": 71,
+      "sha256": "e2a15090f7af00b99a3398f5f2e5a15d493f40c5721793c236c43d8cc0cf5a2e"
+    },
+    {
+      "path": "recipes/u85-u88/evidence/xnu-source-receipt.json",
+      "bytes": 301,
+      "sha256": "a24f62f331920d04c2d828608fdf02039430d85e96050a6f8b89abb881d6cfd5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/bin/xcrun",
+      "bytes": 999,
+      "sha256": "8b268810fb429537ca0097a0b78ad67e72079dae23ac4aa21414561d6b9e8bdb"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_crypto_archive_import.py",
+      "bytes": 1654,
+      "sha256": "7b6173cd17d75d457cdb2db4fa4743287132ee53f61e6049fd6253ae030cda99"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_offline_kernel.sh",
+      "bytes": 2472,
+      "sha256": "009f5ff37a31934373a817188d1be66fb4877f711b67ee3a1c41a8428c84e1b5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/build_pthread_archive_import.py",
+      "bytes": 2133,
+      "sha256": "94147b6f4b5b80ce24a8e26fd475d1fad5a3624b3d59b232d1199f4da355916b"
+    },
+    {
+      "path": "recipes/u85-u88/guest/crypto-import.json",
+      "bytes": 203037,
+      "sha256": "4d8d05e8ee44660a9c672d9e2ca729ade53e8c674664eac5ac5af71c401aebee"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/compile_gpu_guest.py",
       "bytes": 2428,
       "sha256": "077d906d0d2660042cf1f14ddb7668cf6b341ca996f6ed0c862f877e369d9f14"
     },
     {
-      "path": "recipes/gpu-u85/link_gpu_guest.py",
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/link_gpu_guest.py",
       "bytes": 2191,
       "sha256": "3a77dfe577a693ef070fe5f405def96dbfff18421207bfa506f8b12753356baf"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-gpu-u85/link_kernel.sh",
+      "bytes": 2731,
+      "sha256": "fffd81642c74761d0075df470c147cca4fe64ef1a0a66a2d76745575a07ba4fe"
+    },
+    {
+      "path": "recipes/u85-u88/guest/evidence/odin-touch-u75/link_kernel.sh",
+      "bytes": 2654,
+      "sha256": "11c182ef18f083e9a74e1e11cbd26841a6ff5b91ad6dffcfb3e15821323812b5"
+    },
+    {
+      "path": "recipes/u85-u88/guest/iig-tools/iig-8796-cached",
+      "bytes": 717,
+      "sha256": "7ac32cad7f1e4a106a4218c387da7437f11a7e2294f6a5b2ecdfa6410c03be75"
+    },
+    {
+      "path": "recipes/u85-u88/guest/native_prelink.py",
+      "bytes": 12723,
+      "sha256": "5bd80b8c63deec29b747c28253e02308a56d5f8cdb37c9d315e7c8af7012d017"
+    },
+    {
+      "path": "recipes/u85-u88/guest/pthread-import.json",
+      "bytes": 21940,
+      "sha256": "a8ed419756f19490aa744546d5a7d0b137f44f4d48b0d6b4eba523e5341649a6"
+    },
+    {
+      "path": "recipes/u85-u88/guest/record-clang",
+      "bytes": 740,
+      "sha256": "57d392dd6d4318c2951b87578f7a26a0421e044cb1aaedde0ce36d7798862fcc"
+    },
+    {
+      "path": "recipes/u85-u88/guest/record-clang++",
+      "bytes": 373,
+      "sha256": "6ad549b2d6aab2fc5f57ad5b39602c7f275b08fca235f00ebf24be4978c24ffc"
+    },
+    {
+      "path": "recipes/u85-u88/reference-nx769j/os-profiles/ios-16.5-20F66/profile.toml",
+      "bytes": 10324,
+      "sha256": "6461621f22f56d0d95d76b3e3d04e8196784726f81bff04d966f061af3c3fb7e"
+    },
+    {
+      "path": "recipes/u85-u88/reference-nx769j/scripts/emit-prelink-nx769j.py",
+      "bytes": 5941,
+      "sha256": "554dbc92b13f7d042fbb3d0a1845cc93270917e3ca249d2df1abf414eac511c7"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/build-arm-driver.py",
+      "bytes": 7259,
+      "sha256": "bf3cbcf7de988a611f43994f2ef39805fa90ded9aebcb4f27e5348a301863fd5"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/build-xnu-4k-baseline.sh",
+      "bytes": 44811,
+      "sha256": "758342ed1b72afd6e1d914b5764ff43ab77e8815d4d5b73000cdcd6e53831ad1"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/components.toml",
+      "bytes": 17352,
+      "sha256": "a39b7f2f0510dcdd6fa4ad0384c9094cf755a86e8774a5e224f291a3ce6be71c"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/kernel_target.py",
+      "bytes": 1394,
+      "sha256": "f2351aebc029a69673ead76e1a0b49845fd940e285da82cd693a89084991c4bf"
+    },
+    {
+      "path": "recipes/u85-u88/upstream-tools/seal-source-crypto-kernel.py",
+      "bytes": 7519,
+      "sha256": "b8f304c8d88ffa3f49277f407d1aa72734944cacd59c58d010609744af24c0a3"
+    },
+    {
+      "path": "scripts/OdinDarwinEnter.S",
+      "bytes": 1420,
+      "sha256": "2e0562d8e3c1ed771dd498f146c54daf47ea0a8e75ea936477094942f50ab16d"
+    },
+    {
+      "path": "scripts/OdinRamRootRange.h",
+      "bytes": 955,
+      "sha256": "ca56d881a2f7015054a0189bd4009e65ea72d1fc44a54a55030b3925cd24b9da"
+    },
+    {
+      "path": "scripts/OdinSelectInitrd.h",
+      "bytes": 1491,
+      "sha256": "7c325a4bb83bf9cd2231592b11b69e4d116a63e879eb583f1e23f17e9c330bb2"
+    },
+    {
+      "path": "scripts/OdinUniXNUHandoff.c",
+      "bytes": 3742,
+      "sha256": "15e5fccbf92352e56da318a77115e134f88a98ed96acd4f84f31f0d024a85e7b"
     },
     {
       "path": "scripts/adt_codec.py",
@@ -944,8 +1184,8 @@
     },
     {
       "path": "scripts/audit_odin_hid_abi.py",
-      "bytes": 9981,
-      "sha256": "2ad9e36c780f72f5ec01a7a6221bb9a433f08b44b7557d4eaf9fe27c8c68d9f4"
+      "bytes": 9765,
+      "sha256": "0a869d019bbfc65ab12ac39a08c52c152162c3124e44ebe8d60243dce16db4ab"
     },
     {
       "path": "scripts/audit_odin_query74.py",
@@ -984,13 +1224,13 @@
     },
     {
       "path": "scripts/bind_touch_u74.py",
-      "bytes": 3891,
-      "sha256": "d884fb53c18ab661155a3cc2e93b0ae0fc8777c1166e85f2cec7a7bbecd1f752"
+      "bytes": 3839,
+      "sha256": "916b72154d7f359cf5ec662b7ee81013e2d7e3e632bfd03157b47c3dff02bf99"
     },
     {
       "path": "scripts/bind_touch_u75.py",
-      "bytes": 3935,
-      "sha256": "aac692021c7b91349813ad106fb8dda40324c0c724e5e286d15a7f6cdeb46be1"
+      "bytes": 3883,
+      "sha256": "8b161c06ee14f92d729677c1f680b885a0c8810cf38c4edd45c44d7cd0d855c3"
     },
     {
       "path": "scripts/build_crypto_archive_import.py",
@@ -999,8 +1239,8 @@
     },
     {
       "path": "scripts/build_darwinboot_windows.py",
-      "bytes": 8222,
-      "sha256": "ba02eb5df3ed3c51d8300c48d465c7d3664e7b95a8f2cee3b48ce5c8736b9d50"
+      "bytes": 8089,
+      "sha256": "2d718f67d282ac93dd6446a50165d5d65fd69acca6275faf4c6d7edeac4b44ed"
     },
     {
       "path": "scripts/build_development_trust.py",
@@ -1009,8 +1249,8 @@
     },
     {
       "path": "scripts/build_host_virtual_input.py",
-      "bytes": 14829,
-      "sha256": "94858ccfac36da93982702dcf43e87cbf828c46aeb9f30382dea19281ed4dbde"
+      "bytes": 14609,
+      "sha256": "ca3f91a9440c6ae6b0a4bb94053dd6306bf0df167dbfd7ad731abbfc4e2e3a48"
     },
     {
       "path": "scripts/build_native_fat.sh",
@@ -1029,43 +1269,43 @@
     },
     {
       "path": "scripts/build_odin_gpu_u75.py",
-      "bytes": 1531,
-      "sha256": "8bd158be86b00824d76af06a4021ff2674e489229fba4f3ded68797de346a350"
+      "bytes": 1513,
+      "sha256": "4c831e5913facf8daed251261e1f67e905eea2642bc0a337d304d0c031df2377"
     },
     {
       "path": "scripts/build_odin_gpu_u77.py",
-      "bytes": 1531,
-      "sha256": "5bbfb0e25291834bf1dedef0a9b5a4bf19eb245f7543e5c24889d21d5fd31060"
+      "bytes": 1513,
+      "sha256": "01c742ce1ef4ef6f2795aa0d9b886f872a352bf313b29c382f5fc7dc4d75b195"
     },
     {
       "path": "scripts/build_odin_gpu_u78.py",
-      "bytes": 1585,
-      "sha256": "701077bdd20284b1e291e1f96ffbc00fde354a256ce658f0c015f813e3bc6e56"
+      "bytes": 1566,
+      "sha256": "d8697e1cde46b00f2c3de4a028f135c59f82354a33605f9dc5cef57a4054f595"
     },
     {
       "path": "scripts/build_odin_gpu_u79.py",
-      "bytes": 1585,
-      "sha256": "523436ea601a7c22df52fd59ed67c6b88a6403c912df2ad771d01fc538e862a2"
+      "bytes": 1566,
+      "sha256": "de04e59d573e55d013a584c725ca100c2f6e20460851defbc27e522c1f6197c1"
     },
     {
       "path": "scripts/build_odin_gpu_u81.py",
-      "bytes": 1585,
-      "sha256": "1bc1d12bfda8954a737ee399e5505f6c10e8bbe5eb687cb20f8a81acc2d44946"
+      "bytes": 1566,
+      "sha256": "6308c1f0e783519a0c2cc99f1e5ed03d5bd7add722d13f0ffc0fdace1b4cf0e4"
     },
     {
       "path": "scripts/build_odin_gpu_u82.py",
-      "bytes": 1585,
-      "sha256": "b00ecdf93cbb1e69e7626a22f63147163a5f3bf6cf1f1b44b42a6fca51aaffc5"
+      "bytes": 1566,
+      "sha256": "f0aba8cf99036c76fa09ad47577b2a0da97d86bdbf65071f0ebea9d0b0c78fa4"
     },
     {
       "path": "scripts/build_odin_gpu_u83.py",
-      "bytes": 1631,
-      "sha256": "8fd0d4fce65a94221e2e4412b532b590291afcbdf455987cfc9c13efd3fb0da9"
+      "bytes": 1612,
+      "sha256": "3bf7832ba138124fdd57f68cfc14156190596f48ebabe65a42d563e639bf3d86"
     },
     {
       "path": "scripts/build_odin_gpu_u85.py",
-      "bytes": 1648,
-      "sha256": "4ff28cbbc901b74e615cbaaa87157833062e98a85e4ebd370aef0a12f2ea0bb4"
+      "bytes": 1629,
+      "sha256": "3b3ac0fbc525562c32e6a46b3b50b2d4c6931afca8f6d3f87749e02e3fda9eeb"
     },
     {
       "path": "scripts/build_odin_ram_block.py",
@@ -1074,8 +1314,8 @@
     },
     {
       "path": "scripts/build_odin_remote_media.py",
-      "bytes": 6923,
-      "sha256": "5d846e6087158e505897d8de3b7bd43a6e31c22fd5419cb81dcc4af148f883a6"
+      "bytes": 6796,
+      "sha256": "83ba9b02189923e22729600bca08d546151060490f4d85f1066449c7c63467ff"
     },
     {
       "path": "scripts/build_odin_surface_import.py",
@@ -1084,8 +1324,8 @@
     },
     {
       "path": "scripts/build_odin_unixnu_bds.py",
-      "bytes": 6554,
-      "sha256": "6601568f2e6219ea640f87a82802c7e69c87751d834fe816ad08cbbafffce372"
+      "bytes": 6460,
+      "sha256": "35dbf94ac03182be847f44502f8e6f356b4d0b119b08670eac0266194e5d1aa4"
     },
     {
       "path": "scripts/build_odin_unixnu_sec.py",
@@ -1119,8 +1359,8 @@
     },
     {
       "path": "scripts/build_unixnu_dxe_windows.py",
-      "bytes": 2828,
-      "sha256": "ec835b9f7dd21cd61b17e62af76cfebe5964247071c9db503a60dc8ce1ba099b"
+      "bytes": 2788,
+      "sha256": "bb43dd5f104aaccb4434368ba112d69ebb9f2901635009be22d0452bd17a2eab"
     },
     {
       "path": "scripts/build_unixnu_windows.py",
@@ -1139,13 +1379,13 @@
     },
     {
       "path": "scripts/check_initrd_prefix.py",
-      "bytes": 3864,
-      "sha256": "5e00bdcc1b24e5693e02da04c99ef7735cc6e9b0028b84fcae5ff077dfb88ffd"
+      "bytes": 3796,
+      "sha256": "cb162d40c75e499523b29689e8289c30df9de854c1442db406572364187c5633"
     },
     {
       "path": "scripts/check_kernel_readback.py",
-      "bytes": 16886,
-      "sha256": "1837a1ed8c2022c76926898aea52ece92521a14fe72e083b10a7bed88102bbec"
+      "bytes": 16663,
+      "sha256": "66ca5e25dd1979083978621a3e25e6b1338aaf31774425fd625e28227d8493fb"
     },
     {
       "path": "scripts/check_odin_display_interface.py",
@@ -1174,8 +1414,8 @@
     },
     {
       "path": "scripts/compile_odin_storage_reference.py",
-      "bytes": 3891,
-      "sha256": "4fbd8c77403df0066d8f095728d8c3f56499ca2922d0d8b70c1781f4d19ecc5e"
+      "bytes": 3811,
+      "sha256": "4c827fae27eedff0581eb1bb56e535e9f196d0fb94bcfa17edba928bf52d24ce"
     },
     {
       "path": "scripts/compile_pmgr_u73_guest.py",
@@ -1184,13 +1424,13 @@
     },
     {
       "path": "scripts/compile_touch_u74_guest.py",
-      "bytes": 1749,
-      "sha256": "4786178e63594549cc7a9cc1aa66879461d52e4375ec9706befc05612d95d6a1"
+      "bytes": 1725,
+      "sha256": "2771efc62af591ec22ce31759ffe873a6dc1ff57a385879af1948106daa62c41"
     },
     {
       "path": "scripts/compile_touch_u75_guest.py",
-      "bytes": 1749,
-      "sha256": "504ed3b6378be0a96bfab088e06022390667609418a7c3684c0415ae3acdbd00"
+      "bytes": 1725,
+      "sha256": "ab827b8bf3ac328d166818476d758dafa878fb89d92e3891fe3d8c3ef2acbee6"
     },
     {
       "path": "scripts/disassemble_ios_cache_display.py",
@@ -1229,8 +1469,8 @@
     },
     {
       "path": "scripts/finalize_kernel_mmu_diagnostics.py",
-      "bytes": 926,
-      "sha256": "494848ad6988159a4c9e1022529ce4d4b9cacfe3e3ae84c4df7b3f90f27cdbad"
+      "bytes": 914,
+      "sha256": "3e640ade92ca32bf65453dcb279fa04927ba5b8de35c09ee484f24a4c7525168"
     },
     {
       "path": "scripts/finalize_native_ram_root.py",
@@ -1304,8 +1544,8 @@
     },
     {
       "path": "scripts/inspect_root_exec.py",
-      "bytes": 7358,
-      "sha256": "2640ec04f1e68f09fcab7f23795d93853926fba08ce10a26e24db8149434c647"
+      "bytes": 7216,
+      "sha256": "e1db265722b354957e2813c09be6e321c7d9694e7add8fd02ecf165eb2bcecde"
     },
     {
       "path": "scripts/install_host_sb_dyld_policy.py",
@@ -1374,8 +1614,8 @@
     },
     {
       "path": "scripts/install_odin_ram_data_provider.py",
-      "bytes": 2346,
-      "sha256": "21d63f623eb0d2e335f967f9eb07a3b2a4a615ff2c61e1aead4e54c348456216"
+      "bytes": 2303,
+      "sha256": "34a433cdd1f78b4f76efd9937a5dbc5b80932cb6db29211b4a4359955f66a086"
     },
     {
       "path": "scripts/install_offline_headers.sh",
@@ -1409,28 +1649,28 @@
     },
     {
       "path": "scripts/launch_u04_ram.py",
-      "bytes": 6023,
-      "sha256": "2ad8330f22d10dd14491226f26f09567e80bd70b10996a8742b8eeb9bf440483"
+      "bytes": 5909,
+      "sha256": "5ec8df1e2171238beceb8f06adf5e57709a89cd5791e2907427fea680c9e8207"
     },
     {
       "path": "scripts/launch_u05_ram.py",
-      "bytes": 6023,
-      "sha256": "d70b79df5ba1711bb097327c187a6f1c9b99a63afcd0701a82bb92769875302d"
+      "bytes": 5909,
+      "sha256": "0d89d9640c066b995df053c54b873319146561c79e0bd0f8a0f244a36437fc15"
     },
     {
       "path": "scripts/launch_u06_ram.py",
-      "bytes": 6023,
-      "sha256": "40e879e086e224c4a32afe3d92aa129e24256cb5e5bd79a30695de9d7ab8b6c9"
+      "bytes": 5909,
+      "sha256": "6c0c929e36817c1fcf0a1a3c7a95ecace1754dd3c2a75dde71f758bda0d0157b"
     },
     {
       "path": "scripts/launch_u07_ram.py",
-      "bytes": 6023,
-      "sha256": "98692e49aafaacc461eb08ac00757bfcb9488f66484ea2347c2499e3efa15741"
+      "bytes": 5909,
+      "sha256": "8f90ad8faefbebbffcae4203b7423b4243b9fb1e00bd2a86aa2289892eb371a9"
     },
     {
       "path": "scripts/launch_u08_ram.py",
-      "bytes": 6023,
-      "sha256": "d192081788f7fe27960c986d1ff127c5ac3b0e679a7e2bfa7287cf4ffffd0620"
+      "bytes": 5909,
+      "sha256": "25945d4083a33da2d77196df502f5aec234c5a8f17214debbe34c953fc908877"
     },
     {
       "path": "scripts/link_host_display_candidate.py",
@@ -1449,38 +1689,18 @@
     },
     {
       "path": "scripts/link_touch_u75_guest.py",
-      "bytes": 2412,
-      "sha256": "6a222d501fbc3ff2dae0c8164e21100dfd9e19799575020c14bcad25eeff33ac"
+      "bytes": 2377,
+      "sha256": "0a7da129cddc7a95d2f195a61f7f9d920d56e89f0dbd77cde9b990b8bc2f6f7b"
     },
     {
       "path": "scripts/monitor_resident_ui.py",
-      "bytes": 3150,
-      "sha256": "e3b317215c3e6fc41268071af5a5ea2d56db038f1d9a6cfc2592a9e153471b58"
+      "bytes": 3089,
+      "sha256": "9a153dc0bcecd5176748d0bf5efc20d7bb85cec4588e73822ccf0952532863d1"
     },
     {
       "path": "scripts/odin_mmu_diagnostics.S.inc",
       "bytes": 4057,
       "sha256": "e9c44e9834662b3d4abfd5ab2aafb533d47a6568e43f2c778b6b93f5196dd48c"
-    },
-    {
-      "path": "scripts/OdinDarwinEnter.S",
-      "bytes": 1488,
-      "sha256": "e2582f1eea9fd61d810011147a256b486476645956ebacfcf792f1e62d3a70ea"
-    },
-    {
-      "path": "scripts/OdinRamRootRange.h",
-      "bytes": 955,
-      "sha256": "ca56d881a2f7015054a0189bd4009e65ea72d1fc44a54a55030b3925cd24b9da"
-    },
-    {
-      "path": "scripts/OdinSelectInitrd.h",
-      "bytes": 1491,
-      "sha256": "7c325a4bb83bf9cd2231592b11b69e4d116a63e879eb583f1e23f17e9c330bb2"
-    },
-    {
-      "path": "scripts/OdinUniXNUHandoff.c",
-      "bytes": 3742,
-      "sha256": "15e5fccbf92352e56da318a77115e134f88a98ed96acd4f84f31f0d024a85e7b"
     },
     {
       "path": "scripts/offline_xcrun.py",
@@ -1529,8 +1749,8 @@
     },
     {
       "path": "scripts/prepare_gpu_selftest_u76.py",
-      "bytes": 1969,
-      "sha256": "30243056a0b99e98ac0946cd0ac00f86f49e27b21cfa19372195511b2a180b6d"
+      "bytes": 1944,
+      "sha256": "764a60928e6efd9fdbd4d98c8e0c72f4861a6ae0cf279b37bc1dd5869951cb2d"
     },
     {
       "path": "scripts/prepare_host_data_seed.py",
@@ -1549,8 +1769,8 @@
     },
     {
       "path": "scripts/prepare_host_virtual_input_root.py",
-      "bytes": 6815,
-      "sha256": "f5cdc29cec3f134a9ab89b98a47dabaf3078dbb977cee73045e604fd14f3f929"
+      "bytes": 6689,
+      "sha256": "0a61202a85edb62d541ef12d031b4f67762efe67497bfb6d6d31d44610921091"
     },
     {
       "path": "scripts/prepare_ios16_prelink.py",
@@ -1619,8 +1839,8 @@
     },
     {
       "path": "scripts/prepare_source_publication.py",
-      "bytes": 2577,
-      "sha256": "90da2c5edbfe3c224976bbbe65a15a8cc91f9ea2360e49f03a8466b2227d2779"
+      "bytes": 2537,
+      "sha256": "e6d97ab4b59e05e7b641d5e4d50af45c59c0586c052615ed9128a579d26ffd89"
     },
     {
       "path": "scripts/prepare_statusbar_root_u80.py",
@@ -1634,23 +1854,23 @@
     },
     {
       "path": "scripts/prepare_ui_policy_root_u85.py",
-      "bytes": 3746,
-      "sha256": "0bab44d5131ac66ce31e40f17a83fbc3e929c72ad77ba07384e4ab3bcfbebe25"
+      "bytes": 3685,
+      "sha256": "64caf769b5c43f8cc676de7f3dbdcf1123b4e58dbd271d7841729b7cfbd6925d"
     },
     {
       "path": "scripts/prepare_ui_policy_root_u86.py",
-      "bytes": 3746,
-      "sha256": "ec9f0a7b719bf6b948897aaee3a9dfddb8341a7c3b03b952d15774c95f6c1791"
+      "bytes": 3685,
+      "sha256": "13c321c9c5fde961c4a222084a4a2ebd3d08d5e6f92348131f5ea8f3ed79a194"
     },
     {
       "path": "scripts/prepare_ui_policy_root_u87.py",
-      "bytes": 3746,
-      "sha256": "23a0429e425efdac7d6cef7af2669948e9abc6b478529fd0bc147ed7d32a4b82"
+      "bytes": 3685,
+      "sha256": "f455997b13a37a97fab545c45e7d7b0dc9b630285714846d732186330acf89ad"
     },
     {
       "path": "scripts/prepare_ui_policy_root_u88.py",
-      "bytes": 3746,
-      "sha256": "942ad0ce2b7a300962340413682e3e819c1737a8828c0a6af3decb3252385088"
+      "bytes": 3685,
+      "sha256": "ea72eb0986273f5b01b77f0d12bcc0557da5dfe6a09eba9531736d60291b0ddb"
     },
     {
       "path": "scripts/prepare_upstream_setup_preferences.py",
@@ -1689,13 +1909,13 @@
     },
     {
       "path": "scripts/rebuild_touch_u74.py",
-      "bytes": 917,
-      "sha256": "b89443d11a0343a631f27725ce03b9dd7b118ce1bc6f1716e1ee2b381dc61341"
+      "bytes": 904,
+      "sha256": "b0a3001c93308e82fc826ec56b4835ed35736795f5723ca4810acb626f7441dc"
     },
     {
       "path": "scripts/rebuild_touch_u75.py",
-      "bytes": 961,
-      "sha256": "fd5a6bd54e3e4cdd97e023164c8cf2480c2ed77a4c37ba405a3bd06d94155868"
+      "bytes": 948,
+      "sha256": "43a2cfc77d827a217623cc98aa4752476156c9e4d531d56780640308668c81b4"
     },
     {
       "path": "scripts/record_hakios_234_review.py",
@@ -1709,8 +1929,8 @@
     },
     {
       "path": "scripts/record_resident_u69.py",
-      "bytes": 3816,
-      "sha256": "7b82c51f6c460d794931ee64ee38745204a9ff9cfe179764f308a9be6a42eddc"
+      "bytes": 3760,
+      "sha256": "2fd2a4604f5fd65285ccaa81ac3fe76a9e1e76e43c59b6da8eb5d4cc5944fefc"
     },
     {
       "path": "scripts/record_u03_return.py",
@@ -1863,6 +2083,11 @@
       "sha256": "d4f584f53926e14cd39c6a454aeda0c27b7d947d4390a97eb26f4c3e03d88131"
     },
     {
+      "path": "soc/sm8350/README.md",
+      "bytes": 585,
+      "sha256": "1972632fc812c08c0e5efb8114fd57d5c57dccc086c6a292ca128f3e56dfbb71"
+    },
+    {
       "path": "soc/sm8350/configs/sm8350.config",
       "bytes": 375,
       "sha256": "63688d729e0b0deed6fa9dfe2b31dd18ec99179dc305995096d148c302e6c1bb"
@@ -1888,24 +2113,14 @@
       "sha256": "6e68dbcdac670624f2a9806a61fef42110bfe6586029b3f1a0acb068c3a23ec2"
     },
     {
-      "path": "soc/sm8350/README.md",
-      "bytes": 585,
-      "sha256": "1972632fc812c08c0e5efb8114fd57d5c57dccc086c6a292ca128f3e56dfbb71"
-    },
-    {
       "path": "soc/sm8350/soc.toml",
-      "bytes": 172,
-      "sha256": "cf09e2078a2cef4dd3921df6854c7d11114fe911ac14d0d22c1fe8a0a1b12fba"
-    },
-    {
-      "path": "SOURCE-NOTICE.md",
-      "bytes": 1580,
-      "sha256": "672a383b5bff326a9b04b3cd23d8bfb13576ae696895dbd619bcf4c5f7c84391"
+      "bytes": 168,
+      "sha256": "790ce5287bbe42e27894febc986c974cc8be540ba600cfef58f365a6781e9562"
     },
     {
       "path": "source-pins.json",
-      "bytes": 20654,
-      "sha256": "10149289e87838986ce3ac6cb7904b19b7805ced3a9c7e02ca61b303747060b5"
+      "bytes": 21192,
+      "sha256": "a0367271004d3a6b34edecfbc91ebd41e8a6cdc87c73ce2212e4850f88051380"
     },
     {
       "path": "tests/ram_root_range_test.c",

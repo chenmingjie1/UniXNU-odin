@@ -1,0 +1,83 @@
+{
+  "u85": {
+    "tag": "u85",
+    "os": "iOS16.5/20F66",
+    "files": [
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho",
+        "bytes": 56590336,
+        "sha256": "3f95a57bbd346cf8a8c493d365cd98299ce17d21255fa3f5400c133f72bd9d1b"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.system",
+        "bytes": 2478948352,
+        "sha256": "cbf3275523b90a74a75474527307b443ff17c027628a7451dece94ef0b7351bd"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.data",
+        "bytes": 504795136,
+        "sha256": "07b5e68dba65b202911eee6c34d3016cb030cd5cb758021b47cae48f52c5854e"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.trustcache",
+        "bytes": 52232,
+        "sha256": "8c845aa7037b9a3d8ad2404ba470ffb0bdc844e162167dbcbd28219f7f823717"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\DarwinBoot.efi",
+        "bytes": 95232,
+        "sha256": "a1b34117b59c10921253b7ab1e0d3080b243b8bf98a3402cbc23e2337d789040"
+      }
+    ],
+    "hardware_adt_sha256": "6e2123e4fbecfefc50d987036c2ca7161f03bb3513f148d27fbb99f7038eb32f",
+    "staged_adt_sha256": "628737d04b73ace4dc4a79f900ac969e71cb2eeedb879de3aa82f68534a18a9b",
+    "requested_window_bytes": 4294967296,
+    "reserved_input_bytes": 3055976448,
+    "remaining_kernel_memory_bytes": 1238990848,
+    "device_tested": true,
+    "partition_writes": false,
+    "desktop_gpu_composition_verified": false,
+    "boot_image_sha256": "a77af91958c3fe2ede4f6da1e6fae9f9424f99b8dce2ffc39e0e9ea854a4676e"
+  },
+  "u88": {
+    "tag": "u88",
+    "os": "iOS16.5/20F66",
+    "files": [
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho",
+        "bytes": 56590336,
+        "sha256": "3f95a57bbd346cf8a8c493d365cd98299ce17d21255fa3f5400c133f72bd9d1b"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.system",
+        "bytes": 2478948352,
+        "sha256": "d9c63f216eed64877c28697e3372de6b5339275acc6ab91afecf032ab82149c2"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.data",
+        "bytes": 504795136,
+        "sha256": "07b5e68dba65b202911eee6c34d3016cb030cd5cb758021b47cae48f52c5854e"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\Payloads\\kernel.macho.trustcache",
+        "bytes": 52232,
+        "sha256": "fa6199056880898147dab84bad83e715c04c615aa2f3cc6d064f3e6a93827805"
+      },
+      {
+        "path": "esp\\EFI\\UniXNU\\DarwinBoot.efi",
+        "bytes": 95232,
+        "sha256": "a1b34117b59c10921253b7ab1e0d3080b243b8bf98a3402cbc23e2337d789040"
+      }
+    ],
+    "hardware_adt_sha256": "6e2123e4fbecfefc50d987036c2ca7161f03bb3513f148d27fbb99f7038eb32f",
+    "staged_adt_sha256": "628737d04b73ace4dc4a79f900ac969e71cb2eeedb879de3aa82f68534a18a9b",
+    "requested_window_bytes": 4294967296,
+    "reserved_input_bytes": 3055976448,
+    "remaining_kernel_memory_bytes": 1238990848,
+    "device_tested": true,
+    "partition_writes": false,
+    "desktop_gpu_composition_verified": false,
+    "boot_image_sha256": "a77af91958c3fe2ede4f6da1e6fae9f9424f99b8dce2ffc39e0e9ea854a4676e"
+  },
+  "notes": "Hashes identify retained test inputs; binary media are not distributed. Host build manifests and later physical feedback have separate scopes."
+}

@@ -8,7 +8,7 @@ import shutil
 D = Path(__file__).resolve().parents[1]
 OUT = D / 'publish/UniXNU-odin'
 DIRECTORIES = ('drivers', 'firmware', 'host-input', 'package', 'patches',
-               'configs', 'dts', 'soc', 'tests', 'scripts', 'docs', 'recipes', 'licenses')
+               'configs', 'dts', 'soc', 'tests', 'scripts', 'docs', 'recipes', 'licenses', 'profiles')
 FORBIDDEN = re.compile(rb'-----BEGIN (?:OPENSSH|RSA|EC|DSA|PRIVATE).*PRIVATE KEY|'
                        rb'github_pat_[A-Za-z0-9_]+|gh[pousr]_[A-Za-z0-9]{20,}|'
                        rb'https?://[^\s"<>]+(?:lhr\.life/t/|trycloudflare\.com/t/)|'

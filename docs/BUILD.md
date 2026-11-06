@@ -1,3 +1,5 @@
+> 中文详解：[u85～u88 实际构建命令、profile、编译记录与启动参数](BUILD-U85-U88.md)。实际链接闭包与历史基础配方的区别也在该文逐项说明。
+
 # Development build inputs
 
 This snapshot preserves source and historical scripts; it is not yet a self-contained release builder.
