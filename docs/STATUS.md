@@ -1,4 +1,4 @@
-# Device status: 2026-11-06
+# Device status: 2026-11-07
 
 Target: Xiaomi MIX 4 / odin, SM8350, iOS 16.5 / 20F66. Latest physical feedback: u89.
 
@@ -65,5 +65,73 @@ copy work; this is not a GPU metric, scrolling FPS or input latency.
 A public-original-IOSurface-to-userptr adapter is now compiled and tested on
 the computer. Its import/lifetime mock tests pass with ASan/UBSan, and its iOS
 16.5 arm64 library has passed signature audit. It has **not** been deployed,
-physically qualified or integrated into desktop Metal. See
+physically qualified or integrated into desktop Metal at the u89 checkpoint. See
 [the remaining GPU integration boundary](GPU-INTEGRATION.md).
+
+## u90 original-surface probe, physical result
+
+The paired phone accepted a temporary u90 RAM boot. The read-only USB server
+delivered 3,040,419,734 bytes in 2,904 requests and retained resident control.
+No partition was written. The original UI idle assertion was armed before
+helper startup. A later scanout capture shows Settings, with continuing CPU
+presentation and no recorded kernel panic.
+
+The helper created a 64x64, 16KB original IOSurface, wrote the CPU canary and
+reported phase 2 success. Opening HakiosGPU failed at phase 3 with
+`0xe00002e2` / `kIOReturnNotPermitted`. Consequently no original-surface GPU
+import, command submission, fence or readback was qualified. Backend offscreen
+success remains separate from this failed client access and desktop rendering.
+
+The UI exit observer also recorded a backboardd exit with status `a`, namespace
+2, code `a`, and a SpringBoard exit with status `9`, namespace 15, code `0`.
+Resident text packets truncate some boundary characters, including PID digits;
+do not infer exact PIDs or causal ordering from those lines. The reason records
+are more specific than prior PID replacement observations but are not a crash
+stack or proof of what caused the exits.
+
+u90 source kernel SHA-256:
+`40323e8e87955d5ea76f8389dc862b0c191fdfc2cd1df68ee1eb6c26b19c7db9`
+
+u90 boot image SHA-256:
+`59bf91dada6e3c25e4b126e5558ca5ccc556553028a80b68f5743efe54bae88d`
+
+## u91 GPU client access experiment
+
+Automatic review initially rejected adding a native service grant because it
+weakens a sandbox boundary. After seeing the precise scope and risk, the user
+explicitly authorized the exception in the next RAM-boot image. Only HakiosGPU
+declares `NativeSandboxGrantProcess=SpringBoard,backboardd`; this is a development
+security exception and process names are not signing identities.
+
+The native GPU service has been rebuilt and linked with the u90 observation
+code and unchanged u89 touch/display archives. The original-driver audit passed
+65,319 pointers, 30 unchanged original-kext code ranges and 17 real IIG
+implementations. The exact kernel also passed the generic core7 bootstrap
+breakpoint at `_machine_startup`; this does not emulate an Adreno or prove any
+phone GPU operation. Packaging retained 141 exact baseline firmware files and
+passed the read-only USB protocol checks. The signed probe/System/trust media
+are reused unchanged from u90.
+
+Physical u91 result: the service opened, original IOSurface userptr import
+succeeded (handle 1, 16,384 bytes, 64x64), command submission returned fence 1,
+the fence wait succeeded and the 4,096-word CPU readback had zero mismatches.
+Phase 8 reported result 0 / mismatch 0, followed by phase 10 result 0 /
+passed 1 after cleanup. The four CP_MEM_WRITE operations changed words 0,
+2048, 4032 and 4095; all other words retained the canary. This is a real GPU
+memory/command/fence/readback result, not a shader/rasterization test or
+accelerated desktop composition. A subsequent captured scanout shows the
+SpringBoard icon-editing desktop. The existing UI is left running, and the
+resident panic record remains clear.
+
+u91 source kernel SHA-256:
+`2851c491cf6d7115ef1c7b3dec7187da1b812e8d79c23c4330bd39c0ab9a4564`
+
+Local evidence: u91 resident snapshot `20261107-010346` and
+`build/gpu-surface-import/u91-probe-observation.txt`. A source-only summary is
+stored in [GPU-PROBE-U91.json](GPU-PROBE-U91.json). No raw screen image is
+published.
+
+The boot image hash remains identical to u90 because the changed XNU payload
+is delivered through the pinned read-only media server, not embedded in the
+small UEFI boot image. The source kernel hash and media manifest distinguish
+these experiments.

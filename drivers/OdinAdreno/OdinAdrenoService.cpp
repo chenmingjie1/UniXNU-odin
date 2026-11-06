@@ -309,6 +309,11 @@ HakiosGPU::start(IOService * provider)
 		return false;
 	}
 	setProperty(kIOUserClientClassKey, "HakiosGPUUserClient");
+	/* Explicitly authorized for the RAM-boot compositor experiment, u91.
+	 * Existing native_sandbox_grant remains restricted to this service and
+	 * these process names; this is not a global sandbox policy change.
+	 */
+	setProperty("NativeSandboxGrantProcess", "SpringBoard,backboardd");
 	setName("HakiosGPU");
     odin_gpu_stats[1]=1;
 	registerService();
@@ -1021,7 +1026,7 @@ HakiosGPUUserClient::submit(struct msm_gem_submit * request)
 
 		if (b != NULL) {
 			b->fence = request->fence;
-			
+
 		}
 	}
 	reap();

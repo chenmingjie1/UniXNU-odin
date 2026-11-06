@@ -27,6 +27,7 @@ p.add_argument('--idle-policy-with-unlock', action='store_true')
 p.add_argument('--idle-policy-disable', action='store_true', help='Use original UIApplication idle-disable API instead of idle reset')
 p.add_argument('--idle-policy-system', action='store_true', help='Use original SBBacklightController preventIdleSleep/allowIdleSleep')
 p.add_argument('--idle-policy-assertion', action='store_true', help='Acquire and retain original global UI idle-disable assertion')
+p.add_argument('--gpu-surface-probe', action='store_true', help='One background original-IOSurface GPU import/write/readback probe')
 args = p.parse_args()
 assert args.tag.isalnum()
 assert sum((args.unlock_ui, args.sb_unlock_library, args.statusbar_library)) <= 1
@@ -35,6 +36,7 @@ assert not args.idle_policy_with_unlock or (args.sb_unlock_library and args.stat
 assert not args.idle_policy_disable or args.idle_policy_with_unlock
 assert not args.idle_policy_system or (args.idle_policy_with_unlock and not args.idle_policy_disable)
 assert not args.idle_policy_assertion or (args.idle_policy_with_unlock and not args.idle_policy_disable and not args.idle_policy_system)
+assert not args.gpu_surface_probe or (args.idle_policy_assertion and args.sb_unlock_library)
 for command in (SSH, SCP):
     command[command.index('-i') + 1] = str(DEV / 'build/touch-metal-u74/guest-ssh-key')
 with_entitlement = args.event_dispatch_entitlement
@@ -59,6 +61,11 @@ if args.idle_policy_with_unlock:
         if args.idle_policy_assertion:
             combined.write(b'\n#define ODIN_IDLE_ASSERTION_POLICY 1\n')
         combined.write(b'\n' + (DEV / 'host-input/sb_idle_policy.c').read_bytes())
+if args.gpu_surface_probe:
+    with (out / 'host_swipe.c').open('ab') as combined:
+        combined.write(b'\n' + (DEV / 'host-input/OdinSurfaceImport.h').read_bytes().replace(b'#pragma once', b''))
+        for name in ('OdinSurfaceImport.c', 'gpu_surface_probe.c'):
+            combined.write(b'\n' + (DEV / 'host-input' / name).read_bytes().replace(b'#include "OdinSurfaceImport.h"', b''))
 system = ['dispatch_queue_create', 'sleep', 'usleep', 'dprintf', 'mach_absolute_time', 'dyld_stub_binder']
 cf = ['CFStringCreateWithCString', 'CFStringGetCString', 'CFDictionaryCreateMutable', 'CFDictionarySetValue', 'CFDictionaryGetValue',
       'CFNumberCreate', 'CFNumberGetValue', 'CFNumberGetTypeID', 'CFArrayCreate', 'CFRetain', 'CFRelease', 'CFEqual', 'CFGetTypeID', 'CFBooleanGetTypeID',
@@ -69,6 +76,7 @@ hid = ['IOHIDEventSystemClientCreateWithType', 'IOHIDEventSystemClientScheduleWi
        'IOHIDVirtualServiceClientDispatchEvent', 'IOHIDEventCreateDigitizerEvent',
        'IOHIDEventCreateDigitizerFingerEvent', 'IOHIDEventCreateKeyboardEvent', 'IOHIDEventAppendEvent', 'IOHIDEventSetIntegerValue']
 objc = []
+surface = []
 if args.unlock_ui or args.sb_unlock_library:
     contract = json.loads((DEV / 'build/display-analysis-ios16/u56-verified-unlock-contract.json').read_text())
     assert contract['passed'] and contract['target'] == 'iOS16.5/20F66'
@@ -108,12 +116,21 @@ if args.idle_policy_with_unlock:
     for file, selector, types in contracts:
         methods = json.loads((DEV / ('build/display-analysis-ios16/' + file + '.json')).read_text())[0]['methods']
         assert next(m for m in methods if m['selector'] == selector)['types'] == types
+if args.gpu_surface_probe:
+    system += ['dispatch_get_global_queue', 'mach_task_self', 'mach_continuous_time', 'mach_timebase_info']
+    cf += ['CFDictionaryCreateMutable', 'CFDictionarySetValue', 'CFNumberCreate',
+           'kCFTypeDictionaryKeyCallBacks', 'kCFTypeDictionaryValueCallBacks']
+    hid += ['IOServiceGetMatchingService', 'IOServiceMatching', 'IOServiceOpen', 'IOServiceClose',
+            'IOObjectRelease', 'IOConnectCallStructMethod', 'IOConnectMapMemory64', 'IOConnectUnmapMemory64']
+    surface = ['IOSurfaceCreate', 'IOSurfaceLookup', 'IOSurfaceGetBaseAddress', 'IOSurfaceGetAllocSize',
+               'IOSurfaceGetWidth', 'IOSurfaceGetHeight', 'IOSurfaceGetBytesPerRow', 'IOSurfaceGetPlaneCount',
+               'IOSurfaceGetPixelFormat', 'IOSurfaceGetID', 'IOSurfaceLock', 'IOSurfaceUnlock']
 c = Cache(DEFAULT)
 mangled = lambda name: name if name == 'dyld_stub_binder' else '_' + name
-needed = {mangled(name) for name in system + cf + hid + objc}
+needed = {mangled(name) for name in system + cf + hid + objc + surface}
 found = {}
 for image in c.images:
-    if not ('/IOKit.framework/' in image.name or image.name.endswith('CoreFoundation.framework/CoreFoundation')
+    if not ('/IOKit.framework/' in image.name or image.name.endswith(('CoreFoundation.framework/CoreFoundation', 'IOSurface.framework/IOSurface'))
             or '/system/libsystem_' in image.name or image.name.endswith(('/libdispatch.dylib', '/libdyld.dylib', '/libobjc.A.dylib'))):
         continue
     if not image.exports:
@@ -141,7 +158,8 @@ c.close()
 for name, install, symbols in [('libSystem.tbd', '/usr/lib/libSystem.B.dylib', system),
                              ('CoreFoundation.tbd', '/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation', cf),
                              ('IOKit.tbd', '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit', hid),
-                             ('objc.tbd', '/usr/lib/libobjc.A.dylib', objc)]:
+                             ('objc.tbd', '/usr/lib/libobjc.A.dylib', objc),
+                             ('IOSurface.tbd', '/System/Library/Frameworks/IOSurface.framework/IOSurface', surface)]:
     if not symbols:
         continue
     text = ('--- !tapi-tbd-v3\narchs: [ arm64 ]\nplatform: ios\ninstall-name: ' + install + '\n'
@@ -215,6 +233,7 @@ record = dict(scope='Host-only virtual input; physical touch unqualified', sourc
     idle_policy_with_unlock=args.idle_policy_with_unlock,idle_policy_disable=args.idle_policy_disable,
     idle_policy_system=args.idle_policy_system,
     idle_policy_assertion=args.idle_policy_assertion,
+    gpu_surface_probe=args.gpu_surface_probe,
     tool_kind='statusbar-library' if args.statusbar_library else 'sb-unlock-library' if args.sb_unlock_library else 'unlock-ui' if args.unlock_ui else 'virtual-input')
 (out / 'build.json').write_text(json.dumps(record, indent=2) + '\n')
 print(json.dumps(record, indent=2))

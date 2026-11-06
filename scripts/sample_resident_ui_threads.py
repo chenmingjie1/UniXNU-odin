@@ -57,7 +57,7 @@ def parse_sample(text):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--release', choices=['u83', 'u84', 'u85', 'u86', 'u87', 'u88', 'u89'], default='u83')
+    p.add_argument('--release', choices=['u83', 'u84', 'u85', 'u86', 'u87', 'u88', 'u89','u90','u91'], default='u83')
     p.add_argument('--seconds', type=int, default=30)
     p.add_argument('--interval', type=float, default=2)
     p.add_argument('--wait-sampler', type=int, default=0, help='Bounded startup wait for the first published bank')
@@ -93,7 +93,7 @@ def main():
         sample = parse_sample(text)
         sample['elapsed_seconds'] = round(time.monotonic() - start, 3)
         sample['counters'] = {}
-        for name in ('touch', 'hid', 'present', 'surface', *(['policy'] if a.release in ('u85', 'u86', 'u87', 'u88', 'u89') else [])):
+        for name in ('touch', 'hid', 'present', 'surface', *(['policy'] if a.release in ('u85', 'u86', 'u87', 'u88', 'u89','u90','u91') else [])):
             r = subprocess.run([str(fastboot), '-s', 'odin-unixnu-u64', 'oem', 'ui-policy' if name == 'policy' else name + '-stats'],
                                capture_output=True, timeout=5)
             raw_text = (r.stdout + r.stderr).decode(errors='replace')

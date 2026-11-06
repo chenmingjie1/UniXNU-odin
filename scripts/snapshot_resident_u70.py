@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,datetime,json,re,subprocess,time
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--wait-run',type=Path,help='Wait boundedly for the matching media-server resident event')
-parser.add_argument('--release',choices=['u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'],default='u70')
+parser.add_argument('--release',choices=['u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91'],default='u70')
 options=parser.parse_args()
 if options.wait_run:
  deadline=time.monotonic()+600
@@ -27,10 +27,10 @@ devices=subprocess.run([str(TOOLS/'fastboot.exe'),'devices'],capture_output=True
 assert re.search(r'^'+serial+r'\s+fastboot',devices.stdout.decode(),re.M),'Resident USB not present; no blocking wait or device writes'
 result={}
 for name,args in [('resident',['getvar','result']),('stage',['getvar','kernel-stage']),
-                  *([('postvm',['getvar','kernel-postvm']),('panic',['oem','kernel-panic'])] if options.release in ('u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else []),
-                  *([(name,['oem',name+'-stats']) for name in ('touch','hid','gpu',*(['present'] if options.release in ('u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else []))] if options.release in ('u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else []),
-                  *([('surface',['oem','surface-stats'])] if options.release in ('u82','u83','u84','u85','u86','u87','u88','u89') else []),
-                  *([('gpu-log',['oem','gpu-log'])] if options.release in ('u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else []),*([('ui-threads',['oem','ui-threads'])] if options.release in ('u83','u84','u85','u86','u87','u88','u89') else []),*([('ui-policy',['oem','ui-policy'])] if options.release in ('u85','u86','u87','u88','u89') else []),('log',['oem','kernel-log']),('framebuffer',['getvar','framebuffer'])]:
+                  *([('postvm',['getvar','kernel-postvm']),('panic',['oem','kernel-panic'])] if options.release in ('u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else []),
+                  *([(name,['oem',name+'-stats']) for name in ('touch','hid','gpu',*(['present'] if options.release in ('u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else []))] if options.release in ('u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else []),
+                  *([('surface',['oem','surface-stats'])] if options.release in ('u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else []),
+                  *([('gpu-log',['oem','gpu-log'])] if options.release in ('u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else []),*([('ui-threads',['oem','ui-threads'])] if options.release in ('u83','u84','u85','u86','u87','u88','u89','u90','u91') else []),*([('ui-policy',['oem','ui-policy'])] if options.release in ('u85','u86','u87','u88','u89','u90','u91') else []),('log',['oem','kernel-log']),('framebuffer',['getvar','framebuffer'])]:
  result[name]=run(args)
  (OUT/(name+'.txt')).write_text(result[name]['text']+'\n')
  (OUT/'status.json').write_text(json.dumps(result,indent=2)+'\n')

@@ -1,0 +1,52 @@
+{
+  "release": "u91",
+  "device": "Xiaomi MIX 4 / odin / SM8350 / Adreno 660",
+  "os": "iOS16.5/20F66",
+  "kernel_sha256": "2851c491cf6d7115ef1c7b3dec7187da1b812e8d79c23c4330bd39c0ab9a4564",
+  "boot_image_sha256": "59bf91dada6e3c25e4b126e5558ca5ccc556553028a80b68f5743efe54bae88d",
+  "boot_mode": "temporary RAM boot; read-only host media; no partition writes",
+  "probe_scope": "Original IOSurface public API -> GPU userptr -> four CP_MEM_WRITE commands -> fence -> full CPU readback",
+  "surface": {
+    "width": 64,
+    "height": 64,
+    "bytes": 16384,
+    "row_bytes": 256,
+    "pixel_format": "BGRA"
+  },
+  "modified_word_offsets": [
+    0,
+    2048,
+    4032,
+    4095
+  ],
+  "modified_values": [
+    "ff0000ff",
+    "ff00ff00",
+    "ffff0000",
+    "ffffffff"
+  ],
+  "canary": "11223344",
+  "checked_words": 4096,
+  "mismatch_words": 0,
+  "fence": 1,
+  "readback_phase": 8,
+  "readback_result": 0,
+  "cleanup_phase": 10,
+  "cleanup_result": 0,
+  "passed": true,
+  "desktop_gpu_composition_verified": false,
+  "shader_rasterization_verified": false,
+  "frontend_installed": false,
+  "user_authorized_service_access_exception": {
+    "service": "HakiosGPU",
+    "process_names": [
+      "SpringBoard",
+      "backboardd"
+    ],
+    "scope": "temporary RAM-boot experiment"
+  },
+  "local_evidence": "u91 resident snapshot 20261107-010346; u91-probe-observation.txt",
+  "transport_limitation": "Resident text chunks lose some boundary characters; do not infer truncated PID digits",
+  "ui_capture": "SpringBoard desktop in icon-editing mode",
+  "kernel_panic_record": "clear"
+}

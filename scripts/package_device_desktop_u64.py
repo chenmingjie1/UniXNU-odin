@@ -2,9 +2,9 @@
 from pathlib import Path
 import argparse,hashlib,json,re,struct,subprocess,sys
 ROOT=Path(__file__).resolve().parents[3];DEV=ROOT/'work/UniXNU-odin'
-parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--release',choices=['u64','u65','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'],default='u64');parser.add_argument('--native-proof',type=Path,help='Explicit preserved core7 bootstrap verification for this exact kernel');options=parser.parse_args()
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--release',choices=['u64','u65','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91'],default='u64');parser.add_argument('--native-proof',type=Path,help='Explicit preserved core7 bootstrap verification for this exact kernel');options=parser.parse_args()
 tag=options.release
-resident=tag in ('u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89')
+resident=tag in ('u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91')
 darwin_tag=tag if resident else 'u63'
 remote_tag=tag if resident else 'u64'
 media_tag=tag if resident else 'u63'
@@ -30,7 +30,7 @@ assert all(g not in files for g in report['excluded_legacy_apps'])
 modules={
  '9B665204-A133-47A2-9396-9E2B370A4E25':DEV/'build/unixnu-efi/UniXNU.efi',
  report['darwinboot_guid']:DEV/('build/darwinboot-'+darwin_tag+'/DarwinBoot.efi'),
- '6D33944A-EC75-4855-A54D-809C75241F6C':DEV/('build/odin-unixnu-bds-'+tag+'/BdsDxe.efi' if tag in ('u65','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else 'build/odin-unixnu-bds/BdsDxe.efi')}
+ '6D33944A-EC75-4855-A54D-809C75241F6C':DEV/('build/odin-unixnu-bds-'+tag+'/BdsDxe.efi' if tag in ('u65','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else 'build/odin-unixnu-bds/BdsDxe.efi')}
 if tag=='u64':modules['ABEE649A-4B85-4776-8350-6464504D4544']=DEV/'build/remote-media-u64/OdinRemoteMedia.efi'
 for guid,path in modules.items():
  raw=next(files[guid].glob('* PE32 image section/body.bin')).read_bytes()
@@ -61,10 +61,10 @@ manifest={'schema':1,'artifact':image.name,'bytes':len(raw),'sha256':sha(image),
  'media_root':str(DEV/('build/device-desktop-'+media_tag)),
  'source_media_manifest':str(DEV/('build/device-desktop-'+media_tag+'/manifest.json')),
  'remote_files':json.loads((DEV/('build/remote-media-'+remote_tag+'/verification.json')).read_text())['files'],
- 'checks':checks['checks'],'a660_metal_linked':False,'native_touch_linked':tag in ('u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'),'native_gpu_linked':tag in ('u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89')}
+ 'checks':checks['checks'],'a660_metal_linked':False,'native_touch_linked':tag in ('u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91'),'native_gpu_linked':tag in ('u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91')}
 if resident:
  secondary=json.loads((DEV/'build/resident-secondary-u69/verification.json').read_text());assert secondary['passed']
- native_proof=DEV/('build/qemu-early-entry-'+(tag if tag in ('u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89') else 'u69')+'core7verified/verification.json')
+ native_proof=DEV/('build/qemu-early-entry-'+(tag if tag in ('u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91') else 'u69')+'core7verified/verification.json')
  if options.native_proof:native_proof=options.native_proof.resolve()
  native=json.loads(native_proof.read_text())
  assert native['qemu_resident_secondary'] and native['hardware_breakpoint_reached']
@@ -74,7 +74,7 @@ if resident:
      firmware_cpu_mpidr='0x0',secondary_entry_computer_check=secondary,
      native_core7_bootstrap_computer_check=str(native_proof),
      physical_resident_usb_verified=False,physical_desktop_confirmed=False)
- if tag in ('u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'):
+ if tag in ('u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91'):
   readback=json.loads((DEV/('build/remote-media-'+tag+'/readback-check/verification.json')).read_text());assert readback['passed']
   assert readback['production_header_sha256']==sha(DEV/('build/remote-media-'+tag+'/OdinKernelReadback.h'))
   manifest.update(read_only_kernel_symbols=True,read_only_gop_capture=True,readback_computer_check=readback)

@@ -8,8 +8,8 @@ import argparse,datetime,hashlib,json,os,re,struct,subprocess,time,zlib
 ROOT=Path(__file__).resolve().parents[3];DEV=ROOT/'work/UniXNU-odin'
 REL=ROOT/'outputs/MIX4-UniXNU-desktop-u64'
 TOOLS=ROOT/'outputs/MIX4-iOS16.5-touch-userland-r64-input-sampler/tools'
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--boot',action='store_true');p.add_argument('--seconds',type=int,default=1800);p.add_argument('--release',choices=['u64','u65','u66','u67','u68','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'],default='u64');p.add_argument('--wait-android',type=int,default=0,help='Wait this many seconds for the paired Android device before the authorized RAM boot');p.add_argument('--arm-ui-idle-assertion',action='store_true',help='u88/u89 fixture: request original UI idle assertion after post-VM entry, before automatic UI lock');args=p.parse_args()
-assert not args.arm_ui_idle_assertion or args.release in ('u88','u89')
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('--boot',action='store_true');p.add_argument('--seconds',type=int,default=1800);p.add_argument('--release',choices=['u64','u65','u66','u67','u68','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89','u90','u91'],default='u64');p.add_argument('--wait-android',type=int,default=0,help='Wait this many seconds for the paired Android device before the authorized RAM boot');p.add_argument('--arm-ui-idle-assertion',action='store_true',help='u88/u89 fixture: request original UI idle assertion after post-VM entry, before automatic UI lock');args=p.parse_args()
+assert not args.arm_ui_idle_assertion or args.release in ('u88','u89','u90','u91')
 assert 0<=args.wait_android<=1800
 assert not args.wait_android or args.boot,'--wait-android requires --boot'
 if args.release!='u64':REL=ROOT/('outputs/MIX4-UniXNU-desktop-'+args.release)

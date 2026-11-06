@@ -15,7 +15,7 @@ object layout and lifetime contract. There is no installed/verified desktop
 Metal frontend using this backend. A successful buffer import alone will not
 change that fact.
 
-## Implemented adapter, not deployed
+## Original IOSurface adapter and physical probe
 
 `host-input/OdinSurfaceImport.c` uses the original public IOSurface library in
 the calling process, then imports those mapped pages through the existing
@@ -41,8 +41,30 @@ This uses the existing private build guest and exact local system cache. It
 checks that all public imports exist in the 20F66 cache, runs ownership/bounds/
 failure-path tests under AddressSanitizer and UndefinedBehaviorSanitizer, cross
 compiles an arm64 iOS 16.5 dylib, and audits its ad-hoc signature. The artifact
-is a library candidate, **not** a new boot image. No phone operation or kernel
-change is performed. Public-export presence does not prove a physical import.
+is a library candidate, **not** a new boot image. That build performs no phone
+operation or kernel change. Public-export presence does not prove a physical
+import.
+
+The separate u90 candidate compiles the same adapter and a bounded probe into
+the existing signed SpringBoard UI helper. Physical execution created a public
+64x64 BGRA original IOSurface and initialized its canary, then
+`IOServiceOpen(HakiosGPU)` returned `0xe00002e2` (`kIOReturnNotPermitted`). No
+GPU import, submission or pixel readback occurred in that run. The final
+captured screen shows Settings; the desktop remains on the CPU path.
+
+The user explicitly authorized a service-scoped native sandbox exception for
+SpringBoard/backboardd in the subsequent u91 RAM-boot experiment. See
+[the exception and its security scope](GPU-ACCESS-PROPOSAL.md). This fixes an
+access policy change. In the subsequent physical u91 run, IOServiceOpen,
+16KB original IOSurface userptr import, command submission, fence 1 completion,
+all 4,096 readback words and cleanup passed. The probe uses CP_MEM_WRITE, not
+shader drawing. This establishes the memory transport boundary, not a
+renderer, compositor integration or desktop speed improvement.
+
+The new [Helium GLES source review](HELIUM-GLES-REFERENCE.md) identifies a
+concrete alternative frontend: EAGLContext -> OSMesa/Mesa -> freedreno ->
+HakiosGPU. Its MiniIOSurface DRM shim needs adaptation for original IOSurface;
+its A640 hardware parameters are not used on odin.
 
 ## Remaining integration and acceptance
 

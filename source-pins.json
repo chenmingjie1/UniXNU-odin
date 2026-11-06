@@ -396,5 +396,13 @@
     "artifact_hashes": "configs/runtime/u85-u88-artifacts.json",
     "documentation": "docs/BUILD-U85-U88.md",
     "profile": "profiles/os/ios-16.5-20F66/profile.toml"
+  },
+  "helium_gles_reference": {
+    "repository": "https://github.com/HeliumStudio-Dev/hackios-xnu-kernel",
+    "branch": "raphael-bringup",
+    "commit": "57722468a3774e2ec60017705ec356ae9b31f40e",
+    "target": "SM8150/Adreno640/iOS16.5-20F66",
+    "reuse": "EAGL/Mesa/freedreno frontend and DRM integration reference; A640 parameters not used",
+    "physical_odin_desktop_acceleration_verified": false
   }
 }
