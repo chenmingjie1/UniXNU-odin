@@ -5,6 +5,33 @@ import argparse
 import json
 
 
+def process_history(samples):
+    """Identify process replacement; sampled PCs cannot establish an exit cause."""
+    previous, lifetimes, replacements = {}, {}, []
+    for sample in samples:
+        current = {}
+        for thread in sample['threads']:
+            name, pid = thread['name'], thread['pid']
+            current.setdefault(name, set()).add(pid)
+            key = name, pid
+            if key not in lifetimes:
+                lifetimes[key] = dict(name=name, pid=pid,
+                    first_seen_seconds=sample['elapsed_seconds'],
+                    last_seen_seconds=sample['elapsed_seconds'])
+            lifetimes[key]['last_seen_seconds'] = sample['elapsed_seconds']
+        for name, pids in current.items():
+            old = previous.get(name)
+            if old and old['pids'].isdisjoint(pids):
+                replacements.append(dict(name=name, previous_pids=sorted(old['pids']),
+                    current_pids=sorted(pids),
+                    last_old_seen_seconds=old['seconds'],
+                    first_new_seen_seconds=sample['elapsed_seconds']))
+            previous[name] = dict(pids=pids, seconds=sample['elapsed_seconds'])
+    return dict(process_lifetimes=list(lifetimes.values()),
+                process_replacements=replacements,
+                process_exit_cause_known=False)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('directory', type=Path)
@@ -19,7 +46,7 @@ def main():
             if t['name'] in seen:
                 continue
             seen.add(t['name'])
-            waits[t['name']][(t['tid'], t['state'], t['continuation_symbol'], t['wait_event'])] += 1
+            waits[t['name']][(t['pid'], t['tid'], t['state'], t['continuation_symbol'], t['wait_event'])] += 1
     for before, after in zip(samples, samples[1:]):
         delta = lambda group, index: (after['counters'][group][index] - before['counters'][group][index]) & 0xffffffff
         if delta('touch', 10):
@@ -41,7 +68,7 @@ def main():
         average_copy_us=round(copy_us / frame_count, 1) if frame_count else None,
         first_sequence=samples[0]['sequence'], last_sequence=samples[-1]['sequence'],
         user_action_intervals=transitions,
-        first_thread_boundaries={name: [dict(tid=k[0], state=k[1], continuation=k[2], wait_event=hex(k[3]), samples=n)
+        first_thread_boundaries={name: [dict(pid=k[0], tid=k[1], state=k[2], continuation=k[3], wait_event=hex(k[4]), samples=n)
             for k, n in counts.most_common()] for name, counts in waits.items()},
         limits=[
             'A saved user PC is the last boundary; it is not a complete userspace stack.',
@@ -50,6 +77,8 @@ def main():
             'At most32 threads per process and96 total are captured; other threads may be omitted.',
             'Per-frame last timings can repeat between samples; these are not frame-weighted averages.',
             'Touch/frame counters require physical observation to qualify usable input or a permanent freeze.'])
+    report.update(process_history(samples))
+    report['limits'].append('A changed process PID establishes replacement, not the crash/kill reason or its cause.')
     policies = []
     for s in samples:
         v = s['counters'].get('policy')

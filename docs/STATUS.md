@@ -1,6 +1,6 @@
 # Device status: 2026-11-06
 
-Target: Xiaomi MIX 4 / odin, SM8350, iOS 16.5 / 20F66. Latest physical feedback: u88.
+Target: Xiaomi MIX 4 / odin, SM8350, iOS 16.5 / 20F66. Latest physical feedback: u89.
 
 - u87: continuous real operation possible; lag remained.
 - u88: continuous operation still possible; lag remained; bottom upward swipe did not return to Home.
@@ -43,3 +43,27 @@ The user reported that the initial u89 boot was unresponsive. The saved resident
 The host requested the idle assertion after the UI had already auto-locked. That API prevents future idle lock and does not unlock an already locked UI. The media server now provides `--arm-ui-idle-assertion` for the qualified u88/u89 fixture: after resident handoff, it waits for post-VM entry, then requests the fixed original-API command before the helper's first poll. A second temporary u89 run is being validated with this ordering. No new image, input injection, partition write or arbitrary-address command is required.
 
 The exact 20F66 UIKitCore implementation also reads digitizer field `0xb0007` and maps mask bit `0x800` to edge type 1 (implementation starts at unslid cache address `0x18918a784`). This independently supports the metadata contract; physical Home navigation still requires user confirmation.
+
+### Second u89 physical result: restart, not Home navigation
+
+The user confirmed taps worked after the earlier idle-assertion request. An
+upward swipe was followed by a black screen, white spinner, and the desktop;
+scrolling remained extremely slow. The 180-second observer recorded backboardd
+PID 11 last seen at 0.059 seconds and PID 107 first seen at 12.731 seconds.
+SpringBoard PID 5 was last seen at 9.576 seconds and PID 111 first seen at
+15.889 seconds. Preferences also changed from PID 97 to 124 later. This records
+process replacement, not its cause. The order of these sampled boundaries does
+not prove that the edge wrapper caused the restart or that SpringBoard was the
+first failing process. No exit signal/namespace/code or full crash stack was
+captured, and resident kernel panic state was clear.
+
+The analyzer now groups thread samples by PID and reports process lifetimes and
+replacement intervals instead of conflating two instances of the same program.
+There were 801 CPU copies during that observation, averaging 23,908.8 us of
+copy work; this is not a GPU metric, scrolling FPS or input latency.
+
+A public-original-IOSurface-to-userptr adapter is now compiled and tested on
+the computer. Its import/lifetime mock tests pass with ASan/UBSan, and its iOS
+16.5 arm64 library has passed signature audit. It has **not** been deployed,
+physically qualified or integrated into desktop Metal. See
+[the remaining GPU integration boundary](GPU-INTEGRATION.md).

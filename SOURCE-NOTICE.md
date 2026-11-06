@@ -9,6 +9,6 @@ This is a mixed-license development port. Existing file headers and component li
 - XNU modifications remain subject to their original Apple Public Source License notices and applicable upstream terms. Obtain matching full upstream sources/licenses from the pinned repositories when rebuilding or redistributing derivatives.
 - Other files retain their existing SPDX and copyright notices. No blanket license is asserted for files without one.
 
-Reference for the current edge-gesture investigation: `https://github.com/OddlyLabs/unixnu-fuxi`, commit `78f30b651c0ca6ea325682832bb25767523212f5`, `package/NativeHidInput.cpp` (BSD-2-Clause-Patent header). Its version-bound native hook has not been copied into the active iOS 16 driver.
+Reference for the current edge-gesture investigation: `https://github.com/OddlyLabs/unixnu-fuxi`, commit `78f30b651c0ca6ea325682832bb25767523212f5`, `package/NativeHidInput.cpp` (BSD-2-Clause-Patent header). The edge-contact design is adapted in u89; all original-family table sizes, slots and fields were independently qualified against 20F66. Its iPadOS offsets are not reused.
 
 Apple system images, Apple original driver code/binaries, vendor firmware bytes and local credentials are not included in the source publication.

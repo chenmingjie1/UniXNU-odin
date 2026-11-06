@@ -33,14 +33,24 @@
       "sha256": "132a88438eb0567f5df819e4f646e113833dc68dacb992b0e3a56183fd884a65"
     },
     {
+      "path": "docs/GPU-INTEGRATION.md",
+      "bytes": 3985,
+      "sha256": "bfba94ff509cb893a33d05bbb485e335d47684bcc9c099b585146fa71f76413e"
+    },
+    {
       "path": "docs/history/README-through-u62.md",
       "bytes": 19780,
       "sha256": "5400f6bea04b97fd292c627d11b0b9c008bc77944e42d68712b4e52e0e9733f3"
     },
     {
+      "path": "docs/history/u89-respring-and-gpu-import.json",
+      "bytes": 1817,
+      "sha256": "4af0f27c1530e0a3fd64e5bdfdf6d1c079b6f29a6c1eaf3f17a44cc8991a5e87"
+    },
+    {
       "path": "docs/STATUS.md",
-      "bytes": 4554,
-      "sha256": "9abee167fd532e0bc544bed3b1d8683c784d349e46995301740b70988600297b"
+      "bytes": 6052,
+      "sha256": "4e6ca09a726345d2701987dc05a6f8f78c7782fda135860773b3c5fe718b3e73"
     },
     {
       "path": "drivers/OdinAdreno/OdinAdrenoApi.h",
@@ -301,6 +311,16 @@
       "path": "host-input/LICENSE.HakiOS",
       "bytes": 2099,
       "sha256": "f5e3823525007469375ba0c64166a3c26ef00baf856e67ec8d5aa5131d0b58e4"
+    },
+    {
+      "path": "host-input/OdinSurfaceImport.c",
+      "bytes": 4836,
+      "sha256": "4ad5622d7dfdfdd39985ca9db912c46c94ec2ff758183e9bd0afe67eab881ee5"
+    },
+    {
+      "path": "host-input/OdinSurfaceImport.h",
+      "bytes": 1245,
+      "sha256": "d04e1b4898998628f63e52a91bb279f69c6a19145f807bef1d170e2a3b9d844c"
     },
     {
       "path": "host-input/sb_idle_policy.c",
@@ -769,8 +789,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3330,
-      "sha256": "813c8394a099ffed27620049720245405cbd6302052065c18d781f61d66f4bf3"
+      "bytes": 3553,
+      "sha256": "d864bb44d8c76e1f93f4fc3ff9dd9100207ae8c50d58c52675910743916d4e5f"
     },
     {
       "path": "recipes/gpu-u85/compile_gpu_guest.py",
@@ -794,8 +814,8 @@
     },
     {
       "path": "scripts/analyze_resident_ui_threads.py",
-      "bytes": 4796,
-      "sha256": "7daf17206eb8f4c09fdecaeb9cbb6a4f99882446102a6aa5314f36b2ae9287d8"
+      "bytes": 6306,
+      "sha256": "ac8a258e2286119b30941993f7decac2b9e78a15c889ca1946ba7d0bb757c8e5"
     },
     {
       "path": "scripts/analyze_u17_display_runtime.py",
@@ -1056,6 +1076,11 @@
       "path": "scripts/build_odin_remote_media.py",
       "bytes": 6923,
       "sha256": "5d846e6087158e505897d8de3b7bd43a6e31c22fd5419cb81dcc4af148f883a6"
+    },
+    {
+      "path": "scripts/build_odin_surface_import.py",
+      "bytes": 5788,
+      "sha256": "fae6a6701bd58fdacb4e6d3cc9998c160cac192dd0013daa50955eb2ce0f0894"
     },
     {
       "path": "scripts/build_odin_unixnu_bds.py",
@@ -1874,8 +1899,8 @@
     },
     {
       "path": "SOURCE-NOTICE.md",
-      "bytes": 1489,
-      "sha256": "8ed15100ee5a55a125913ac51fdfabd713cb7bf82b33e3d9ff73318ad4e0dc6d"
+      "bytes": 1580,
+      "sha256": "672a383b5bff326a9b04b3cd23d8bfb13576ae696895dbd619bcf4c5f7c84391"
     },
     {
       "path": "source-pins.json",
@@ -1886,6 +1911,16 @@
       "path": "tests/ram_root_range_test.c",
       "bytes": 1762,
       "sha256": "22926ef6a109fb7c5367122a018866897bea84a14eb8db413ca4d57ab1708327"
+    },
+    {
+      "path": "tests/surface_import_test.c",
+      "bytes": 4935,
+      "sha256": "03701626d7e6be2cc57012e2cbb26b44edef3fe8203c56352aec62d5c7cddd04"
+    },
+    {
+      "path": "tests/test_ui_process_history.py",
+      "bytes": 1418,
+      "sha256": "54d24d34f1605b0927ac80306a41bbd123f4ca8d70739c9f17b72cd0261584d9"
     },
     {
       "path": "tests/touch_bridge_test.c",

@@ -1,0 +1,61 @@
+{
+  "release": "u89",
+  "date": "2026-11-06",
+  "user_feedback": "Taps work; upward swipe followed by black screen and white spinner, then desktop. Scrolling very slow.",
+  "process_replacements": [
+    {
+      "name": "backboardd",
+      "previous_pids": [
+        11
+      ],
+      "current_pids": [
+        107
+      ],
+      "last_old_seen_seconds": 0.059,
+      "first_new_seen_seconds": 12.731
+    },
+    {
+      "name": "SpringBoard",
+      "previous_pids": [
+        5
+      ],
+      "current_pids": [
+        111
+      ],
+      "last_old_seen_seconds": 9.576,
+      "first_new_seen_seconds": 15.889
+    },
+    {
+      "name": "Preferences",
+      "previous_pids": [
+        97
+      ],
+      "current_pids": [
+        124
+      ],
+      "last_old_seen_seconds": 9.576,
+      "first_new_seen_seconds": 88.71
+    }
+  ],
+  "process_exit_cause_known": false,
+  "observer_seconds": 180.053,
+  "frames_copied": 801,
+  "average_cpu_copy_us": 23908.8,
+  "kernel_panic_recorded": false,
+  "desktop_gpu_composition_verified": false,
+  "adapter": {
+    "artifact_sha256": "08626d48d10527456cbbc52bbaf7118106d289ca15ec167d5600713b446df94a",
+    "source_sha256": {
+      "OdinSurfaceImport.c": "4ad5622d7dfdfdd39985ca9db912c46c94ec2ff758183e9bd0afe67eab881ee5",
+      "OdinSurfaceImport.h": "d04e1b4898998628f63e52a91bb279f69c6a19145f807bef1d170e2a3b9d844c",
+      "surface_import_test.c": "03701626d7e6be2cc57012e2cbb26b44edef3fe8203c56352aec62d5c7cddd04"
+    },
+    "ownership_bounds_failure_tests_passed": true,
+    "address_and_undefined_sanitizers_passed": true,
+    "signed_macho_verified": true,
+    "physical_surface_import_verified": false,
+    "metal_plugin_integrated": false
+  },
+  "runtime_changed_this_step": false,
+  "partition_writes": false
+}
