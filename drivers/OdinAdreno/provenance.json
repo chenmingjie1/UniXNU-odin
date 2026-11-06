@@ -1,0 +1,40 @@
+{
+  "source_guest": "/home/odin/xnu-work/project/xnu-src/xnu-8796.121.2/bsd/dev/redwood_adreno.c",
+  "source_sha256": "342aba6a82aaa642e9e70dfddf040e9ffbc79078297be94f7deab3c0bce6da1a",
+  "latest_api_reference": "hakios@2631f5d7d4f9d7322aca60991b34ba465dec343b",
+  "board": "xiaomi,odin / qcom,sm8350",
+  "chip": "0x06060001",
+  "firmware": [
+    [
+      "a660_gmu.bin",
+      55256,
+      "6bb9360a1601253a86ee3ae1b9b916f5f1832a72d55e9b8573567f1740c94e2b"
+    ],
+    [
+      "a660_sqe.fw",
+      40496,
+      "f911a4badf7b56719cb130492bc39f9edb85335f54e8b4983b5c67eb9e6204bb"
+    ],
+    [
+      "a660_zap.mdt",
+      6860,
+      "94ee4b7ddf070ec7ca5121c689d3673043b8e97a9e292ff2031bb8b1646590af"
+    ],
+    [
+      "a660_zap.b02",
+      1976,
+      "1a5fdbf458ea547c5459b301ab577a83461797b77bde9501fb48fc62d2d5f185"
+    ]
+  ],
+  "changes": [
+    "Exact board compatible gate replaces former loader device_type",
+    "Native printf replaces legacy loader shared-ring logging",
+    "No legacy loader return",
+    "Private firmware table replaces legacy image parser",
+    "Native service callback; original CPU desktop retained"
+  ],
+  "kernel_linked": true,
+  "hardware_tested": false,
+  "kernel_sha256": "edfb4e9e64b5f9e085c48ce1454fca02dda06a4b2b8903090ed4f75f1174654a",
+  "desktop_metal_rendering_verified": false
+}

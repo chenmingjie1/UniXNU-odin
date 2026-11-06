@@ -1,0 +1,12 @@
+--- a/bsd/kern/kern_exec.c
++++ b/bsd/kern/kern_exec.c
+@@ -6937,6 +6937,9 @@
+ #error Scratch Data mounting requires the authenticated original OS startup path
+ #endif
+ #if defined(XNU_NATIVE_RAM_BLOCK) && XNU_NATIVE_RAM_BLOCK
++#if (DEBUG || DEVELOPMENT) && defined(ARM64_BOARD_CONFIG_BCM2837)
++#define XNU_OWNER_DATA_VOLUME_UUID "27931BBD-B7C9-B784-FA28-8FFFFE8261CC"
++#endif
+ #ifndef XNU_OWNER_DATA_VOLUME_UUID
+ #error Supply the observed scratch volume UUID for the IOKit backend
+ #endif

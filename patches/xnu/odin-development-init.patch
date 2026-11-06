@@ -1,0 +1,23 @@
+--- a/bsd/kern/kern_exec.c
++++ b/bsd/kern/kern_exec.c
+@@ -7968,6 +7968,20 @@
+ #endif
+ 
+ #if DEBUG || DEVELOPMENT
++#if defined(ARM64_BOARD_CONFIG_BCM2837)
++	/* Explicit owner development entry; retain the normal exec/AMFI checks. */
++	char odin_init[64];
++	if (PE_parse_boot_argn("odin-init-path", odin_init, sizeof(odin_init))) {
++		if (strcmp(odin_init, "/sbin/launchd.ios") != 0) {
++			panic("unsupported odin development init path");
++		}
++		printf("load_init_program: owner development entry %s\n", odin_init);
++		error = load_init_program_at_path(p, (user_addr_t)scratch_addr,
++		    odin_init, init_envp);
++		if (error) panic("owner development init exec failed: %d", error);
++		return;
++	}
++#endif
+ 	/* Check for boot-arg suffix first */
+ 	char launchd_suffix[64];
+ 	if (PE_parse_boot_argn("launchdsuffix", launchd_suffix, sizeof(launchd_suffix))) {

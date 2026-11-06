@@ -1,0 +1,37 @@
+--- a/osfmk/prng/prng_random.c
++++ b/osfmk/prng/prng_random.c
+@@ -430,6 +430,10 @@
+ extern struct mach_header_64 _mh_execute_header;
+ extern kern_return_t corecrypto_kext_start(kmod_info_t *, void *);
+ SECURITY_READ_ONLY_LATE(kern_return_t) source_corecrypto14_status = KERN_FAILURE;
++/* 0: not selected; 1: an earlier provider; 2: the source fallback. */
++SECURITY_READ_ONLY_LATE(unsigned int) source_corecrypto14_provider = 0;
++extern bool crypto_init;
++
+ 
+ static void
+ source_corecrypto14_bootstrap(void)
+@@ -444,6 +448,23 @@
+ 	if (PE_parse_boot_argn("fips_mode", &mode, sizeof(mode)) && mode != 0) {
+ 		panic("source corecrypto verification requires complete default POST");
+ 	}
++
++	/* OSKext startup precedes EARLY_BOOT. A prelinked crypto module may have
++	 * already completed POST and installed both interfaces by this point.
++	 * Never weaken register_and_init_prng's duplicate-install assertion.
++	 */
++	if (prng_ready) {
++		if (!crypto_init) {
++			panic("existing PRNG has no registered crypto interface");
++		}
++		source_corecrypto14_provider = 1;
++		source_corecrypto14_status = KERN_SUCCESS;
++		return;
++	}
++	if (crypto_init) {
++		panic("crypto provider registration incomplete: no PRNG");
++	}
++	source_corecrypto14_provider = 2;
+ 	info.address = (vm_address_t)&_mh_execute_header;
+ 	source_corecrypto14_status = corecrypto_kext_start(&info, NULL);
+ 	if (source_corecrypto14_status != KERN_SUCCESS) {

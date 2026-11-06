@@ -1,0 +1,4 @@
+schema_version = 2
+[soc]
+name = "sm8350"
+description = "Local SM8350 resources from pinned haydn source, reviewed against old odin GIC inputs; device bring-up pending"

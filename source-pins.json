@@ -1,0 +1,391 @@
+{
+  "upstream": {
+    "repository": "https://github.com/UniXNU/UniXNU",
+    "commit": "04573c510c5fd4892ca6948739389141cc9e05f5"
+  },
+  "hid_reference": {
+    "repository": "https://github.com/UniXNU/ShengHidInput",
+    "commit": "71a40e76daeae1bb4127546f96ffa7339c7a06ff",
+    "os_abi": "ipados-17.7.11-21H461",
+    "direct_iOS16_qualified": false
+  },
+  "community_references": [
+    {
+      "name": "haydn-iamojz",
+      "repository": "iamOJZ/UniXNU-haydn",
+      "title": "Xiaomi Redmi K40 Pro / K40 Pro+ / Mi 11i (haydn), SM8350 (iamOJZ)",
+      "title_zh": "Xiaomi Redmi K40 Pro / K40 Pro+ / Mi 11i (haydn), SM8350 (iamOJZ)",
+      "format": 2,
+      "legacy_page": "link",
+      "repository_id": 1437245323,
+      "revision": "9710ddf99b1d23b54b93cd683f6af1e37a43c87b",
+      "board": "haydn",
+      "soc": "SM8350",
+      "os_profile": "ipados-17.7.11-21H461",
+      "components": [
+        "ArmDTPlatform",
+        "ArmCpu",
+        "SoftwareAES",
+        "XnuPrelink",
+        "DarwinBoot",
+        "AppleKeyStoreState",
+        "QcomGeniSpi",
+        "ShengUfs"
+      ],
+      "record_state": "invalid",
+      "record_error": "iamOJZ/UniXNU-haydn/configuration: implemented work needs evidence"
+    },
+    {
+      "name": "nx769j",
+      "repository": "Asultop/UniXNU-NX769J",
+      "title": "nubia RedMagic 9 Pro / 9 Pro+ / 9S Pro / 9S Pro+ (NX769J)",
+      "title_zh": "nubia RedMagic 9 Pro / 9 Pro+ / 9S Pro / 9S Pro+ (NX769J)",
+      "format": 2,
+      "legacy_page": "link",
+      "repository_id": 1437946479,
+      "revision": "2a265afdbd95d45e4a90664157e793c3bfee3755",
+      "board": "nx769j",
+      "soc": "SM8650",
+      "os_profile": "ios-16.5-20F66",
+      "components": [
+        "ArmDTPlatform",
+        "ArmCpu",
+        "SoftwareAES",
+        "XnuPrelink",
+        "DarwinBoot",
+        "ShengUfs",
+        "VirtioMmioBlock",
+        "VerifiedRoot",
+        "GopFramebuffer"
+      ],
+      "record_state": "available"
+    },
+    {
+      "name": "venus",
+      "repository": "Sulee7z/UniXNU-venus",
+      "title": "Xiaomi Mi 11 M2011K2C: single-CPU platform bring-up",
+      "title_zh": "Xiaomi Mi 11 M2011K2C: single-CPU platform bring-up",
+      "format": 2,
+      "legacy_page": "link",
+      "repository_id": 1441789870,
+      "revision": "9b1402a99d9ee37d8aa4a980eceff18a4c993e02",
+      "board": "venus",
+      "soc": "SM8350",
+      "os_profile": "ipados-17.7.11-21H461",
+      "components": [
+        "ArmDTPlatform",
+        "ArmCpu",
+        "SoftwareAES",
+        "GopFramebuffer",
+        "AppleKeyStoreState",
+        "ShengHidInput",
+        "XnuPrelink",
+        "DarwinBoot"
+      ],
+      "record_state": "available"
+    }
+  ],
+  "legacy_runtime": {
+    "kernel_sha256": "98ebd30bbac925d53adeb118a73f0a3e203f925771dcb73771f1622b9848bf8d",
+    "ios": "16.5",
+    "build": "20F66",
+    "cmdline": "bootcpu=7 cpus=1 touchscreen=4 buttons=0 cpufreq=0 gpu=1 wifi=0 adsp=0 ufs=0 ufs_native=0 ufs_write=0 var_store=0 hv_wdt_pet=0 loader_return_after=0 adreno_speed=1 odin_touch_limit_ms=3600000 odin_touch_spi_lanes=1",
+    "system_crc32": "aea79a53"
+  },
+  "input_files": [
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/odin_st_touch_core.h",
+      "export": "legacy-reference/xnu-touch/odin_st_touch_core.h",
+      "sha256": "4cbf12ecc06b0cd939574ec19fa424c9a11ee1e6e267c2276c9ffe2210972048",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/odin_st_touch.c",
+      "export": "legacy-reference/xnu-touch/odin_st_touch.c",
+      "sha256": "b61c0aa6eaca89a7bf1fb43819b51077f7b3083aff8cd00b3cca54d91fcfbfb0",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/odin_st_controller_adapter.h",
+      "export": "legacy-reference/xnu-touch/odin_st_controller_adapter.h",
+      "sha256": "ee56dfb5f50587d0bee7f7770c2a6e014fc08f33afd78c90f0a38ca723f3ae84",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/OdinTouchController.c",
+      "export": "legacy-reference/xnu-touch/OdinTouchController.c",
+      "sha256": "e9e6996ae86d090583c2dca9e88741189d29b87f8554ccc46200112efc36a008",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/OdinTouchController.h",
+      "export": "legacy-reference/xnu-touch/OdinTouchController.h",
+      "sha256": "5ad321380898ef2f57b2d9d28f23a477a7d5e7c08dbcd504909d7626fa19b1f5",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/kernel-touch-queue-r61/xnu-overlay/bsd/dev/redwood_input.c",
+      "export": "legacy-reference/xnu-touch/redwood_input.c",
+      "sha256": "4d6dd78ddf52a18f5898cd1384b28aaa9129ad7dcbef957a41ed988635452ae5",
+      "scope": "Exact r61 overlay retained by r64; not integrated into UniXNU"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/clock-provider-fingerprint.inc",
+      "export": "legacy-reference/loader-touchrun59/clock-provider-fingerprint.inc",
+      "sha256": "0c75a4bfac0425e85e470a6a17d85db48124b8c875b03c5825ba8f152b1f859e",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/efi.h",
+      "export": "legacy-reference/loader-touchrun59/efi.h",
+      "sha256": "71f4fcfbbe83c84dc8bdba303d72c890e1d37b86d2ae048290a43ce7ae8a6513",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/identity.h",
+      "export": "legacy-reference/loader-touchrun59/identity.h",
+      "sha256": "6863635ced15084bf42d3f4e7c51a77b467f4fa9f64077daf53b3edd23825eb0",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/LICENSE.upstream",
+      "export": "legacy-reference/loader-touchrun59/LICENSE.upstream",
+      "sha256": "f5e3823525007469375ba0c64166a3c26ef00baf856e67ec8d5aa5131d0b58e4",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/loader.c",
+      "export": "legacy-reference/loader-touchrun59/loader.c",
+      "sha256": "45a037ecc9f075083f2dcaf97b707af55c8251126398f1a1f428b48d53107a6e",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_pmic_provider_fingerprint.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_pmic_provider_fingerprint.inc",
+      "sha256": "84465c9a3f2ac2466c71a3c17eb7684e9076dfb811c49703c2feb1d228d3e345",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_cache_fingerprint.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_cache_fingerprint.inc",
+      "sha256": "da262d49bb7b4510d34798c97b6408f9a28ac3be514e2e745a8c82a385af802a",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_cache_v2.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_cache_v2.inc",
+      "sha256": "ec709eedfb2e4a4421b55edc858702101c4fad786fe455484eb88bc696988670",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_cache_v2_decode.py",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_cache_v2_decode.py",
+      "sha256": "b8658d81b8a213f83dbc96c9c753ec5ac76530cc16136a78e3a110d7b911a5e8",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_touch_power.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_touch_power.inc",
+      "sha256": "52d5ea33a48ffcbb7751187843e2c215a81f236c1904bfd1dca8e83a4e143cee",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_touch_power_cache.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_touch_power_cache.inc",
+      "sha256": "80457ec5764829b445bf257e5bfa0acabc69d618a46a3eaace5cf3dacf98f044",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_rpmh_touch_power_decode.py",
+      "export": "legacy-reference/loader-touchrun59/odin_rpmh_touch_power_decode.py",
+      "sha256": "2ca8b72e734f06274bdb11c617dc0b88a01e80dd7cbf02063990557ab4833fbb",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_spi_provider_fingerprint.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_spi_provider_fingerprint.inc",
+      "sha256": "b369d6a56cd54f4e275e38b7bc9c7834be855544a9ff408c2dc1074953f79d57",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_touch56_handoff.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_touch56_handoff.inc",
+      "sha256": "318cb6c9fef637e2f1a255255b777f408fcfbff7a3800550b34941f770de42f2",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_touch_gpio_r21.inc",
+      "export": "legacy-reference/loader-touchrun59/odin_touch_gpio_r21.inc",
+      "sha256": "f38a462fb9637ac385d9ca0ca79717da298ef3422e9dd93b5d9ade8ef9395da1",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/source/odin-system-touchrun59/odin_touch_gpio_r21_decode.py",
+      "export": "legacy-reference/loader-touchrun59/odin_touch_gpio_r21_decode.py",
+      "sha256": "9b8beb9bfadc53bbe177e502129befa818de0b24275677c3634cfc8d50546c37",
+      "scope": "Old UEFI loader/handoff reference; not a DarwinBoot build"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/display-flicker-r59-video2/actual-guest-sources/lemonade_display.c",
+      "export": "legacy-reference/display/lemonade_display.c",
+      "sha256": "3dad16f2874b40b864df1f1dbb7d24b67689947daebface69fc2c9692acf8345",
+      "scope": "Runtime baseline source reviewed for scanout and producer lifetime; flicker unresolved"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/display-flicker-r59-video2/actual-guest-sources/MiniIOMobileFramebuffer.cpp",
+      "export": "legacy-reference/display/MiniIOMobileFramebuffer.cpp",
+      "sha256": "199c24f01d2a184d3f1b9883eafe6cfde9a82dc752e94f16e63cc1ecef8c4c67",
+      "scope": "Runtime baseline source reviewed for scanout and producer lifetime; flicker unresolved"
+    },
+    {
+      "source": "outputs/MIX4-odin-porting/display-flicker-r59-video2/producer-fence-review.json",
+      "export": "legacy-reference/display/producer-fence-review.json",
+      "sha256": "da0e2fc2dace00cdd7fcaab9ba293e922c693e57541e68ea1fbc99d2cdca7d4f",
+      "scope": "Unconfirmed producer-lifetime hypothesis, not a measured root cause"
+    },
+    {
+      "source": "outputs/MIX4-iOS16.5-touch-userland-r64-input-sampler/device-outcome.json",
+      "export": "legacy-reference/r64/device-outcome.json",
+      "sha256": "ffe9f799ca00f18981099528f5a7ac49f96f9a822df2916d73e79a3043307cc9",
+      "scope": "Existing r64 device evidence; no UniXNU hardware acceptance transferred"
+    },
+    {
+      "source": "outputs/MIX4-iOS16.5-touch-userland-r64-input-sampler/runs/20261102-211812-597407/input64-waits-symbolicated.json",
+      "export": "legacy-reference/r64/input64-waits-symbolicated.json",
+      "sha256": "8e2b069f65dc6eaa5ca3677d505f306142c41d4f663c8d364bddb58ff1c6e256",
+      "scope": "Existing r64 device evidence; no UniXNU hardware acceptance transferred"
+    },
+    {
+      "source": "work/ios-inputs/096-04088-077.dmg.verified.json",
+      "export": "legacy-reference/ios16-inputs/096-04088-077.dmg.verified.json",
+      "sha256": "1b5f5b4f245a7c36248abde845f15b0ba5d710ce6c58ba853176d9b2d94b2713",
+      "scope": "Retained iOS16.5 source-input receipt; OS images are not copied"
+    },
+    {
+      "source": "work/ios-inputs/096-04666-078.dmg.verified.json",
+      "export": "legacy-reference/ios16-inputs/096-04666-078.dmg.verified.json",
+      "sha256": "88981bc267c17bcb85c780036cb0e414f114994f55fcee648f5edcd88f0bb266",
+      "scope": "Retained iOS16.5 source-input receipt; OS images are not copied"
+    },
+    {
+      "source": "work/ios-inputs/BuildManifest.plist.verified.json",
+      "export": "legacy-reference/ios16-inputs/BuildManifest.plist.verified.json",
+      "sha256": "70870aacdf02e3a0ed722932fe15d7a89e5b51fd35417f9cc5ac131e3d50645f",
+      "scope": "Retained iOS16.5 source-input receipt; OS images are not copied"
+    }
+  ],
+  "native_candidate": {
+    "image_sha256": "ae0c87dc168e2d63a74350007d715458cd3697225fdfd2c32f234871f6f5125b",
+    "native_kernel_sha256": "ae548db05563403c9ffa20b094d1d89426bb6fabd5ae247e44362a6ed3badd39",
+    "xnu_revision": "aca3beaa3dfbd42498b42c5e5ce20a938e6554e5",
+    "xnu_version": "8796.101.5",
+    "darwinboot_revision": "3c75734014cdab0acd9541e88057b7606ee7ae08",
+    "firmware_sha256": "bc22ea32b311ce06dc80268e116c3d3b1ec91b9fabd4be0a8ea821ed346d8c30",
+    "original_ios_kexts_prelinked": true,
+    "device_tested": false,
+    "abi_fix": "DarwinBoot source copy uses compiled XNU8796 boot.h: 608 command-line bytes, 0x2e0 structure",
+    "notes": "30 original executable kexts and codeless IOHIDEventDriver metadata included; no OS root, native HID worker or A660 Metal; no device validation",
+    "crypto_source": {
+      "name": "Corecrypto2023-reference",
+      "repository": "https://github.com/ONLYA/corecrypto-2023",
+      "revision": "11fba65b12d8830630e248dfa8344caf8b065f26",
+      "archive_sha256": "fd04cb46cb733fdd8e6334702081a33b202ae7645140f59fa55b7d47de7e688f",
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\UniXNU-components\\Corecrypto2023-reference-11fba65b12d8830630e248dfa8344caf8b065f26",
+      "selected_automatically_for_hardware": false
+    },
+    "pthread_source": {
+      "name": "Libpthread519-reference",
+      "repository": "https://github.com/apple-oss-distributions/libpthread",
+      "revision": "c0e60fb5ecfc54cf379c261d3f9572cc22ded891",
+      "archive_sha256": "9b64cb4abe7ba648112b3448bc1bc71070e07f0a29cdfc7a9148d8a636a02c17",
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\UniXNU-components\\Libpthread519-reference-c0e60fb5ecfc54cf379c261d3f9572cc22ded891",
+      "selected_automatically_for_hardware": false
+    },
+    "release": "u03",
+    "prelinked_kernel_sha256": "ccb0359a85a097dfaee2b4689510700ecd3e037989f3f26afb2bbe123b6a99e3",
+    "original_kernelcache_sha256": "e6fa75598f47b5a9460a60913e2ac8e4cd6cd60eb475bb31da65b68ffbcfdad5",
+    "iorpc_abi_bytes": 24,
+    "real_driverkit_iig_implementations": 17
+  },
+  "github_review_sources": [
+    {
+      "repository": "OddlyLabs/FuxiFtsTouch",
+      "commit": "a923703792a94196cefaf49293c162a4919e202a",
+      "archive_sha256": "5ecf03d9d3f2700684cf01bf613132cc1d920619207c9ef62634e09a6c3b319a",
+      "scope": "同为 ST FTM5，ID 36 40，含 FIFO dummy 和高分辨率 LE16 解码；两个原有主机测试通过，两个模块成功编译为 arm64 iOS16.5 对象，未链接内核。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "OddlyLabs/unixnu-fuxi",
+      "commit": "99ddb33136e2183ec2604e3ca5013ca685987d5c",
+      "archive_sha256": "553083be97d8faab9ceba906401401fdbe9d545c06f0a7968f78b2b094ce8f6b",
+      "scope": "有实机 ID/触点证据和独立采集/HID 线程结构；其 HID ABI 绑定 iPadOS17，必须重新提取 iOS16.5 ABI，不能复制地址和类布局。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "qine233/uefi-odin",
+      "commit": "bf27b144604e4c425a6ed561d8f8b1ab4e4839f7",
+      "archive_sha256": "66938cc82200c81b062bcee560eefdd0a39e622e85ac06e05cb9510e1bd4f655",
+      "scope": "固件平台参考；仍需板级输入，不能替换本地已亮屏的固件基线。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "qine233/UniXNU-odin",
+      "commit": "3f8df85bc2670da5619240febb33f47c32ba0bcb",
+      "archive_sha256": "c85c78e8cb30d2775168d60a06030913702dd62e6a34c79a9c43773d17199e90",
+      "scope": "MIX 4 板级参考；输入仅有主机验证，GPU 为 PM4/电源观察层，尚无可直接使用的完整系统镜像。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "qine233/UniXNU-sm8350-common",
+      "commit": "e66022542ef0bab3283bfa8e4f66d282412f9d23",
+      "archive_sha256": "02c86589bf1ba8eaa9033d936829cf6fd2220ef61f5b75c9308994395df7fa63",
+      "scope": "SM8350 资源与多核 affinity 参考；本轮交叉核对真实 FDT，候选仍用单 CPU。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "UniXNU/AdrenoMetal",
+      "commit": "171d30b0400cbcdb26d304a908b552781ef840da",
+      "archive_sha256": "dd026913bbc8f2446c3bf663a5715de41d72f67f1cc832d505c3cfe3739fa44f",
+      "scope": "前端 GPU 合成验收范围为 sheng/A740；还依赖内核 GPU ABI 和 Turnip，不能视为 A660 已可用。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "UniXNU/GopFramebuffer",
+      "commit": "5edfc66952c4e0e3260426f213515f5620ce01e1",
+      "archive_sha256": "03d1cb4e7ef4789e71b1cc835d36de2bab4fc889464cae890da2b258663dce84",
+      "scope": "新 fence 等待修补：busy/unknown/慢完成时保留旧帧和首次目标，完成或取消后再推进；原有真实方法主机测试通过，尚未移植到本地16.5候选。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "UniXNU/UniXNU",
+      "commit": "bd3e9472422e01c68d17237b5b8b869baefbd0f2",
+      "archive_sha256": "472f4001102dc45cec860414778f5ddaadfcacb5e3c18beb82cd0a4dce9db993",
+      "scope": "新 HEAD 比本地构建 pin 多 24 个提交，包含显示同步和 Metal 相关更新；本轮未把整个框架切到新 HEAD。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "xuanli-cn/UniXNU-lemonadep",
+      "commit": "1444198b3fe8b3634323c98ca12254cdd8c19fbb",
+      "archive_sha256": "fa9a81fca6db3565da0ebe60cdcd605bc572875f8b5e9a8ddc1c260981ca7c92",
+      "scope": "本次固定版本只有 README，没有可直接移植的实现。",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "Nyktis/iig-port",
+      "commit": "ea6d147d668ca15d490da638012243fcd705f30d",
+      "archive_sha256": "e5c8726cfcf35208e63823f15ea8662b313873356c09a5a32fe0870c911989d3",
+      "scope": "Actual generator used with pinned UniXNU Darwin-target patch and local XNU8796 24-byte IORPC content adapter; 17 target implementations compiled and linked",
+      "included_in_native_kernel": false
+    },
+    {
+      "repository": "Allenwdk/xnu-linux-toolchain",
+      "commit": "909990e4ec2c6cda30c20cdb23219946918c7fd6",
+      "archive_sha256": "c54dd3e542e744565e959c3ca5deea7bcd8f4fea3383e3d483b3d05ed5b89275",
+      "scope": "Reviewed only; simplified/stub RPC path was not selected",
+      "included_in_native_kernel": false
+    }
+  ],
+  "github_review": "research/github-20261103/review.json",
+  "prelink_verification": "build/ios16-prelink/independent-audit.json"
+}

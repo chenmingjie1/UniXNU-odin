@@ -1,0 +1,83 @@
+--- a/osfmk/arm64/start.s
++++ b/osfmk/arm64/start.s
+@@ -460,10 +460,48 @@
+  */
+ 	.align 2
+ 	.globl EXT(start_first_cpu)
++
++// ODIN_KERNEL_ENTRY_MARK: diagnostic stores before MMU enable only.
++// x0 or x20 points at boot_args. x9-x15 are scratch at these checkpoints.
++.macro odin_kernel_mark args, index, lo, hi
++ ldr x9, [\args, #0x28]
++ cbz x9, 90f
++ ldr x10, [\args, #0x38]
++ cmp x10, #2304
++ b.lo 90f
++ ldr x11, [\args, #0x48]
++ cmp x11, #64
++ b.lo 90f
++ mov w12, #\lo
++ movk w12, #\hi, lsl #16
++ add x13, x9, #((4 + \index) * 256)
++ mov x11, #64
++91:
++ mov x14, x13
++ mov x15, #32
++92:
++ stp w12, w12, [x14], #8
++ subs x15, x15, #1
++ b.ne 92b
++ add x13, x13, x10
++ subs x11, x11, #1
++ b.ne 91b
++ dsb sy
++90:
++.endm
++
+ LEXT(start_first_cpu)
++	.globl EXT(odin_entry_mark0)
++LEXT(odin_entry_mark0)
++	odin_kernel_mark x0, 0, 0, 0xffff
++
+ 
+ 	// Unlock the core for debugging
+ 	msr		OSLAR_EL1, xzr
++	.globl EXT(odin_entry_mark1)
++LEXT(odin_entry_mark1)
++	odin_kernel_mark x0, 1, 0x00ff, 0xffff
++
+ 	msr		DAIFSet, #(DAIFSC_ALL)				// Disable all interrupts
+ 
+ 	mov		x20, x0
+@@ -567,6 +605,10 @@
+ 	add		x0, x0, x1							// base is kernel link address + slide
+ 
+ Lkernelcache_base_found:
++	.globl EXT(odin_entry_mark2)
++LEXT(odin_entry_mark2)
++	odin_kernel_mark x20, 2, 0x00ff, 0xff00
++
+ 	/*
+ 	 * Adjust physical and virtual base addresses to account for physical
+ 	 * memory preceeding xnu Mach-O header
+@@ -621,6 +663,10 @@
+ 	// the early debugger rather than corrupting memory or forging a map.
+ 	b Lbootstrap_tables_exhausted
+ Lbootstrap_tables_ready:
++	.globl EXT(odin_entry_mark3)
++LEXT(odin_entry_mark3)
++	odin_kernel_mark x20, 3, 0x8000, 0xffff
++
+ 	/* Ensure TTEs are visible */
+ 	dsb		ish
+ 
+@@ -752,6 +798,9 @@
+ 	PAC_INIT_KEY_STATE tmp=x0, tmp2=x1
+ #endif /* HAS_APPLE_PAC */
+ 
++	.globl EXT(odin_entry_mark4)
++LEXT(odin_entry_mark4)
++	odin_kernel_mark x20, 4, 0x8080, 0xff80
+ 	// Enable caches, MMU, ROP and JOP
+ 	MOV64   x0, SCTLR_EL1_DEFAULT
+ 	MSR_SCTLR_EL1_X0

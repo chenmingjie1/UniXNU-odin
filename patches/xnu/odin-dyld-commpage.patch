@@ -1,0 +1,14 @@
+--- a/bsd/kern/kern_exec.c
++++ b/bsd/kern/kern_exec.c
+@@ -7975,6 +7975,11 @@
+ 		if (strcmp(odin_init, "/sbin/launchd.ios") != 0) {
+ 			panic("unsupported odin development init path");
+ 		}
++		/* The boot tunable itself does not call the commpage exporter. */
++		extern uint64_t dyld_flags;
++		extern void commpage_update_dyld_flags(uint64_t);
++		commpage_update_dyld_flags(dyld_flags);
++		printf("odin development dyld commpage flags: 0x%llx\n", dyld_flags);
+ 		printf("load_init_program: owner development entry %s\n", odin_init);
+ 		error = load_init_program_at_path(p, (user_addr_t)scratch_addr,
+ 		    odin_init, init_envp);

@@ -1,0 +1,8 @@
+/dts-v1/;
+/include/ "sm8350.dtsi"
+/ {
+    model = "Xiaomi MIX 4";
+    compatible = "xiaomi,odin", "qcom,sm8350";
+};
+/* DRAM/allocation reservations are emitted from the actual UEFI map, not
+ * copied from another board's memory bank. Do not claim this is a boot ADT. */

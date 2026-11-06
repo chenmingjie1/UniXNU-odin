@@ -1,0 +1,5 @@
+# Board-owned development handoff. This is not Apple firmware attestation.
+# The bootloader is unlocked and this port combines a native kernel with
+# original OS modules, so it cannot claim a sealed Apple boot-stage chain.
+[chosen.u32]
+mix-n-match-prevention-status = 0

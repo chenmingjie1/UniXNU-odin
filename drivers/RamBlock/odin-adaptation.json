@@ -1,0 +1,7 @@
+{
+  "revision": "4be2d7eb05ef5a98126c91e0302c149140c0e3e1",
+  "source_sha256": "17dcb4bac69e46346d5b100ac64a9371ec61281a4f84504e4d2f74f9e123a2e1",
+  "adapted_sha256": "2a40b34edec43c6e788101510d4b4891446e5bded1ee91a022e0f1a058990fbf",
+  "scope": "Host separate volatile RAM Data; persistent UFS feature excluded",
+  "device_commands_executed": false
+}

@@ -1,0 +1,100 @@
+--- a/bsd/dev/memdev.c
++++ b/bsd/dev/memdev.c
+@@ -98,6 +98,15 @@
+ 
+ #include <miscfs/devfs/devfs.h>
+ 
++
++#include <pexpert/device_tree.h>
++#include <pexpert/boot.h>
++#include "OdinRamRootRange.h"
++extern boot_args *BootArgs;
++static void odin_ram_root_init(void);
++unsigned int odin_ram_root_status;
++uint64_t odin_ram_root_base;
++uint64_t odin_ram_root_bytes;
+ 
+ void            mdevinit(int the_cnt);
+ 
+@@ -487,6 +496,7 @@
+ void
+ mdevinit(__unused int the_cnt)
+ {
++	odin_ram_root_init();
+ #ifdef CONFIG_MEMDEV_INSECURE
+ 
+ 	int devid, phys;
+@@ -713,6 +723,47 @@
+ }
+ 
+ 
++/* Raw boot media reserved by DarwinBoot through TopOfKernelData. */
++static void
++odin_ram_root_init(void)
++{
++	DTEntry entry;
++	const void *property;
++	unsigned int size;
++	uint64_t range[2], virt_tree, phys_tree;
++	dev_t device;
++
++	odin_ram_root_status = 1; /* No disk in this payload. */
++	if (SecureDTLookupEntry(NULL, "/chosen/memory-map", &entry) != kSuccess ||
++	    SecureDTGetProperty(entry, "RAMDisk", &property, &size) != kSuccess) {
++		return;
++	}
++	if (size != sizeof(range) || !BootArgs) {
++		panic("odin RAM root: malformed memory-map descriptor");
++	}
++	memcpy(range, property, sizeof(range));
++	virt_tree = (uint64_t)(uintptr_t)BootArgs->deviceTreeP;
++	if (virt_tree < BootArgs->virtBase ||
++	    virt_tree - BootArgs->virtBase > UINT64_MAX - BootArgs->physBase) {
++		panic("odin RAM root: invalid device-tree translation");
++	}
++	phys_tree = BootArgs->physBase + virt_tree - BootArgs->virtBase;
++	if (!odin_ram_root_range_valid(BootArgs->physBase, BootArgs->memSize,
++	    BootArgs->topOfKernelData, phys_tree, BootArgs->deviceTreeLength,
++	    range[0], range[1])) {
++		panic("odin RAM root: disk is outside reserved payload memory");
++	}
++	odin_ram_root_status = 2;
++	device = mdevadd(0, range[0] >> 12, (unsigned int)(range[1] >> 12), 1);
++	if (device == (dev_t)-1) {
++		panic("odin RAM root: md0 registration failed");
++	}
++	mdev[0].mdFlags |= mdRO;
++	odin_ram_root_base = range[0];
++	odin_ram_root_bytes = range[1];
++	odin_ram_root_status = 3;
++}
++
+ dev_t
+ mdevlookup(int devid)
+ {
+--- /dev/null
++++ b/bsd/dev/OdinRamRootRange.h
+@@ -0,0 +1,23 @@
++/* SPDX-License-Identifier: BSD-2-Clause-Patent
++ * Validate a raw, page-aligned disk in DarwinBoot's reserved payload prefix.
++ * No physical address is accepted merely because it occurs in a boot argument.
++ */
++#ifndef ODIN_RAM_ROOT_RANGE_H
++#define ODIN_RAM_ROOT_RANGE_H
++static int
++odin_ram_root_range_valid(unsigned long long phys, unsigned long long bytes,
++    unsigned long long top, unsigned long long tree, unsigned long long tree_bytes,
++    unsigned long long disk, unsigned long long disk_bytes)
++{
++    const unsigned long long limit = ~0ULL;
++    if (!bytes || bytes > limit - phys || top < phys || top > phys + bytes)
++        return 0;
++    if (!tree_bytes || tree < phys || tree > top || tree_bytes > top - tree)
++        return 0;
++    if (!disk_bytes || disk_bytes > 0xfffff000ULL || ((disk | disk_bytes) & 0xfff))
++        return 0;
++    if (disk < tree + tree_bytes || disk > top || disk_bytes > top - disk)
++        return 0;
++    return 1;
++}
++#endif

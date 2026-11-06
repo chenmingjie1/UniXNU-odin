@@ -1,0 +1,9 @@
+{
+  "source": "work\\hakios-upstream\\tools\\apfs\\mkapfs.py",
+  "source_sha256": "3595dab647b4161650d2a3c62d2a4b79b2217b64ee6fdfc576f49bc99db67a7f",
+  "patched_sha256": "51859bffe7daa1a99c7a81d96f0002112074c300d85e51f7b5b6d12a8356eb8d",
+  "reference_kernel": "build/ios16-prelink-u10init/kernel.prelinked.experimental.macho",
+  "template_va": "0xfffffff004403d58",
+  "memcmp_call_va": "0xfffffff005698484",
+  "original_upstream_source_modified": false
+}

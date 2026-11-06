@@ -1,0 +1,4 @@
+# Keep the original classes as ABI dependencies, but use the native Qualcomm
+# platform and CPU providers instead of matching Apple's hardware drivers.
+[disable_personalities]
+"com.apple.driver.AppleARMPlatform" = ["AppleARMPE", "AppleARMCPU"]

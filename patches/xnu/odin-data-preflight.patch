@@ -1,0 +1,59 @@
+--- a/bsd/kern/kern_exec.c
++++ b/bsd/kern/kern_exec.c
+@@ -6946,6 +6946,11 @@
+ extern int mdevgetrange(int, uint64_t *, uint64_t *);
+ volatile int native_owner_data_status = -1;
+ volatile int native_owner_data_stage = 0;
++volatile int odin_data_device_lookup = -1;
++volatile int odin_data_target_lookup = -1;
++volatile int odin_data_device_type = -1;
++volatile int odin_data_device_matches = -1;
++
+ volatile int native_owner_data_readonly = -1;
+ volatile dev_t native_owner_data_device = NODEV;
+ uint64_t native_owner_data_seed_base, native_owner_data_seed_size;
+@@ -7776,8 +7781,24 @@
+ 	    (error = copyout("/private/var", request.path, 13)) ||
+ 	    (error = copyout(device_path, spec, strlen(device_path) + 1)) ||
+ 	    (error = copyout(payload, request.data, sizeof(payload)))) goto done;
++
++#if (DEBUG || DEVELOPMENT) && defined(ARM64_BOARD_CONFIG_BCM2837)
++	vnode_t odin_probe = NULLVP;
++	odin_data_device_lookup = vnode_lookup(device_path, 0, &odin_probe, vfs_context_current());
++	if (!odin_data_device_lookup) {
++		odin_data_device_type = vnode_vtype(odin_probe);
++		odin_data_device_matches = vnode_specrdev(odin_probe) == device;
++		vnode_put(odin_probe);
++	}
++	odin_probe = NULLVP;
++	odin_data_target_lookup = vnode_lookup("/private/var", 0, &odin_probe, vfs_context_current());
++	if (!odin_data_target_lookup) vnode_put(odin_probe);
++	printf("odin Data preflight: device=%d type=%d matches=%d target=%d\n",
++	    odin_data_device_lookup, odin_data_device_type, odin_data_device_matches, odin_data_target_lookup);
++#endif
+ 	native_owner_data_stage = 2;
+ 	error = mount(p, &request, &result);
++	printf("odin Data mount returned: %d\n", error);
+ 	if (error) goto done;
+ 	native_owner_data_stage = 3;
+ 	error = vnode_lookup("/private/var", 0, &data_root, vfs_context_current());
+--- a/bsd/vfs/vfs_syscalls.c
++++ b/bsd/vfs/vfs_syscalls.c
+@@ -1594,7 +1594,17 @@
+ 		error = EINVAL;
+ #endif
+ 	} else {
++#if (DEBUG || DEVELOPMENT) && defined(ARM64_BOARD_CONFIG_BCM2837)
++		uint32_t odin_trace_mount = 0;
++		PE_parse_boot_argn("odin-data-mount", &odin_trace_mount, sizeof(odin_trace_mount));
++		if (odin_trace_mount == 1)
++			printf("odin VFS mount enter: fs=%s from=%s args=%llx devvp=%p\n",
++			    fstypename, mp->mnt_vfsstat.f_mntfromname, fsmountargs, device_vnode);
++#endif
+ 		error = VFS_MOUNT(mp, device_vnode, fsmountargs, ctx);
++#if (DEBUG || DEVELOPMENT) && defined(ARM64_BOARD_CONFIG_BCM2837)
++		if (odin_trace_mount == 1) printf("odin VFS mount return: %d\n", error);
++#endif
+ 	}
+ 
+ 	if (flags & MNT_UPDATE) {

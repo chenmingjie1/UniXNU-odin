@@ -1,0 +1,20 @@
+schema_version = 2
+[board]
+name = "odin"
+soc = "SM8350"
+soc_source = "sm8350"
+os_profile = "ios-16.5-20F66"
+kit = "odin"
+description = "MIX 4 native UniXNU core/platform candidate; hardware qualification pending"
+[components]
+include = ["ArmDTPlatform", "ArmCpu", "XnuPrelink", "DarwinBoot"]
+[kernel]
+defconfig = "odin_defconfig"
+config_fragments = ["arch:configs/common.config", "soc:configs/sm8350.config", "os:configs/ios.config"]
+patch_series = ["device:patches/xnu/series"]
+archives = ["build-corecrypto-14.py", "build-corecrypto-14.py --namespace", "component:ArmDTPlatform", "component:ArmCpu", "build-libpthread-kernel.py"]
+[device_tree]
+source = "device:dts/odin.dts"
+include_dirs = ["soc:dts"]
+[package]
+unixnu = "../UniXNU-source/UniXNU-04573c510c5fd4892ca6948739389141cc9e05f5"
