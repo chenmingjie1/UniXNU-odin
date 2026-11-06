@@ -8,7 +8,8 @@ import argparse,datetime,hashlib,json,os,re,struct,subprocess,time,zlib
 ROOT=Path(__file__).resolve().parents[3];DEV=ROOT/'work/UniXNU-odin'
 REL=ROOT/'outputs/MIX4-UniXNU-desktop-u64'
 TOOLS=ROOT/'outputs/MIX4-iOS16.5-touch-userland-r64-input-sampler/tools'
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--boot',action='store_true');p.add_argument('--seconds',type=int,default=1800);p.add_argument('--release',choices=['u64','u65','u66','u67','u68','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'],default='u64');p.add_argument('--wait-android',type=int,default=0,help='Wait this many seconds for the paired Android device before the authorized RAM boot');args=p.parse_args()
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('--boot',action='store_true');p.add_argument('--seconds',type=int,default=1800);p.add_argument('--release',choices=['u64','u65','u66','u67','u68','u69','u70','u71','u72','u73','u74','u75','u76','u77','u78','u79','u80','u81','u82','u83','u84','u85','u86','u87','u88','u89'],default='u64');p.add_argument('--wait-android',type=int,default=0,help='Wait this many seconds for the paired Android device before the authorized RAM boot');p.add_argument('--arm-ui-idle-assertion',action='store_true',help='u88/u89 fixture: request original UI idle assertion after post-VM entry, before automatic UI lock');args=p.parse_args()
+assert not args.arm_ui_idle_assertion or args.release in ('u88','u89')
 assert 0<=args.wait_android<=1800
 assert not args.wait_android or args.boot,'--wait-android requires --boot'
 if args.release!='u64':REL=ROOT/('outputs/MIX4-UniXNU-desktop-'+args.release)
@@ -117,6 +118,20 @@ try:
    _,status=cmd('fastboot',['-s',remote,'getvar','result'],20)
    record(event='resident_core7_control_available',status=status,bytes_served=total)
    print('Resident firmware retained USB control:',status,flush=True)
+   if args.arm_ui_idle_assertion:
+    # The assertion prevents future idle lock; it cannot unlock a UI that has
+    # already slept. Arm the fixed RAM command before the helper's first poll.
+    # Wait for post-VM so the kernel's zero-fill initialization is complete.
+    deadline=time.monotonic()+60
+    while True:
+     _,postvm=cmd('fastboot',['-s',remote,'getvar','kernel-postvm'],10,True)
+     match=re.search(r'stage=([0-9a-fA-F]+)',postvm)
+     if match and int(match[1],16)>=0x4e:break
+     assert time.monotonic()<deadline,'Post-VM entry not observed; UI policy not armed'
+     time.sleep(.25)
+    _,policy=cmd('fastboot',['-s',remote,'oem','ui-wake'],10)
+    record(event='ui_idle_assertion_armed_before_helper',postvm=postvm,output=policy)
+    print('Original UI idle assertion requested before SpringBoard helper startup',flush=True)
    # Leave the desktop running. No reboot and no second kernel launch.
    break
   match=re.search(r'odin-read:\s*([0-9a-fA-F]{8}):([0-9a-fA-F]{8}):([0-9a-fA-F]{16}):([0-9a-fA-F]{8})',output)

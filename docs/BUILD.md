@@ -23,3 +23,7 @@ This snapshot preserves source and historical scripts; it is not yet a self-cont
 A successful C/C++ compile, ABI audit or QEMU run is not evidence of usable physical touch, edge gestures or GPU desktop composition. Device evidence must identify its exact kernel/media hashes and the user's physical observations.
 
 `firmware/OdinTouchRpmhFingerprint.h` is also excluded: despite its filename, it embeds retained firmware code bytes. The current local loader requires that separately generated, board-qualified input.
+
+## Current RAM fixture startup ordering
+
+For the u88/u89 native UI assertion fixture, use the media server's `--arm-ui-idle-assertion` option. It waits until kernel post-VM entry before writing the fixed policy command, then lets the signed SpringBoard helper acquire the original UI idle-disable token before auto-lock. Issuing `oem ui-wake` only after the screen has logically locked cannot be treated as a successful wake/unlock.

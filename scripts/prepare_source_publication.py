@@ -42,7 +42,7 @@ def main():
         records.append(dict(path=relative.as_posix(), bytes=len(data),
                             sha256=hashlib.sha256(data).hexdigest()))
     (OUT / 'source-manifest.json').write_text(json.dumps(dict(
-        release='u88', scope='source-only development snapshot; not a complete system image',
+        release='u89-candidate', scope='source-only development snapshot; not a complete system image',
         files=records), indent=2) + '\n', encoding='utf-8')
     print(json.dumps(dict(directory=str(OUT), files=len(records),
                           total_bytes=sum(p['bytes'] for p in records))))

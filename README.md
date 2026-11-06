@@ -2,7 +2,7 @@
 
 Experimental SM8350 / Adreno 660 port targeting **iOS 16.5 / 20F66**.
 
-**2026-11-06, u88:** the physical MIX 4 displays the SpringBoard desktop and accepts real ST touchscreen input. The user can keep operating it, but scrolling is still slow and the bottom swipe does not return Home. This is a development source snapshot, not a finished daily-use system or a flashable release.
+**2026-11-06, u88:** the physical MIX 4 displays the SpringBoard desktop and accepts real ST touchscreen input. The user can keep operating it, but scrolling is still slow and the bottom swipe does not return Home. u89 adds an exact-family edge-metadata candidate; its first physical test was unusable after logical auto-lock. The startup ordering has been corrected and is being retested. This is a development source snapshot, not a finished daily-use system or a flashable release.
 
 | Area | Observed result | Remaining work |
 | --- | --- | --- |

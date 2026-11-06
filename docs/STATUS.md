@@ -35,3 +35,11 @@ Contact lifetime tests, 70,020 existing report-bridge assertions, native compile
 Kernel SHA-256: `3e148e97163396e01c31d7a23bcc4d338f230d1439340df8023a551b364fca56`
 
 Boot image SHA-256: `c77f8289746db7f6407adb263c4f56d03aebcb417d4752363904a94d27d0c00a`
+
+### First u89 physical result and startup ordering correction
+
+The user reported that the initial u89 boot was unresponsive. The saved resident state contained 294 accepted/forwarded HID reports, 11 edge-marked finger events, no skipped event ABI checks and no kernel panic. The UI policy reported screen off, digitizer disabled and locked, despite a subsequently acquired idle-disable token. This is not a Home-gesture pass.
+
+The host requested the idle assertion after the UI had already auto-locked. That API prevents future idle lock and does not unlock an already locked UI. The media server now provides `--arm-ui-idle-assertion` for the qualified u88/u89 fixture: after resident handoff, it waits for post-VM entry, then requests the fixed original-API command before the helper's first poll. A second temporary u89 run is being validated with this ordering. No new image, input injection, partition write or arbitrary-address command is required.
+
+The exact 20F66 UIKitCore implementation also reads digitizer field `0xb0007` and maps mask bit `0x800` to edge type 1 (implementation starts at unslid cache address `0x18918a784`). This independently supports the metadata contract; physical Home navigation still requires user confirmation.

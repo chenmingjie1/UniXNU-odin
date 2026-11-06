@@ -1,5 +1,5 @@
 {
-  "release": "u88",
+  "release": "u89-candidate",
   "scope": "source-only development snapshot; not a complete system image",
   "files": [
     {
@@ -29,8 +29,8 @@
     },
     {
       "path": "docs/BUILD.md",
-      "bytes": 2355,
-      "sha256": "e741b5e4cfb2c4d975a1b8c3d23acdf9338b344f8476b62fb469b9fb581015ab"
+      "bytes": 2793,
+      "sha256": "132a88438eb0567f5df819e4f646e113833dc68dacb992b0e3a56183fd884a65"
     },
     {
       "path": "docs/history/README-through-u62.md",
@@ -39,8 +39,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 3297,
-      "sha256": "9d0870c4895cfeb144164c250fcb522704d6a7b235efb8136ac4a25d1be1af00"
+      "bytes": 4554,
+      "sha256": "9abee167fd532e0bc544bed3b1d8683c784d349e46995301740b70988600297b"
     },
     {
       "path": "drivers/OdinAdreno/OdinAdrenoApi.h",
@@ -769,8 +769,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3155,
-      "sha256": "40ab5a8b5f3eda87d33afe753c113a2818997ce0b0789bb078b7dce64ad17055"
+      "bytes": 3330,
+      "sha256": "813c8394a099ffed27620049720245405cbd6302052065c18d781f61d66f4bf3"
     },
     {
       "path": "recipes/gpu-u85/compile_gpu_guest.py",
@@ -1594,8 +1594,8 @@
     },
     {
       "path": "scripts/prepare_source_publication.py",
-      "bytes": 2567,
-      "sha256": "1196e3705aba0063b8b2195646a6f358d46d9f1a64279ec1ab9f79deb9d30036"
+      "bytes": 2577,
+      "sha256": "90da2c5edbfe3c224976bbbe65a15a8cc91f9ea2360e49f03a8466b2227d2779"
     },
     {
       "path": "scripts/prepare_statusbar_root_u80.py",
@@ -1769,8 +1769,8 @@
     },
     {
       "path": "scripts/serve_device_desktop_u64.py",
-      "bytes": 9251,
-      "sha256": "8c7e3e2e041fe89e167bcc88cb96bc4c593a3d8f8c96187bbafeb226407022d6"
+      "bytes": 10350,
+      "sha256": "d03e9651b4889cdb787d0cdad6eb83773325db0b6a8e0b9eb86b5b4ea6d51e89"
     },
     {
       "path": "scripts/snapshot_resident_u70.py",
