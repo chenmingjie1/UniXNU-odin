@@ -1,0 +1,206 @@
+{
+  "source": "work\\UniXNU-odin\\build\\root-media\\system-resource-maps-u10.apfs",
+  "source_sha256": "49311fcb63b62fed0f2fe5cf2310d36b7208bd2a9d2756c1542066536b11ae1a",
+  "output": "work\\UniXNU-odin\\build\\root-media\\system-launch-services-u12.apfs",
+  "sha256": "2658df13e759b76a9a7db3e0a9f91d6fc8dba9539acf16f54dccdac5d90eeee4",
+  "bytes": 2476826624,
+  "existing_file_payloads_preserved": 45043,
+  "all_existing_stored_file_payloads_verified": true,
+  "executables_modified": false,
+  "services": [
+    {
+      "label": "com.apple.notifyd",
+      "program": "/usr/sbin/notifyd",
+      "source_sha256": "627b24feb59a493a50f488bc62ec9e878c333757d4ddb7786a977650ed9b1a05",
+      "output_sha256": "6793ab2af740f1f37bd9de3b854d60b5ad67b2086fe1e61fdfb2cce583f0957e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.cfprefsd.xpc.daemon",
+      "program": "/usr/sbin/cfprefsd",
+      "source_sha256": "16aa60c1effb6b7e7775712582bf4572c56ca1a25d1aca322eb822b03a06189f",
+      "output_sha256": "500de46b7a59ef3e3761e5792cd4a63929518bb4cabcc18cff6723fe068aa872",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.cfprefsd.xpc.daemon.system",
+      "program": "/usr/sbin/cfprefsd",
+      "source_sha256": "a34c6b85e29c1523d84597c81393e048c70274e5871c346d1969a7d413658f77",
+      "output_sha256": "7136eb7efb94f3ee32822155b557b3340735c813c3f40a60abb61d566d1adda5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.logd",
+      "program": "/usr/libexec/logd",
+      "source_sha256": "747f48668ece468cdd4374831156025cb4f5cf0a46633d1567bc319a6189b88d",
+      "output_sha256": "c5c89beceeb37cfd314ab4d7a4270ab425f40497952883416850b464bfcefbdf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.syslogd",
+      "program": "/usr/sbin/syslogd",
+      "source_sha256": "86ce6512803e6a20c04834f155a38e1b1a24ff66c9452a57850f65bf2056d5fe",
+      "output_sha256": "35b45cbe8b769f2bd8509af52440cac93ddcf66c1b0f0767a0aacbdabcfcd22b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.distnoted.xpc.daemon",
+      "program": "/usr/sbin/distnoted",
+      "source_sha256": "10dff975d8e8ead968b69b75b84f85950bea99ef7c52ce0794f4c74b8e9635b3",
+      "output_sha256": "ada4476f1c107916009c2ff2405a270b2acdfbb2ce8c59f51ec0ccaddfc3d72e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.diagnosticd",
+      "program": "/usr/libexec/diagnosticd",
+      "source_sha256": "7c8ace140aebbf2f167d123a466a9b4b5a0a08de0da90eb34f4afaf5ee3a964b",
+      "output_sha256": "fba07f317f2d24d7940470ca861f022c82fa3967108096ae6ae4c67db0b39c0a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.fseventsd",
+      "program": "/usr/libexec/fseventsd",
+      "source_sha256": "9ed8fc412995a666dfea7f5b737122e6c4cc4c8d819a1f7e6b59ca00c420f46b",
+      "output_sha256": "5cf997041824230f53c2a20a2de8559a27c73ef1bb3eb783042c228b3487d78e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.containermanagerd",
+      "program": "/usr/libexec/containermanagerd",
+      "source_sha256": "aa13bebb8f31427d0e31886fbeda0c0db3f628e15a100dfd5c3d5effeb8d78ad",
+      "output_sha256": "70b3a8f9f589d1800be001b87a6f8d19444823cfc14925e88fb4508d27d260ca",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.containermanagerd.system",
+      "program": "/usr/libexec/containermanagerd_system",
+      "source_sha256": "1d1e3b63f2505829d2dc9941b719cbdb7be856927d57f8417221ef1444602c3b",
+      "output_sha256": "d6bf9b7d2e928b4881444f537f89942a3cdb9a068ac7c24b150863b7975b9162",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.runningboardd",
+      "program": "/usr/libexec/runningboardd",
+      "source_sha256": "acfb970df5653cbde0d6c251b5ecfc0234749e9aadbb46279d61cad0ebad2de1",
+      "output_sha256": "37c98c8d3fdc22e8a057c39a8d00fadd45a26f961535dbcfcf61cabcd10a91e5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.backboardd",
+      "program": "/usr/libexec/backboardd",
+      "source_sha256": "d5f1e51f1a1354265ddc081681fb3a919157d9f8a1ddb20bc079b76fc74aa6c0",
+      "output_sha256": "3f583eed9562c2b019316cd96893fe704d245ace6a3c92e91863c1e5749c8d8f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.usermanagerd",
+      "program": "/usr/libexec/usermanagerd",
+      "source_sha256": "beabb2528fab10ed9d9b707e8b325aa3d6cbef85398b472ce82aa20283d90e5a",
+      "output_sha256": "339ea552ab3f3a337fd4ecd478dd968af47b64cd0d8072afcb7073e21479b229",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobilegestalt.xpc",
+      "program": "/usr/libexec/MobileGestaltHelper",
+      "source_sha256": "7d74d538caacedc5a6c373b73888e69b10b35d8f07669caaeb1d171bd2058269",
+      "output_sha256": "06933d6b30cbea40551ebe05276357771661959b78cf426f051d77045b58c40d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.lsd",
+      "program": "/usr/libexec/lsd",
+      "source_sha256": "9728a545bd4cdde11d2f264ef547c5a15717964d8029b37fa71ffa23010b3a78",
+      "output_sha256": "ca4bcd050071b0b53a4623598012f8e6655eecfc7b97d9a671ec8c26d57d2111",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.powerd",
+      "program": "/System/Library/CoreServices/powerd.bundle/powerd",
+      "source_sha256": "99bd1283703e2f58cc41f5d601fa6534ae904d7b646d0c0ca45542d7d9c21886",
+      "output_sha256": "e0b8f142c84e075f541067d04d7a5a48f99c8c2b73c86b0a30226a91b1e23f2a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.analyticsd",
+      "program": "/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd",
+      "source_sha256": "1722ef2a6f72577e33d32ee2e8feb09b435cbfc562f930f7b7dcd786942b08e5",
+      "output_sha256": "9f6c3cb8c8b9db48c74e8ae4bc2ba4f049bf097f68375ad938e0cd751a22209e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.logd_helper",
+      "program": "/usr/libexec/logd_helper",
+      "source_sha256": "636130e5a2b4485f99dd56f10f6e2b9d008fff39c5ccdc81be9c7b262279f828",
+      "output_sha256": "50bad2546863b289091da3b746b97e9b4b5445186fb9651b96940a2112b941d6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.iconservices.iconservicesagent",
+      "program": "/System/Library/CoreServices/iconservicesagent",
+      "source_sha256": "bd2ce94953d89cc578e71aba0933c9e2bc502095fbe1d00a2930bbebe11ec363",
+      "output_sha256": "19858255be0342644a564946c849780246a3c9cddbd5d0cc39fbb47d2e962d29",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.pluginkit.pkd",
+      "program": "/usr/libexec/pkd",
+      "source_sha256": "5c3280488e1493e566d17ef45a81456a08253c291d2d10b928970514235c1a56",
+      "output_sha256": "f7f034eec10f8ae4f34804db20a1b5202a0e0d17013d74391944f42ee02d54d7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.SpringBoard",
+      "program": "/System/Library/CoreServices/SpringBoard.app/SpringBoard",
+      "source_sha256": "4b7ba9f778a4f092a363e732697aa973f3ea91cb409305b9ba6a673ca985431a",
+      "output_sha256": "a2564c113d84ae0923f0d509628b02a2e5ffadb2c60c612d77972fc455530dc3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    }
+  ],
+  "standard_shared_cache_path_supplied": true,
+  "diagnostic_console_stderr": false,
+  "data_volume_mounted": false,
+  "device_commands_executed": false,
+  "scope": "Host QEMU service-loading fixture; not a phone desktop image"
+}

@@ -1,0 +1,35 @@
+{
+  "tag": "build-inputs-ios16.5-xnu8796-20261107",
+  "assets": [
+    {
+      "name": "iig-8796-cached-native8796.tar.gz",
+      "bytes": 1032265,
+      "sha256": "057d04292d2bd6d346262e3fa9b212d29d4f350d24d445a5ee81b5ab309e7fd8"
+    },
+    {
+      "name": "iig-package-manifest.json",
+      "bytes": 18060,
+      "sha256": "de6ffc73fa52c86891fb086ae0d5a144367b88933315243ba935e09e46c8f4f1"
+    },
+    {
+      "name": "iPhoneOS16.5.xnu.sdk-with-kernel-libs.tar.gz",
+      "bytes": 31467921,
+      "sha256": "cff6c15c0bd6452e360d24fb3c9e7838b170f56df8dfc48bccbab1bb6f47c722"
+    },
+    {
+      "name": "native-iig-evidence-20261103.tar.gz",
+      "bytes": 1180236,
+      "sha256": "2500d7429239795055a71e704622bc5c9f0232b6d89a9ef1acc9ce2bbf597df8"
+    },
+    {
+      "name": "sdk-package-manifest.json",
+      "bytes": 1854042,
+      "sha256": "2d9b3c25be6b740dc3cc9557f73ddf0f67afd4052788367712c15dc9aa6df7fd"
+    },
+    {
+      "name": "u80-root-replay-support.tar.gz",
+      "bytes": 61316,
+      "sha256": "4a2107374f5f3f01d3ead99f2d8352229e4e75327bf07b1df9af5adca5a73d71"
+    }
+  ]
+}

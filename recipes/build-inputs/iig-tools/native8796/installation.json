@@ -1,0 +1,12 @@
+{
+  "backup": "/home/odin/unixnu-odin-build/iig-tools/native8796/before-real-iig.tar.gz",
+  "restored_iorpc_headers": [
+    "upstream/.cache/xnu-work/iokit/DriverKit/IORPC.h",
+    "upstream/.cache/xnu-work/iokit/IOKit/IORPC.h",
+    "upstream/build/xnu/ios-obj/EXPORT_HDRS/iokit/DriverKit/IORPC.h",
+    "upstream/build/xnu/ios-obj/EXPORT_HDRS/iokit/IOKit/IORPC.h"
+  ],
+  "real_iig_sources_installed": 17,
+  "kernel_linked": false,
+  "device_tested": false
+}

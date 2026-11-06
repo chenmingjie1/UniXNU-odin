@@ -1,0 +1,38 @@
+[
+  {
+    "path": "scripts/repair_mkapfs_spaceman.py",
+    "original_sha256": "e52a7e220c7ea9f8b9085d84e138c6d11eafbf0c6341e04f7e42b5af532820ab",
+    "recipe_sha256": "e52a7e220c7ea9f8b9085d84e138c6d11eafbf0c6341e04f7e42b5af532820ab",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  },
+  {
+    "path": "scripts/repair_mkapfs_resource_maps.py",
+    "original_sha256": "bd74601ed2353fb092fbbbb8379cfdedfec0e154461c1a35f254c3948e263c31",
+    "recipe_sha256": "c51aef1d30bd21235b8d624f17e037fc8ceda096e33b8568e92a936ace0d9281",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  },
+  {
+    "path": "scripts/prepare_launch_services_root.py",
+    "original_sha256": "facdca0653d34d17528485ca848e2e56301a51ce351213368e5f10f9cb9538de",
+    "recipe_sha256": "7e2d2352ebd88402f97b1f81175495c6466262a4f913b33716fcd18360e67dda",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  },
+  {
+    "path": "scripts/restore_cryptex_trampolines.py",
+    "original_sha256": "f6829d00f3513e5bd7abf1cc10e91a74e96f2f028231e5681b25b51a11b66405",
+    "recipe_sha256": "f6829d00f3513e5bd7abf1cc10e91a74e96f2f028231e5681b25b51a11b66405",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  },
+  {
+    "path": "scripts/prepare_host_virtual_input_root.py",
+    "original_sha256": "0a61202a85edb62d541ef12d031b4f67762efe67497bfb6d6d31d44610921091",
+    "recipe_sha256": "0a61202a85edb62d541ef12d031b4f67762efe67497bfb6d6d31d44610921091",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  },
+  {
+    "path": "scripts/prepare_statusbar_root_u80.py",
+    "original_sha256": "ceac4be4551998ab0120cc7a1f88c7cb452b50d88dc094fda20cb435b307fa95",
+    "recipe_sha256": "ceac4be4551998ab0120cc7a1f88c7cb452b50d88dc094fda20cb435b307fa95",
+    "changes": "Only local dependency paths; no APFS transformation logic changed"
+  }
+]

@@ -6,6 +6,8 @@
 
 > **构建资料补充（2026-11-07）：** 已公开 [u85～u88 实际构建流程与配置答疑](docs/BUILD-U85-U88.md)，包含 iOS 16.5 profile、Clang 编译记录包装器、实际归档链接脚本、u88 完整启动参数及 CoreCrypto seal 顺序。
 
+> **依赖文件补充（2026-11-07）：** 已上传 [SDK 与完整 IIG 缓存 Release](https://github.com/chenmingjie1/UniXNU-odin/releases/tag/build-inputs-ios16.5-xnu8796-20261107)，含 `libcc_kext.a`、`libfirehose_kernel.a`、`native8796/generated` 和 `legacy-headers`。参见 [下载与安装](docs/BUILD-INPUTS.md) 及 [u80 APFS 获取、生成与配置](docs/SYSTEM-HOST-INPUT-U80.md)。
+
 ## 项目情况
 
 | 项目 | 当前情况 |
@@ -17,7 +19,7 @@
 | 最新已记录实机版本 | u91，2026-11-07 |
 | 测试方式 | 临时 RAM 启动，System / Data 介质位于内存中 |
 | 源码范围 | 板级适配、显示与触摸驱动、实验性 GPU 后端、固件衔接及开发工具 |
-| 发布范围 | 源码与文档；不包含 Apple 系统镜像、原版驱动二进制、厂商固件数据或账号凭据 |
+| 发布范围 | 源码与文档，以及 Release 中的 SDK / IIG 构建输入；不包含完整 Apple 系统镜像、原版驱动二进制、厂商固件数据或账号凭据 |
 
 本项目与参考仓库 [HakiOS / raphael](https://github.com/HeliumStudio-Dev/hackios-xnu-kernel) 的目标设备和实现路径不同。该仓库的 Redmi K20 Pro / Mi 9T Pro 启动包、GPU / Wi-Fi 结论及操作步骤，不能直接作为 MIX 4 的测试结果或使用说明。
 

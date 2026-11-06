@@ -1,0 +1,197 @@
+{
+  "scope": "Host-only virtual input; physical touch unqualified",
+  "source": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\host-input\\sb_ui_unlock.c",
+  "source_sha256": "91a1b1556d56e2b5ea7061293da118242b27a69858145471a74235430cc8cf26",
+  "original_ios16_imports": {
+    "_sel_registerName": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800be0dc",
+        "actual_export": true
+      }
+    ],
+    "_object_getClass": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800bc73c",
+        "actual_export": true
+      }
+    ],
+    "_objc_msgSend": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800b9800",
+        "actual_export": true
+      }
+    ],
+    "_objc_getClass": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800c8464",
+        "actual_export": true
+      }
+    ],
+    "_method_getTypeEncoding": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800d00d8",
+        "actual_export": true
+      }
+    ],
+    "_method_getName": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800bd7c4",
+        "actual_export": true
+      }
+    ],
+    "_method_getImplementation": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800bcb68",
+        "actual_export": true
+      }
+    ],
+    "_class_replaceMethod": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800c96cc",
+        "actual_export": true
+      }
+    ],
+    "_class_getSuperclass": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800c0774",
+        "actual_export": true
+      }
+    ],
+    "_class_getInstanceMethod": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800c2b6c",
+        "actual_export": true
+      }
+    ],
+    "_class_getClassMethod": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800d1460",
+        "actual_export": true
+      }
+    ],
+    "_class_copyMethodList": [
+      {
+        "image": "/usr/lib/libobjc.A.dylib",
+        "address": "0x1800bbdf8",
+        "actual_export": true
+      }
+    ],
+    "_dispatch_time": [
+      {
+        "image": "/usr/lib/system/libdispatch.dylib",
+        "address": "0x18db8998c",
+        "actual_export": true
+      }
+    ],
+    "_dispatch_after_f": [
+      {
+        "image": "/usr/lib/system/libdispatch.dylib",
+        "address": "0x18db94238",
+        "actual_export": true
+      }
+    ],
+    "__dispatch_main_q": [
+      {
+        "image": "/usr/lib/system/libdispatch.dylib",
+        "address": "0x1e1eac040",
+        "actual_export": true
+      }
+    ],
+    "_dprintf": [
+      {
+        "image": "/usr/lib/system/libsystem_c.dylib",
+        "address": "0x18dc7bfb0",
+        "actual_export": true
+      }
+    ],
+    "_free": [
+      {
+        "image": "/usr/lib/system/libsystem_malloc.dylib",
+        "address": "0x1945341b4",
+        "actual_export": true
+      }
+    ],
+    "dyld_stub_binder": [
+      {
+        "image": "/usr/lib/system/libdyld.dylib",
+        "address": "0x1a6c3cea0",
+        "actual_export": true
+      }
+    ],
+    "_open": [
+      {
+        "image": "/usr/lib/system/libsystem_kernel.dylib",
+        "address": "0x1c1854a54",
+        "actual_export": true
+      }
+    ],
+    "_getpid": [
+      {
+        "image": "/usr/lib/system/libsystem_kernel.dylib",
+        "address": "0x1c1853520",
+        "actual_export": true
+      }
+    ],
+    "_close": [
+      {
+        "image": "/usr/lib/system/libsystem_kernel.dylib",
+        "address": "0x1c1854084",
+        "actual_export": true
+      }
+    ]
+  },
+  "compile": [
+    "clang-18",
+    "-target",
+    "arm64-apple-ios16.5",
+    "-std=c11",
+    "-O1",
+    "-ffreestanding",
+    "-fno-stack-protector",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-c",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/host_swipe.c",
+    "-o",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/host_swipe.o"
+  ],
+  "link": [
+    "ld64.lld-18",
+    "-arch",
+    "arm64",
+    "-platform_version",
+    "ios",
+    "16.5",
+    "16.5",
+    "-adhoc_codesign",
+    "-o",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/host_swipe",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/host_swipe.o",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/libSystem.tbd",
+    "/home/odin/unixnu-odin-build/evidence/host-virtual-input-u80/objc.tbd",
+    "-dylib",
+    "-install_name",
+    "/redwood/host-input/libodin-ui-unlock.dylib"
+  ],
+  "signed_macho_audit": "tool-audit.json",
+  "device_commands_executed": false,
+  "kernel_unchanged": true,
+  "runtime_verified": false,
+  "icon_desktop_verified": false,
+  "entitlements": {},
+  "entitlement_blob_and_special_slot_verified": false,
+  "tool_kind": "sb-unlock-library",
+  "statusbar_with_unlock": true
+}

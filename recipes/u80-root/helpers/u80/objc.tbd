@@ -1,0 +1,8 @@
+--- !tapi-tbd-v3
+archs: [ arm64 ]
+platform: ios
+install-name: /usr/lib/libobjc.A.dylib
+exports:
+  - archs: [ arm64 ]
+    symbols: [ _objc_getClass, _sel_registerName, _objc_msgSend, _class_getInstanceMethod, _class_getClassMethod, _object_getClass, _class_getSuperclass, _class_copyMethodList, _method_getName, _method_getImplementation, _method_getTypeEncoding, _class_replaceMethod ]
+...

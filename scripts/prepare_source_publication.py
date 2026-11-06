@@ -15,7 +15,7 @@ FORBIDDEN = re.compile(rb'-----BEGIN (?:OPENSSH|RSA|EC|DSA|PRIVATE).*PRIVATE KEY
                        rb'https?://[^\s"<>]*[?&]password=')
 SUFFIXES = {'.c', '.cpp', '.h', '.py', '.toml', '.json', '.md', '.S', '.sh',
             '.plist', '.dts', '.dtsi', '.patch', '.txt', '.ps1', '.yaml',
-            '.yml', '.entitlements', '.diff', '.config', '.inc', '.HakiOS', ''}
+            '.yml', '.tbd', '.entitlements', '.diff', '.config', '.inc', '.HakiOS', ''}
 
 
 def main():

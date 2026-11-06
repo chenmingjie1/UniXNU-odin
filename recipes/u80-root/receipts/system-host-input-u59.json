@@ -1,0 +1,101 @@
+{
+  "scope": "Host-only virtual input fixture; not a phone image",
+  "source": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\UniXNU-odin\\build\\root-media\\system-core-policy-u37.apfs",
+  "source_sha256": "a32c3734376145828c63b63fe2701cbd6e8a7e0f9ce39adba1b263b31fc77666",
+  "output": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\UniXNU-odin\\build\\root-media\\system-host-input-u59.apfs",
+  "sha256": "609bcd431868a7138c40c0eca5bdaae664de6b8f74bb951a80bf97f40808d268",
+  "bytes": 2478948352,
+  "added_paths": [
+    "/redwood/host-input",
+    "/redwood/host-input/libodin-ui-unlock.dylib"
+  ],
+  "original_file_payloads_verified": 45518,
+  "original_executables_modified": false,
+  "job": {
+    "CFBundleIdentifier": "com.apple.springboard",
+    "EmbeddedHomeScreen": true,
+    "EnablePressuredExit": false,
+    "EnableTransactions": false,
+    "EnvironmentVariables": {
+      "CA_ASSERT_MAIN_THREAD_TRANSACTIONS": "1",
+      "OS_ACTIVITY_DT_MODE": "YES",
+      "DYLD_INSERT_LIBRARIES": "/redwood/host-input/libodin-ui-unlock.dylib"
+    },
+    "HighPriorityIO": true,
+    "KeepAlive": true,
+    "Label": "com.apple.SpringBoard",
+    "LimitLoadFromHardware": {
+      "osenvironment": [
+        "diagnostics"
+      ]
+    },
+    "MachServices": {
+      "PurpleSystemAppPort": {
+        "ResetAtClose": true
+      },
+      "com.apple.DragUI.druid.system": true,
+      "com.apple.SBUserNotification": true,
+      "com.apple.UIKit.KeyboardManagement.hosted": true,
+      "com.apple.UIKit.statusbarserver": true,
+      "com.apple.bulletinboard.dataproviderconnection": true,
+      "com.apple.bulletinboard.observerconnection": true,
+      "com.apple.bulletinboard.serverconduitconnection": true,
+      "com.apple.bulletinboard.settingsconnection": true,
+      "com.apple.controlcenter.remoteservice": true,
+      "com.apple.frontboard.systemappservices": true,
+      "com.apple.notificationcenter.widgetcontrollerconnection": true,
+      "com.apple.pegasus": true,
+      "com.apple.pencilkit.pktouchdetection": true,
+      "com.apple.proactive.HomeScreenSuggestion.xpc": true,
+      "com.apple.proactive.UserEducationSuggestion.client-listener.xpc": true,
+      "com.apple.siri.activation": true,
+      "com.apple.siri.activation.service": true,
+      "com.apple.springboard.backgroundappservices": {
+        "HideUntilCheckIn": true,
+        "ResetAtClose": true
+      },
+      "com.apple.springboard.blockableservices": {
+        "ResetAtClose": true
+      },
+      "com.apple.springboard.carditemscontroller": true,
+      "com.apple.springboard.oswatchdog": true,
+      "com.apple.springboard.services": {
+        "HideUntilCheckIn": true,
+        "ResetAtClose": true
+      },
+      "com.apple.springboard.statusbarservices": {},
+      "com.apple.systemstatus": true,
+      "com.apple.systemstatus.activityattribution": true,
+      "com.apple.systemstatus.publisher": true,
+      "com.apple.usernotifications.aps": true,
+      "com.apple.usernotifications.aps.dev": true,
+      "com.apple.usernotifications.delegate.com.apple.donotdisturb": true,
+      "com.apple.usernotifications.remotenotificationservice": true,
+      "com.apple.usernotifications.usernotificationservice": true,
+      "com.apple.usernotifications.usernotificationsettingsservice": true
+    },
+    "POSIXSpawnType": "App",
+    "ProgramArguments": [
+      "/System/Library/CoreServices/SpringBoard.app/SpringBoard"
+    ],
+    "RunAtLoad": true,
+    "ThrottleInterval": 5,
+    "UserName": "mobile",
+    "_AdditionalProperties": {
+      "RunningBoard": {
+        "UnderlyingAssertion": "UnderlyingDarwinRoleUI"
+      }
+    },
+    "_LimitLoadFromClarityMode": true
+  },
+  "tool_kind": "sb-unlock-library",
+  "tool_sha256": "fb4277fd291f3d9184cd1d48a3e9ebb4879b708722d3792d624a1c51d6711734",
+  "trust_source_sha256": "78e53c93b54354a93c4bdb59cc9dc5863b003e282406cff32a2262d8d9f71f7b",
+  "trust_entries": 2173,
+  "trust_output": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\UniXNU-odin\\build\\root-media\\host-input-development-trust-u59.bundle",
+  "trust_sha256": "fe5a7748f2c93ec689c291472b7062a1fc4b4dce6af9584f5b4a9d5cf125761f",
+  "wildcard_trust": false,
+  "device_commands_executed": false,
+  "virtual_input_runtime_verified": false,
+  "desktop_verified": false
+}

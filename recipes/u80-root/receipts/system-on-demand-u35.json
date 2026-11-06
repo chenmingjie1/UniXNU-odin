@@ -1,0 +1,4522 @@
+{
+  "source": "build\\root-media\\system-activation-service-u33.apfs",
+  "source_sha256": "2693cbdc71b720333f56f57d1470c3af1f6dab670c3423e2d1cb507f4f04bd69",
+  "output": "build\\root-media\\system-on-demand-u35.apfs",
+  "sha256": "54a2a8de8d32be310f5a93b3c2d4f6fe9c76ad60f0ca4c39aadf36aed019f992",
+  "bytes": 2478804992,
+  "existing_file_payloads_preserved": 45067,
+  "all_existing_stored_file_payloads_verified": true,
+  "executables_modified": false,
+  "services": [
+    {
+      "label": "com.apple.ABDatabaseDoctor",
+      "program": "/System/Library/Frameworks/AddressBook.framework/Support/ABDatabaseDoctor",
+      "source_sha256": "bd3de7fc007b52a07bb70ecb4e8ba99b1cbfec83efbb8a527f57c48007050317",
+      "output_sha256": "d323b5dfe76ed841e67479c728e8498c18570ec9896c4a3df7d13e2f1129544e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.abm-helper",
+      "program": "/System/Library/PrivateFrameworks/ABMHelper.framework/Support/abm-helper",
+      "source_sha256": "03fec13cd9dda67a96fecf93352a76f79886300ebc83fc6a7ff10770865aa409",
+      "output_sha256": "62b284dca5b8c666102136dadb3cb409a43318c8f4a7f774bb99dd7ea89029f2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.absd",
+      "program": "/usr/sbin/absd",
+      "source_sha256": "26d378731c0fa25bf7d73ec6c07d60975ceb89c6206bfffa582d4a2d70b8a833",
+      "output_sha256": "5298d14b7752490e6cf8e8a771182059943e331b406a083366ed39c0d00aead1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.accessibility.axassetsd",
+      "program": "/System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd",
+      "source_sha256": "090be5574876b7d37ca17644d6ccb141c932afb9a64f82290d7f50cf0b8f4e13",
+      "output_sha256": "fd250b35d16e6e0c9fb1f083b65a98c46c9bf6b8532d97669c7d63f0344a4daa",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.accessibility.axremoted",
+      "program": "/System/Library/PrivateFrameworks/AccessibilityRemoteServices.framework/Support/axremoted",
+      "source_sha256": "b4fe66e7f59ca577e2ce910d76127e362f89e28bc061c7b37014e670395b9b61",
+      "output_sha256": "34959b02d270ad8f9a5808c90326787b7066ed5ba112574ca6f3405957cf3632",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.accessibility.heard",
+      "program": "/System/Library/PrivateFrameworks/HearingCore.framework/heard",
+      "source_sha256": "ca17771989d8089b82ea1aa2df3f2033edcc603a9ff5bcbfc1f4c1364d2e87e5",
+      "output_sha256": "48f606fb71598076b3d55af17cfc3e10730f160fa674eb59d956383685393e88",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.accessibility.motiontrackingd",
+      "program": "/System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/Support/motiontrackingd",
+      "source_sha256": "036fcca75292f8695472f8669d73972ece330b5316171a836541a34fffebd8b8",
+      "output_sha256": "d1119aabce63cbc171770d2f319797ea42ecfd77e599279b1531edefb6035a14",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.accessoryd",
+      "program": "/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd",
+      "source_sha256": "97a3de5369c88c615e15e5746f479ae28f48c31837b6f91f984139f06b1b966e",
+      "output_sha256": "65f22107404334bc67158e410327bd646afe3bbca5fe723946a1ec37450193ce",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.accessoryupdaterd",
+      "program": "/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/accessoryupdaterd",
+      "source_sha256": "439114b1d5ca74b7ac5a67a4b53ba28b6484aead68ca2e4481accd25b3b71b66",
+      "output_sha256": "146d6d0bfc5ab3a3cbb978cfd6a691dbd61f8cb522f18a45a05e5d2d1c7693b9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.accountsd",
+      "program": "/System/Library/Frameworks/Accounts.framework/accountsd",
+      "source_sha256": "7286b519642aaa3de45e5aeb9179b2e0fbe20c18c4bb32d5cb38567badadf87f",
+      "output_sha256": "7ff390e51dc1115943bcd911b89f1763658cec1104696e3ba0e5c151db7bdb15",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.activityawardsd",
+      "program": "/System/Library/PrivateFrameworks/ActivityAwardsServices.framework/activityawardsd",
+      "source_sha256": "604d780697e8e03acecfd429d95bfba40316eab1bfd186e5cd724d061196d24d",
+      "output_sha256": "cd1523790d5d46e29f1cebd9b695e05995febfdda8dfb3a9c0cd7a4a20dceacf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.adid",
+      "program": "/usr/libexec/adid",
+      "source_sha256": "c885d7b8228e949bb268d07974d696928d42157f3dda136cb8c245dc5c349181",
+      "output_sha256": "45e9ddd15cd12954565ebe9299490460edf656a48893d717e0caa342798006bf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.AdminLite",
+      "program": "/System/Library/PrivateFrameworks/AdminLite.framework/Resources/AdminLiteTool",
+      "source_sha256": "e8938a3445748476e1dbc4dc31b41f0c0519c40e173307d8b3c293fa8764e142",
+      "output_sha256": "1b242746f5f1a444cef074655f03086e0c12a07c1eabc92a5251ced2f2a0008b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.afcd",
+      "program": "/usr/libexec/afcd",
+      "source_sha256": "5cf4dd8f43a6bdc80905ab6c6d66f0d716e0841efa58e4be0a5becad87dd1ee3",
+      "output_sha256": "1859120d38d39bb0cdf89df63b8bdb01f08487f0e1c230dff52895494b2d3877",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.aggregated.addaily",
+      "program": "/System/Library/PrivateFrameworks/AggregateDictionary.framework/Support/addaily",
+      "source_sha256": "b3051f30a6011dc3e40ba1c4b9fb6f25583bcc8f5308637850c7b23bf1fe3b3c",
+      "output_sha256": "98c2f11cdf1921e9bcfbac4a0a28755d2491fd53820c5d5018147d5c547692ab",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.aggregated",
+      "program": "/System/Library/PrivateFrameworks/AggregateDictionary.framework/Support/aggregated",
+      "source_sha256": "bf003fe137d13a7f2c17fa2c6f38334557e9d351560da194b40df111afa24c48",
+      "output_sha256": "99acaf300ddb533c6c9e805b6709a94152472dd04eff0439961f46798da29df0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.akd",
+      "program": "/System/Library/PrivateFrameworks/AuthKit.framework/akd",
+      "source_sha256": "8805eee1513a26f783b46da5ec72afff9e46cf0ebfde64ba4803aaed43a8e23f",
+      "output_sha256": "c5ea0d6c9740352debf185ba3361c0d7fceb87ed0f42dd8d8f1e797db21f4a43",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.amsaccountsd",
+      "program": "/System/Library/PrivateFrameworks/AppleMediaServices.framework/amsaccountsd",
+      "source_sha256": "bb49dc63439e5f8503f7cbe09eb1a547e8167e401ff724cc66114db1cd1842a7",
+      "output_sha256": "6048e23ef4e3a3985bc27d31400be7af8a6da7038b0a4405ec28ccb90250d82c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.amsengagementd",
+      "program": "/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengagementd",
+      "source_sha256": "1b2079d132d3d161f4a68d0062eedf765a718ae1e7dc2bbe62b3fb4892ef73cc",
+      "output_sha256": "61f95d552d64d2e18cc3d2585b097c23081fac62df60ef4977c4b6fe44515296",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.and",
+      "program": "/System/Library/PrivateFrameworks/AccountNotification.framework/and",
+      "source_sha256": "50e034ab707953600b948e2f32c79a70fd4f98df79f9e9a8d0498bf6cd38bfa6",
+      "output_sha256": "a6928c8903a196077559e1ac5b59c90d70b6717868c4acb3037764d8d1505bd5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.announced",
+      "program": "/usr/libexec/announced",
+      "source_sha256": "5864cbca7ad210df843684c44ecea5e4f3c6e947f358e9b2990a430afdfad12d",
+      "output_sha256": "74f0f8c1a7336e37228b3e5c5eb7bf8b7f5434c255797b753e3022c448a6ad0d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.anomalydetectiond",
+      "program": "/usr/libexec/anomalydetectiond",
+      "source_sha256": "6099119b6c48b21a39794082f453648d605688f00bf84cbd9719523551304c59",
+      "output_sha256": "9cb4643908897d1993476fbc6cc6aff98c1006efcb4cce0083e3ae1b0ee0ebd6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ap.adprivacyd",
+      "program": "/usr/libexec/adprivacyd",
+      "source_sha256": "e1f3505f6a1d7c089302f0579914681e19307341da2a184c476e83ef800f6e73",
+      "output_sha256": "a0a48490ef96f85f547a89cd23a08e669fee8f224d1972d5cb74ec977199821a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ap.promotedcontentd",
+      "program": "/usr/libexec/promotedcontentd",
+      "source_sha256": "2f075f94fb2591a2cac542d8c44e5fa73b82dcdd85d4fff7d8c97cf48a696462",
+      "output_sha256": "2d7677820de66f888ea8c092f1b175ec19b21db62402870e86f845426f148a30",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.appleaccountd",
+      "program": "/usr/libexec/appleaccountd",
+      "source_sha256": "c79e31e2747a088e40a5e2ada17050b70979843a8347c0cf873e15fa815c8ba3",
+      "output_sha256": "fcadef1df6ea968e138f1a59db5e237bcffebb15de29c6a951383845bc217755",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.applecamerad",
+      "program": "/usr/sbin/applecamerad",
+      "source_sha256": "2bba9f51864a16709747f82099ce445924d96575d7bd3918a4e2d290545c01ec",
+      "output_sha256": "b1dfeabbc7e31bb04079690f221bfa3f37918162bf3987dfba68c4e61d2e948c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.AppleCredentialManagerDaemon",
+      "program": "/System/Library/PrivateFrameworks/AppleCredentialManager.framework/AppleCredentialManagerDaemon",
+      "source_sha256": "6de87ec3b1dbc26b2afb4b2ea3b4e9d416a9c656ecf8edb3fd3d81d3930f31a4",
+      "output_sha256": "745dd66d47e13d886d5999f20a2fb5aa76dc20bf675608a324b40b7ede25cba3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.AppSSODaemon",
+      "program": "/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon",
+      "source_sha256": "5f51612cba609c68b8498955997776a2be04636981469c2ba934cb9d8b8b79d9",
+      "output_sha256": "9166f7bde42e1e86504dd9de741b184e9c36f8d0b19e456697b83a6956a1dba3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.appstorecomponentsd",
+      "program": "/System/Library/PrivateFrameworks/AppStoreComponents.framework/Support/appstorecomponentsd",
+      "source_sha256": "94cdc19e0212e3ae8f3330d8ebfbf7f287db83089770b0f3aaa00e43a8205bf6",
+      "output_sha256": "0b759f93c8ffe5faa74b71852ee9160bf6dc4c20d0961431b387027c231f3d22",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.appstored",
+      "program": "/System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstored",
+      "source_sha256": "fe235f7aa164770e5bd5d917fa9533c2a2b15102c664f9f911d887965ec4cb50",
+      "output_sha256": "8c8765422499fe06b937befa1d21eba327d787b9df6de9ef41d66d5ea21247da",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.apsd",
+      "program": "/System/Library/PrivateFrameworks/ApplePushService.framework/apsd",
+      "source_sha256": "8fe57a9b340586060ffc13968974ee25d6d7d5562345f8e7875fe37c2fc118b6",
+      "output_sha256": "ffa2ad1ab054cbad12f0a42df9238069ecb673a1d7e79f38f15e8b8aaa919aab",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.arkitd",
+      "program": "/usr/libexec/arkitd",
+      "source_sha256": "fc53cf1cd0dd78d87b6f2ff9b8907b181a12e2f988484c407b7cae8105f5f31f",
+      "output_sha256": "bd3f53280d6daa2ac33a90ffa672817f363c81bc040aba82a8ed02321d41dd55",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.asd",
+      "program": "/usr/libexec/asd",
+      "source_sha256": "1a42884720636597aba372cfd181b7c99f1dd5068d4c62f49c2f24c977c33ba2",
+      "output_sha256": "bd902b9feddad657a33a30877dc42ccf3ae154e670b3a09273face9f4804ac83",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.askpermissiond",
+      "program": "/System/Library/PrivateFrameworks/AskPermission.framework/Support/askpermissiond",
+      "source_sha256": "b8da3fd6a5bd5ffe588770639e0c161e909be94b34b6916436350b1ff13272ce",
+      "output_sha256": "2e7d8a961fc8ca92e13c046e70d73139202bbd93fe39016ec98a155a40cbf896",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.aslmanager",
+      "program": "/usr/sbin/aslmanager",
+      "source_sha256": "4e4821c75c2733a42a3502b6572508d09763070c929c9084e62c9fedc49bdce3",
+      "output_sha256": "1cfb88f8a20aa15e75ddba612980af1678e09dcd23087f43c7bd52192e283b8d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.AssetCacheLocatorService",
+      "program": "/System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService",
+      "source_sha256": "8a32d9ee155252a0aa0f5255d63c604b3c3354fe26bb16d47ba089235d1a6d85",
+      "output_sha256": "76d50ed352cece1d5143ebfb41b77958496387b3b8402103f5555d23e18965ca",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.assetsd.nebulad",
+      "program": "/System/Library/PrivateFrameworks/CameraUI.framework/Support/nebulad",
+      "source_sha256": "2576c54885e620cee005a537230025708994bef822b8e439a01efb344bdcf1cd",
+      "output_sha256": "6c247c20de8d8c5784621301c0d4d4c818e2abed7b40a2753b6856565dee91d8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.assetsd",
+      "program": "/System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd",
+      "source_sha256": "6cc28886ffb8ea0185f85347df9d9a6add25e67c7ba091f211ddeba3ca0b8ed2",
+      "output_sha256": "430587693c7a1228da5efcbcdffbf4b529f70649520c994058651e365d38fcd2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.assistant_cdmd",
+      "program": "/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/assistant_cdmd",
+      "source_sha256": "0c5114af8b075ab9d8d8ca7e1cde8df114b59c693e5b587535faf7004f97a232",
+      "output_sha256": "af063e47587180116ed55cddc2c60ce4d03f50e931a5dd02c9085504e2c89647",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.assistant_service",
+      "program": "/System/Library/PrivateFrameworks/AssistantServices.framework/assistant_service",
+      "source_sha256": "cb882dd8bcecf461d42b2e806f49ef1d45571776f8e20c20088de565ac7c975a",
+      "output_sha256": "0610adb19354a10df546452f38cc0a47c8c3aea335d5e8c0607ea99fbbe4e58c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.assistivetouchd",
+      "program": "/System/Library/CoreServices/AssistiveTouch.app/assistivetouchd",
+      "source_sha256": "3aa54cddd478a2a65c60a562e12123acf6cb361c74c69fe0d0f94362f7cffc13",
+      "output_sha256": "276cd0b45e3c9e704bac784dce6b68381d06bbb3b40e57a7abec7a148dc82f7e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.atc",
+      "program": "/usr/libexec/atc",
+      "source_sha256": "43ac996a677315ef9a1d0cfc064e7403fe6ab894e21d37aff9d79111a3301932",
+      "output_sha256": "1b0f80ad8bc0a52463713bf9e00e2988995bd295624124a6af108d16df11bf77",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent",
+      "program": "/System/Cryptexes/App/usr/libexec/AuthenticationServicesAgent",
+      "source_sha256": "f8f87e66ca96afd1f116b5bd81984e606f9b12e94fc6443ffab9af1695236ffc",
+      "output_sha256": "cc030e2d1000ffd773c0b0c76b5fe55d83f51f3abf17e9fd5f43f298d881fd97",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.avatarsd",
+      "program": "/System/Library/PrivateFrameworks/AvatarPersistence.framework/Support/avatarsd",
+      "source_sha256": "7a811ea4a5ed4479ec3d435c8b728f575ee6a2e1c27cce5563b6fbf6fedb1ecd",
+      "output_sha256": "7ea01748bec093ab09843affea906eb84e76f23d2672e0d01f6d622cc46e3d73",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.avconferenced",
+      "program": "/usr/libexec/avconferenced",
+      "source_sha256": "c6ab9829b67116cf77703a1610a6895dc83f870141f1298ba722c4a02116e2ad",
+      "output_sha256": "e96f4b814361e8dab5e5a578833fab9b4fcc2880012f2581a12be78ea16ee6f6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.awdd",
+      "program": "/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/awdd",
+      "source_sha256": "c6e9f9b06e8492d1b8d1ce3152de76a31d58fb4c45336101c899738fd325d404",
+      "output_sha256": "0249c3298f7f4a051d176bce4e5ffcbeae0a5a9900470e3ebfa5eb9036fcb760",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.backgroundassets.user",
+      "program": "/usr/libexec/backgroundassets.user",
+      "source_sha256": "25da9ecc9394d4ca0bf4da3d978f0ad7111726e9c710a56022f2588c2f2e8027",
+      "output_sha256": "fb1bffe26b206474ef9a0a9fd1751f14e84444812a782e131ce25eadedbcb826",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.backupd",
+      "program": "/System/Library/PrivateFrameworks/MobileBackup.framework/backupd",
+      "source_sha256": "8ad0cb425f5edd56195650ef04eaec06d03d372878fec20f82f738e1118aadb3",
+      "output_sha256": "e2ad76e5a173609c79372aa3f2036f2e771a3a0d5c2a043fa6e1aede4e4f870e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.BarcodeSupport.BarcodeNotificationService",
+      "program": "/System/Library/PrivateFrameworks/BarcodeSupport.framework/com.apple.BarcodeSupport.BarcodeNotificationService",
+      "source_sha256": "6f2d5306fabfc94f829e975c9608eee63bb00360e5c6958867e467d568be86f3",
+      "output_sha256": "a0bba6a5d036e017fecea42ad0a31da315d5d415d6b797ae873567c9bbabea25",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.batteryintelligenced",
+      "program": "/usr/libexec/batteryintelligenced",
+      "source_sha256": "ecca7e91c05fdd85c58f19e400342e1403dc402674fa79e03743e2c745075539",
+      "output_sha256": "a7ca90ba62ece2f61cf7a41b7657fbe763f6071dcaa3758af40810c586fb3b93",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.betaenrollmentd",
+      "program": "/usr/libexec/betaenrollmentd",
+      "source_sha256": "c8e7dc568518943cd204f55292441a1a61d6823035e6697efb4838fbe2d120c7",
+      "output_sha256": "c022096d23c82807bfb5f859599c9028d73b6c4eb766f4e57264f31773f14aa8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.biomed",
+      "program": "/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/biomed",
+      "source_sha256": "063b728e574debb50cdd5b542d72afec61e9695e1de67db1a222b1df48b88fc8",
+      "output_sha256": "11ed33b4b031c33190c65818a2d5a94e4ef1d1b61cb91b01b2dc56104bf1e10b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.biomesyncd",
+      "program": "/usr/libexec/biomesyncd",
+      "source_sha256": "5be0adae22980401f3767700d517dd52014254e73cef856cffb99e48dbf3da77",
+      "output_sha256": "6a017a7c67a3a31e92720c9f0808b4c48dfda5c7d742b0c20b200783976dcd86",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.biometrickitd.pearl",
+      "program": "/usr/libexec/biometrickitd",
+      "source_sha256": "e35ccdc2cc532643ac09ae88099012d94e9b77893c96a164dad634d6467155cb",
+      "output_sha256": "ee88de3037598ee5e77f083da516aa8568887d8587c0664422f4236d04cfa703",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.bird",
+      "program": "/System/Library/PrivateFrameworks/CloudDocsDaemon.framework/bird",
+      "source_sha256": "9d5984290243fb5050211c652c8d1462d157192466ce024b505823adca0ae4d1",
+      "output_sha256": "417f575c71601bcc797ca50ead9c9f3fffbe1a7e13c49e88d7d8c9e72ac21ab1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.BlueTool",
+      "program": "/usr/sbin/BlueTool",
+      "source_sha256": "e6a3c88d3458b7d6adc5da3b11099769648068baf81beae63283300c80c6606a",
+      "output_sha256": "63a038514f89338eadd84ba00ba1181675e2fdae3127644d739480a6e7ba5532",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.bluetoothd",
+      "program": "/usr/sbin/bluetoothd",
+      "source_sha256": "50c41740a1b925dd5035787a4e95aea23de548bc464421f452f80ac8aa6192d7",
+      "output_sha256": "231137f500ade5d43075c464aea04bcb1328d8e31dbed9d0f54045a749167ca8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.bluetoothuserd",
+      "program": "/usr/libexec/bluetoothuserd",
+      "source_sha256": "54ee8f56584fbdcb901f02bafeb573017e52efa5353dd08da98a9b59648e6b1f",
+      "output_sha256": "61ce3047dc0be5f84a274acadfc2f37adf98233c6dd745261b8e1e12662fd330",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.bookassetd",
+      "program": "/System/Library/PrivateFrameworks/BookLibraryCore.framework/Support/bookassetd",
+      "source_sha256": "cc86df6afedaa26ea95208d34c1f1eb22268f8c1158a79d3d579370b232152b3",
+      "output_sha256": "d31e56e173d68ced8de8bdf6ad5dc80007d7bbda9d6c32ba5dfb39455e7aa328",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.bookdatastored",
+      "program": "/System/Library/PrivateFrameworks/BookDataStore.framework/Support/bookdatastored",
+      "source_sha256": "8982bcfec433f70d2cbdcbd67d44a4122f1868cc0eefc93f885597429f38bb7d",
+      "output_sha256": "7d4d22f6b487c081d0aaf6ea5393e7dd0265c60c07bf1949b7adf583559afa31",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart WatchPaths",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.BTServer.avrcp",
+      "program": "/usr/sbin/BTAvrcp",
+      "source_sha256": "6d03f9801e9b64d34808a2129e81bbdca9514915f29ae510c5af49458e0d9c36",
+      "output_sha256": "232bc6e9beb5494eed05ad9000b4c26a3599e7dc8aab9e5f7fe04b955126971b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.BTServer.le",
+      "program": "/usr/sbin/BTLEServer",
+      "source_sha256": "a8dd5b4d67e26ec2b804ca08d31401f1f061331322130200e7a554d0022b556c",
+      "output_sha256": "0919c21b8d2215640e77efd38353f2f328a98178dd84c87309b551efffe6d71e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.BTServer.map",
+      "program": "/usr/sbin/BTMap",
+      "source_sha256": "2a35020d2eaf4b26d637457ea196b8d5885bd487382180efc6ddf11d1b2890f0",
+      "output_sha256": "124a4e30cfd6075474671f802036ba46472d173443476d500ec77ecc55ad2b41",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.BTServer.pbap",
+      "program": "/usr/sbin/BTPbap",
+      "source_sha256": "3eba12a6653d48058a67128aed6715f6d1f491494bcb4b7d4d63059052ffaad4",
+      "output_sha256": "bf63890324d870fb0f669e451c5307982abaf871d788a27101ac5086a107d38f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.businessservicesd",
+      "program": "/System/Library/PrivateFrameworks/BusinessChatService.framework/businessservicesd",
+      "source_sha256": "ad44a6055e0669f8a2ca43d6ea855dcc9765aa214c8cb92e7838c2dcc613e764",
+      "output_sha256": "781c93f66f77fef98c74662ea57d2b6d50ead17dc0784a691b48afcd54e33fe9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.cache_delete",
+      "program": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted",
+      "source_sha256": "53d16967eb5c298487eaf2394ec9862a51934e574e71bb1e9d71f7562fb72d9c",
+      "output_sha256": "f9440fa797cd59012f762cb7d6587df01f8ca63857e2cb9177f9be6f73ea24ef",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.calaccessd",
+      "program": "/System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calaccessd",
+      "source_sha256": "f75f7d2c7250ad21275aa6cbb41a388eb0fdc09a3a891b1e0a86060ca6231922",
+      "output_sha256": "5a843c2958ddd867f5cc9df69dcb3e5be16906e1f3d1d2b8c4a02626fa41b6a6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.CallHistorySyncHelper",
+      "program": "/System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistorySyncHelper",
+      "source_sha256": "adba949fd96161aedeab6a2dcf6289ddfd6fb4bb1525b6c5685412d63423b910",
+      "output_sha256": "8526ec1180a9999be63a72ad69f14e9df1d99900d32d2a16774fdda94f80f116",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.captiveagent",
+      "program": "/usr/libexec/captiveagent",
+      "source_sha256": "f96790f2ab479c2057fff812d44d452a4ab93c061b0b952f15598856bf060dbf",
+      "output_sha256": "b3548c65a386ae1e51991b1da1e7f6e7ff992fa7cace53975ded8b22383cb25e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.carkitd",
+      "program": "/System/Library/PrivateFrameworks/CarKit.framework/Support/carkitd",
+      "source_sha256": "211a55fe5029bd49334201c57b4b2ebf9cb128bd94449dddd72afaddbb8be7cd",
+      "output_sha256": "03c6592a55520dc6dcded5b61e8c4a88a8960f3438846e4cfc33332ac219c546",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.CarPlayApp",
+      "program": "/System/Library/CoreServices/CarPlay.app/CarPlay",
+      "source_sha256": "ea8f91adadf6268e125e3d44a92efc706f6c0debfccbef89238ba230ae461901",
+      "output_sha256": "b7080da2eec1f3249895ce19a1b9389851997e6c0bf13148bb345a99e11e2cf2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.cdpd",
+      "program": "/System/Library/PrivateFrameworks/CoreCDP.framework/cdpd",
+      "source_sha256": "9be96adc777558fa0efb8cbd7507d197e2606dfb73ff71f26680a713df2a68b0",
+      "output_sha256": "91b1eb13e2d92cea78f6bc2478c8dcc6cf138aabfb6ceebefc3d81353a85cc0e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.certui.relay",
+      "program": "/System/Library/PrivateFrameworks/CertUI.framework/certui_relay",
+      "source_sha256": "99a9c46c54504ec16a4f78af848a477d92012bed06b48a622e7ab3c00514b855",
+      "output_sha256": "2c8e8f16dbb80271b9909a5e2bf462f662250f7185a649de8b13507946e81ef0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.cfnetwork.AuthBrokerAgent",
+      "program": "/System/Library/Frameworks/CFNetwork.framework/AuthBrokerAgent",
+      "source_sha256": "5a3dc1b8c4ee3aaf93e85705885a01631c811de54a46c5a60e4a8564be88ad89",
+      "output_sha256": "2eadab59b213820fdcfdc7bb90cc74985e9b9665369e7a8aa5c118d967061226",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.cfnetwork.cfnetworkagent",
+      "program": "/System/Library/Frameworks/CFNetwork.framework/CFNetworkAgent",
+      "source_sha256": "cb7ec1913302e016a017822c9ddd901813f9831a0fdbb2953d538003ad386843",
+      "output_sha256": "ec05ed1a4d94cb966619ebd07d6e4eee39d597b5c1dfc6265b4eca0d03e47270",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval"
+      ]
+    },
+    {
+      "label": "com.apple.checkerboard",
+      "program": "/Applications/CheckerBoard.app/CheckerBoard",
+      "source_sha256": "6a8e67ed7eb45420857a91b39098e8c17cda67c3110074eb74a317dac657cbe6",
+      "output_sha256": "702e67e83127f488143ee331e237def2dcd28f052b1c7b6e3324d00912dfeada",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.checkerboardd",
+      "program": "/usr/libexec/checkerboardd",
+      "source_sha256": "b3208465009e6f164fb8834350eee0dbdec3d8ca2ebef35b2764c6c17a9bb388",
+      "output_sha256": "e06b912816074480c16eff164c80d6ca4d96bd9ad42a43d4e1fb9d235702281f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.ckdiscretionaryd",
+      "program": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/ckdiscretionaryd",
+      "source_sha256": "b636fee90d9236d6df0f3760215f75170780e4fbb5e014e03175f78ac6ac03f3",
+      "output_sha256": "ab499b69c8a0be985acb645a9bebd639d0e70d8f345de7b78f92e72e1a134b79",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.ClarityBoard",
+      "program": "/System/Library/CoreServices/ClarityBoard.app/ClarityBoard",
+      "source_sha256": "26baf83838836df14753e4aa7e8446a30c5815284b0f2063ece08d7927863722",
+      "output_sha256": "9abc856100bced1dd5885768780d5d99e83fd5ff7a4ce12fcb7d15f4f3ae9c61",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.ClipServices.clipserviced",
+      "program": "/System/Library/PrivateFrameworks/ClipServices.framework/clipserviced",
+      "source_sha256": "e23406e713cc4248cc50404f42fa1fbccb55d93d19ca089bf8f924df12cc80da",
+      "output_sha256": "cacac9b39bae63e0d8c41174b73ffe966d1cb449653bbd3339328caa46bffb46",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.cloudd",
+      "program": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "source_sha256": "53a8ca8d0d9b54c7298779a22600e04517df94cf6db5139345d0540525a64ab0",
+      "output_sha256": "147582fca27b7e9b3c76f6561a536ef9448169bfc1ee0edb2d4ff68e00844565",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.cloudpaird",
+      "program": "/usr/libexec/cloudpaird",
+      "source_sha256": "3171339dfcd7d0537377f2cde9273a9c22c839fd6413569b6f3c760afe24ac2a",
+      "output_sha256": "0c08c295c4649ddad375cc2a67de20d758eca6688740cb38a7b5dfecb7caee93",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.cloudphotod",
+      "program": "/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/Support/cloudphotod",
+      "source_sha256": "21c5a729d468fa6a3a0558eac6b1dd5bf9b891eff75a536d519d87528c18d83a",
+      "output_sha256": "afcb141d18dce5d61ed5d9670292e915512d0d36f8adc4bb64fa55416beebc67",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.cmfsyncagent",
+      "program": "/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAgent",
+      "source_sha256": "9a70a6cceec7629172dc5c550add91751c00632179d5a3a1c943c935b9c7966c",
+      "output_sha256": "7142177978b3700dd7adee130df00f75890e9961d154484064de7eb868ffebac",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.commandandcontrol",
+      "program": "/System/Library/CoreServices/CommandAndControl.app/CommandAndControl",
+      "source_sha256": "fb9aaa98a4f8b79bc7a3ae5ac8b3ac5e61fa55084f673e488bc5bfb6c875cba8",
+      "output_sha256": "95ead27f140350d0699879b3b6a7a9d3d017b3be19d007d3f64dfa30e2126e82",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.CommCenter",
+      "program": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter",
+      "source_sha256": "59fb2d07cd882eb44880672b4d96d8d81fa59e7e6a04aa4eb0991a2be1fed722",
+      "output_sha256": "a242a90b9569a068d83fe8d9dbc3d70f3470e1692fef2318fa3e08f8e71d5cfe",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.CommCenterMobileHelper",
+      "program": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterMobileHelper",
+      "source_sha256": "f37c4e1087d16a7803284ae04544d12a09fdfe23eb868748a144dab920d62815",
+      "output_sha256": "1ffeade2a3b3fb02c3ab02f6a9b949322c09b9ed92d7f8072f6821d12e8c7969",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.CommCenterRootHelper",
+      "program": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterRootHelper",
+      "source_sha256": "2b63d51756d070ab3d3ea88988a942f611235c1f21c6cb628b4405bc6e6a9c96",
+      "output_sha256": "d8834452a3d1ba66ae07a3710746a9cea0fcb0a3fa4bf74f706cdfc736519cbc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval"
+      ]
+    },
+    {
+      "label": "com.apple.companion_proxy",
+      "program": "/usr/libexec/companion_proxy",
+      "source_sha256": "461317df1f228cd915b4be97209e57223cfd61024f1629aef9db3fc53f787c49",
+      "output_sha256": "4bd7eba1f28a58e933060f8277b36ac02042504fdd3936ae645343b8466c672b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.companionauthd",
+      "program": "/usr/libexec/companionauthd",
+      "source_sha256": "35446a3bd48e8ec83b5b613b660d8cd2926fe17b1986d769adb6a5d900a658ce",
+      "output_sha256": "922d8287473d4aed91900ad3d1ae787b771acd4a9163acaa3a4d0bc37cfbd3cf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.configd",
+      "program": "/usr/libexec/configd",
+      "source_sha256": "e12cbfbf41c09a3479181fe6eb1a4108f498813a2c511b30852a782337e238f9",
+      "output_sha256": "2af6d7f7a144dc768ad5bd595a6a9211b0b5bb429e33ad59a781f1603fb8c38a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.contacts.donation-agent",
+      "program": "/System/Library/PrivateFrameworks/ContactsDonation.framework/Versions/A/Support/contactsdonationagent",
+      "source_sha256": "2a25df569fd37bab55d4cb8c411c51f61271f9ae1ae8d97e38aaf6fb6b45ec59",
+      "output_sha256": "f9997f684910d0ff4b02e2c8a2093b23242b43a291802e3b42606994b443bc7f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.contactsd",
+      "program": "/System/Library/Frameworks/Contacts.framework/Support/contactsd",
+      "source_sha256": "7bd442a125c7bca5fcd3afcfaf23a485deb72d6ef8e078ced8ce91d331e9dca6",
+      "output_sha256": "c3f317d1039e8d6222156624f7f5f409f69f5364f14d5efd7f5b5acb1d07b72d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.contextstored",
+      "program": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/contextstored",
+      "source_sha256": "b92667118c460b23fa2cd3179319c880efa5236568011eedaa12d9f428a86087",
+      "output_sha256": "63c79c744bea94d4a00c6e8ce278ae4a6d3a6afec5a743cdfe4faa0c78390910",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.coordinated",
+      "program": "/usr/libexec/coordinated",
+      "source_sha256": "ad81ccfd5d5ec5c2d877d7f68c34b4773151c9c89340787a649df594f58526f6",
+      "output_sha256": "e239104b000988e2e37ddefa63ca8eebb3f7ddc5716a63ff54a1dd814eb99edc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.CoreAuthentication.daemon",
+      "program": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",
+      "source_sha256": "19efabc3a21c870692e9467171bcf14660f49915a92d2bf3786919b077c1ae7a",
+      "output_sha256": "74ca3e2766cfb78d6314aef5ea3a4f87a79491386899768bc4f6636c86ed95b9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.corecaptured",
+      "program": "/usr/libexec/corecaptured",
+      "source_sha256": "855920d93db257330ce3f35912d857db3a993a0ac29cada98b281ad56e26304e",
+      "output_sha256": "d1c673edd3c49f8ea2987640660c3240013de7638ce746ef7d0e3a9eb7772504",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.coredatad",
+      "program": "/usr/libexec/coredatad",
+      "source_sha256": "a3f03a241bf6f451a764c30e176382fdb519ce3c30da7ebefe1caf57b4951760",
+      "output_sha256": "548bfbeb73da0026016fa3d4a7e371e1b34bc484fef49c0b176516d64543611a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.coreduetd",
+      "program": "/usr/libexec/coreduetd",
+      "source_sha256": "d43478f2374ef16689d675292616fc9cf2ca2c01b0f8e2364a1868a786a2be4f",
+      "output_sha256": "4c7b04880596da58c7347a6065507c5d28b9c2a3d1abf90683f5a7e49377129e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.coreidvd",
+      "program": "/usr/libexec/coreidvd",
+      "source_sha256": "cf78c1ecc7771ff6c3c9db4e7dbf16959e21f6e0a2610077f5e5c617a96a6053",
+      "output_sha256": "4697d1d2f81074eef2b28a750e8cb2fa6e9f9563bda9226d6a527014f9effb65",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.corerepaird",
+      "program": "/usr/libexec/corerepaird",
+      "source_sha256": "848a4a0d37bbb8e0969b280cb449764041d3443db087af3c35f853a0c44ce588",
+      "output_sha256": "1ee84b24d31ca77c2d637881d2d3b5d671ba83387279ea6b30ecb0ff585316f6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.coreservices.useractivityd",
+      "program": "/System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd",
+      "source_sha256": "1b0b2503c285ecd03a09277cdecd5d03fd441dc2b3462100b9d44cffbe4e451c",
+      "output_sha256": "95a8d514aedd5bc51607ca0f5887906466ae9b9b0ad6826af7cdd924721479eb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.corespeechd",
+      "program": "/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd",
+      "source_sha256": "a1be2d5c354b320a0b3d2fc0f21207709141de191b613a47cd180cc9d260571f",
+      "output_sha256": "34a7913132a192cafc0c51528b92db6b75f4225f2c45a9ca88a62d79b09aff49",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.corespotlightservice",
+      "program": "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlightService",
+      "source_sha256": "6c39a605e987f4596a5b5afb156665b8cdb821915afb635c3cdccd4c03e4a030",
+      "output_sha256": "87305a30f1a44b6bd54536d5bdd1a08cdf2c263d8cc7d144585f207df2e60024",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.coresymbolicationd",
+      "program": "/System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd",
+      "source_sha256": "dc16ec664cf90a38e15ec450ae0b18dd9e13f2ff6ebc7d00e05e994e3e4e6ac5",
+      "output_sha256": "f643317c0df2f1007556e7f58f77d7996ec09f764578dad86d24c81a8c4512c4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.countryd",
+      "program": "/usr/libexec/countryd",
+      "source_sha256": "6f8181776ddee375b2a5b6c1ec39b0df18023e47282486d2fa58738a83356eb1",
+      "output_sha256": "92dc012cfaf8587dab26f9a2d8dd1709c6f6bec196e1cd4b3b3230b3f5161ea9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.crash_mover",
+      "program": "/usr/libexec/crash_mover",
+      "source_sha256": "1a638cc01c3aad71c817dd460b84faf7376af3449397ffcba4d280cd63534e27",
+      "output_sha256": "d8c0e077e783ad8e5176f729a1662f920db0540f845eb2a11c226d80b7e1ea24",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.crashreportcopymobile",
+      "program": "/usr/libexec/afcd",
+      "source_sha256": "c6d06026595a185c717afcd841f432e934e4734f948aa66f56b9e59f2ef2eea9",
+      "output_sha256": "b47faf6a06d813e2d5655c1b3a3d1b487b4b65bc14abcb45e97ee3d993cd9619",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.ctkd",
+      "program": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd",
+      "source_sha256": "fe312363726408ef9816a1835d7350a3cbf77d49797e0042d05f70929576e555",
+      "output_sha256": "a956343268b1a71b84d1c01ea1fe7ec0c341264161c497c951741223adc5525c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.dasd",
+      "program": "/usr/libexec/dasd",
+      "source_sha256": "107337a500f388f71df5c90cf68937fdd2afef1c2760f66664f1f654b3859630",
+      "output_sha256": "ab1e255011cbd40f76154ca20d121a1d9124d08ffddf719fef93f720c92cc217",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.dataaccess.dataaccessd",
+      "program": "/System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd",
+      "source_sha256": "804f0286484d6d81c32a46894e7411642d17c1b134849eb25c2a2e5a69f8048b",
+      "output_sha256": "ab41c6a4b38a47eed36f3d4fff568fdccaf0fd6f80e691f12dff40a1605bb88e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.DataDetectorsSourceAccess",
+      "program": "/usr/libexec/DataDetectorsSourceAccess",
+      "source_sha256": "d1b95eda0d4e2fa19c18759f9f19d41e30ee328a7bd71dc0f6f0a78da74db3f0",
+      "output_sha256": "35fb4a29c63da8c95d2cef97f856c2fc1b84c0a3260ac2134c55dc841e311db2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.datastored",
+      "program": "/usr/libexec/datastored",
+      "source_sha256": "9ef66277c768c48e6ac1f111211fc476516e7f60e0e131838e3377896f679005",
+      "output_sha256": "daf5eb941563675ca3b4c0d4d763c48ab8fe6c2ed3fa3bf01b850b037a77e886",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.deferredmediad",
+      "program": "/usr/libexec/deferredmediad",
+      "source_sha256": "b55aa517c22cb41605554f7d43a7a2d61d4fab2b9809dc27db5e9f2d1a019d1f",
+      "output_sha256": "16735d9977da824dbbe6086dfcdbf423f4e5d10a0394ebd2325a0522ba6a1509",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.deleted_helper",
+      "program": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted_helper",
+      "source_sha256": "fcdac58b5cda22a138ec6269f17d2c67f1aa787717075054440901cb4bbea02c",
+      "output_sha256": "54c6a44b5f19bb2f87ca983eb8ef622afea05b9a92151ee23eb982912c279c08",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.DesktopServicesHelper",
+      "program": "/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesHelper",
+      "source_sha256": "cd9fabe500c4a3ad15f0e6680127adaa3691d2d67c36ba73c085bd7c9d306aef",
+      "output_sha256": "7a0added4b6b6677f88790ea4ccbb274fa42c8df8f0d3978e0bef7cb78a9250b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.device-o-matic",
+      "program": "/System/Library/CoreServices/DeviceOMatic.app/DeviceOMatic",
+      "source_sha256": "e16322aeb8777ac487b709c6e213985fe363f4adacfe678826c65270f05521a3",
+      "output_sha256": "aa13dd55f1382e64018abc0a21e0d303bafeb929bc1fade01aee733e7db0880a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.deviceaccessd",
+      "program": "/usr/libexec/deviceaccessd",
+      "source_sha256": "3b4be5a40cb089ac9b6963c7f184a4ee2dec71216b8ac5d91401b19870c58bdb",
+      "output_sha256": "65679f23244fe1045865d461ac98f63160a453aa65a75620f5d041ca20ca4e37",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.devicecheckd",
+      "program": "/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/devicecheckd",
+      "source_sha256": "37bedca4b4dbb43c29d800f95a1d09e9d405e6e443b31d98ab07cb6a04e2e60b",
+      "output_sha256": "b8cc652f56ffa6f131917ffacac5bc1ea512fa2e29ac3246ed6e65b42477b05c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.devicedataresetd",
+      "program": "/System/Library/PrivateFrameworks/EmbeddedDataReset.framework/Support/devicedataresetd",
+      "source_sha256": "ccbc1a37096e2515a311260314b4305517d209ff00d8bd55643f1c7c2e403120",
+      "output_sha256": "24b6cc9c7ee558d4951bd782908ae90a235c35247178426d7e7986cc8f1d3c23",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.devicemanagementclient.mdmd",
+      "program": "/usr/libexec/mdmd",
+      "source_sha256": "9cdba566059d94bbfef6214a86bfe4238ea52dc788b3a998234b1532124ceb20",
+      "output_sha256": "52ea319ba879bf161b3b877eaaa9274b8b4be22fd2be00ce55b68dfe3183a04d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.devicemanagementclient.teslad",
+      "program": "/usr/libexec/teslad",
+      "source_sha256": "e48d8fe9c29adebd43485b7be785bbf7adee35d8e756955b8bad0f9731dc6220",
+      "output_sha256": "e00843d85ae1385565f2e8ed957a0d42b64f2add391016a7ddfcbcfb8b057d22",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.dhcp6d",
+      "program": "/usr/libexec/dhcp6d",
+      "source_sha256": "917ddafe4f2e73638d9255922f16661ff7a4b699b053f5bc53667e72c4c62622",
+      "output_sha256": "a9a9d775d01d9a2660ecab86ca8f17492cf758d3a730e3a4db6922a6f1eb4842",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.diagnosticextensionsd",
+      "program": "/usr/libexec/diagnosticextensionsd",
+      "source_sha256": "39c4aed921f4e95a099e0500fa5eb5a92cdcc42328939f4657e9d3328461f0b9",
+      "output_sha256": "8968e19ec5d72cde60b9e64a326a2866a7edb7b4f82f84aac6a4a43fb0f235d7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.diskarbitrationd",
+      "program": "/usr/libexec/diskarbitrationd",
+      "source_sha256": "cbd5e12ee855678041287a115bc185809600e1f57af777632b76dadd03c1564a",
+      "output_sha256": "f2c6629cea554bb55837113bc46ca52b276b18e399d824623e5e8b28a8ac07d1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.diskimagesiod",
+      "program": "/usr/libexec/diskimagesiod",
+      "source_sha256": "d851ed3fcc596b242448e4654f3dc514229221426c6e5efdac555543303aaf08",
+      "output_sha256": "2226f725ec9984a97ea94dd259451f8c21cfddefee95f9fea6e020e0e33f61a7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.diskimagesiod.ram",
+      "program": "/usr/libexec/diskimagesiod",
+      "source_sha256": "d3804db693ba4f83c4d5fa9eee1210b5307261c43a3c0e6fdae8fe4b5abbc659",
+      "output_sha256": "770f98adfc2203375c9816fe1036dd16b09fa5cb8a15ba8c4e426d6a2115c1c6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.dmd",
+      "program": "/usr/libexec/dmd",
+      "source_sha256": "d46a2433a7c1d43184ad5764d95d5775efe03c9b010cdeff32f4d977fc73fabf",
+      "output_sha256": "4a7248bdf6a9168039aa89d2ac625dd9af2cd4507000a65dea0419b94bf8f8be",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.DMHelper",
+      "program": "/System/Library/Frameworks/CoreTelephony.framework/Support/DMHelper",
+      "source_sha256": "27d2a215b988bca03165f34b1a1e6927c3f5563759ff6c003ba56e4c84218452",
+      "output_sha256": "474ad8b74ba10c8d9f2dc0f81388eeae185cdcb7fb4f074c95c9981d4a80bdda",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.donotdisturbd",
+      "program": "/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/Support/donotdisturbd",
+      "source_sha256": "a47066e50dec0006ddf9def501c9f46e12556ce48b973c5691fe1d69a421c484",
+      "output_sha256": "a53e1597517b16812c28f1c31d6b548a3e3596c1eb9ad2e41b3d3b17d8e4904d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.dprivacyd",
+      "program": "/usr/libexec/dprivacyd",
+      "source_sha256": "245050f5e0eb236d2c0963ebc41e8b84d3e55407bd34cdd12a43be97e9b68867",
+      "output_sha256": "f2d2ba7233324d81180fced1e46fffb70b9039471983db4e96476116bd4c4adc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.DragUI.druid",
+      "program": "/System/Library/PrivateFrameworks/DragUI.framework/Support/druid",
+      "source_sha256": "ce6ad945ac6fb4b9566d6f2275a4248e0e6e3c24c6ff99dd1b5b7914100ca225",
+      "output_sha256": "4eaaa11fb16b0fd893d634dc019f0b87f198a84dad3b5f5378efb2baabf5393e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.driverkitd",
+      "program": "/usr/libexec/driverkitd",
+      "source_sha256": "601069ffd78b67ce488f64c29ef658b0a66656e0dbb7ffa8dc5a655fac6c2288",
+      "output_sha256": "7fff1c8ae31e01ea210f7c3d80816c889abdcf11c240f90c56f523ca41387844",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.dt.automationmode-writer",
+      "program": "/System/Library/PrivateFrameworks/AutomationMode.framework/automationmode-writer",
+      "source_sha256": "9f978f3e1243e700503481b14227e1ce0a2151db44bf987449e1491c810ac623",
+      "output_sha256": "c2ba9a323ee3b7ff7b4ab4afc9cd90d19b8173a0b0b3a841885f2a57cffd5a38",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.dt.AutomationModeUI",
+      "program": "/System/Library/PrivateFrameworks/AutomationMode.framework/AutomationModeUI.app/AutomationModeUI",
+      "source_sha256": "8f1c5cbd59b6581b9d588761fef81ab260f678bc08d086cf2f9fad50ebb25b0b",
+      "output_sha256": "916d24a2d4b3685ced05beea3c29341481aa5f6dc09075eb381000c58bd6ac62",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.dt.fetchsymbolsd",
+      "program": "/usr/libexec/dtfetchsymbolsd",
+      "source_sha256": "e1c6961d744ba770b81bc0ea2f31312b114805fd870ad75cac68235e16187fa9",
+      "output_sha256": "d86ad34b2056abfddfb64afb902930d0accd9c7bd2f08a5c514c40dc40e4c16e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.dt.previewsd",
+      "program": "/System/Library/PrivateFrameworks/PreviewsOSSupport.framework/Support/previewsd",
+      "source_sha256": "92311f567a51b8e786dd27506be4227029354077dd833b19bbeeaaeadd89fd9c",
+      "output_sha256": "625fb30064ad286bce025ddfc269776bdca77f99aa54d05ab5415b1ecaba49d3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.dt.remotepairingdeviced",
+      "program": "/usr/libexec/remotepairingdeviced",
+      "source_sha256": "1506d5b3900899aa7875f68ec74d60134d7eba57140a3681b9c757f83fc5ac4d",
+      "output_sha256": "4e85bf38a2597c89ed8d98850ba121f30399e53f48d6bab23fe59a4d319bac2f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.duetexpertd",
+      "program": "/usr/libexec/duetexpertd",
+      "source_sha256": "d51b0b620ab4fe2da324293d95155f207799865523158717caf1a7aff35d9211",
+      "output_sha256": "9014467976bfe3c22edab23e4c11041a663a61f1c120ce9c3600a0884f83afd4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.DumpBasebandCrash",
+      "program": "/usr/bin/DumpBasebandCrash",
+      "source_sha256": "a101ba13a3669478207b836c7c07ea7396bafe06b03ca0af92b04fe1bd27354a",
+      "output_sha256": "383012016024b7e886c5a88805196eb33dbd23e669fc1782502867f7fb1adab2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart QueueDirectories"
+      ]
+    },
+    {
+      "label": "com.apple.DumpPanic",
+      "program": "/usr/libexec/DumpPanic",
+      "source_sha256": "0b3defd44e8cd87d34cc27c1068bf20e85eea12ad39ed9a0d648e97081994aeb",
+      "output_sha256": "7a8e8288d5b03f2d842880472dcd96c7fa572df69e877ee51c97946f36399aaf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.email.maild",
+      "program": "/System/Library/PrivateFrameworks/EmailDaemon.framework/maild",
+      "source_sha256": "4abac79b3d5785390fd65117374b925fcaec17d91bcded10f270311deca492a8",
+      "output_sha256": "e0309d2ac8cbe983d9e3f6aee8a374fd5b27fafb83ec4d4d07d4333828fd4cbd",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.EscrowSecurityAlert",
+      "program": "/System/Library/CoreServices/EscrowSecurityAlert.app/EscrowSecurityAlert",
+      "source_sha256": "e514798ff5cbc922ecae2bca145d15b1d82cb6c71d253c553a03ff119da50699",
+      "output_sha256": "49bf525de71c41c5f40831caf632ec8af08fd100f370983906971530178ef4f3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.exchangesyncd",
+      "program": "/System/Library/PrivateFrameworks/ExchangeSync.framework/Support/exchangesyncd",
+      "source_sha256": "efff0a1513f469cb35390312665a36baf00fa27008ffa9477f147102129c04c2",
+      "output_sha256": "63c4ad0a0046d1dcadca38670ddf078d52b2b46306c91ce9cc0ca965b766f38c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.facemetricsd",
+      "program": "/usr/libexec/facemetricsd",
+      "source_sha256": "128677199dd21852ff0b57346147fb11b4a4d214f16b532e9f7ca3308cb6de29",
+      "output_sha256": "59ca0e4f7eeacaeadc7d781b5e377d2848ba6396348443aa96f99b10bce88e2f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fairplaydeviceidentityd",
+      "program": "/usr/libexec/fairplaydeviceidentityd",
+      "source_sha256": "3e0800462896abbf7883d661791eb30fe74232484629c691c06a27f7edc8a8e2",
+      "output_sha256": "d17748818d2d3d8bc568f49b50e99dce49c56901b28f6d9a2c57947a331397e6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.familycircled",
+      "program": "/System/Library/PrivateFrameworks/FamilyCircle.framework/familycircled",
+      "source_sha256": "126a89e606f38bb21b4104bdabcc6e08dc90ea177a4b23b62b305c7eeb0af56c",
+      "output_sha256": "f8b6d0eb677cd5aff73e1be3a21410e691151c086bae651a96554963c0398fb2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.FamilyControlsAgent",
+      "program": "/System/Library/Frameworks/FamilyControls.framework/FamilyControlsAgent",
+      "source_sha256": "0eed205633f8da5b8af74c49df81175de9f1068aac0dfc8b7cefd23769461f64",
+      "output_sha256": "05d4aa63c0fc19c123fcbe00f48b484fcc47511327fc24cfdecde4e56e0c1ef1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fdrhelper",
+      "program": "/usr/libexec/fdrhelper",
+      "source_sha256": "eae5e55c259169751bd5ccbb8465eb9aa640906d2ebc3ff8b16f3ea2dfd68be5",
+      "output_sha256": "1933425986a8c41b88c64b164ca6c3ba8aa6d730658e6514a591df339476f4a5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.FileCoordination",
+      "program": "/usr/sbin/filecoordinationd",
+      "source_sha256": "c95e9f6824ab394bc9fd438cdd530a0c8cb68444367aa8059bcff36919defa14",
+      "output_sha256": "7b92a703dc88ed680a969dcfa2b76dd5dbaab6ecde5c78903137b65b93b224c0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.FileProvider",
+      "program": "/System/Library/Frameworks/FileProvider.framework/Support/fileproviderd",
+      "source_sha256": "06dc6d405feffafd32110424f560e2a94e59715deb994e1da8a0d0e5f62120fa",
+      "output_sha256": "33634a4b539efb8f61bf2b7ba088f01c3e017ac107005750ca60f525ddf76248",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.filesystems.apfs_iosd",
+      "program": "/System/Library/Filesystems/apfs.fs/apfs_iosd",
+      "source_sha256": "dd657265caff3e9904b5a426bae5deb95a07b063cc0eb57b56936b85ca9700b5",
+      "output_sha256": "2250fe53f975e03ff68f6f236d9bcc74bb0d4911ab3fe54680c11713582a66b6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.filesystems.livefileproviderd",
+      "program": "/System/Library/PrivateFrameworks/UserFS.framework/livefileproviderd",
+      "source_sha256": "e7d9f83e429901e4affc1affc4a18e069986a089004ca796d9c21a455817f0d2",
+      "output_sha256": "fe28ddc12b1939411f64740e7e0836dfadec5519356401dbfb9711db38d6e242",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.filesystems.smbclientd",
+      "program": "/System/Library/PrivateFrameworks/SMBClientProvider.framework/smbclientd",
+      "source_sha256": "ee01bcc5919633b4a8f4b6dacdb3b694ac5486d6857ec153569c90fc1c29b0f4",
+      "output_sha256": "02e29290ef52f7c2deb741fb61d711402a03410ab82a7381f194ad86958c315e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.filesystems.userfs_helper",
+      "program": "/System/Library/PrivateFrameworks/UserFS.framework/userfs_helper",
+      "source_sha256": "067d4949a859ad7d32bef976a9bcc02ad63eb4a4671e47a56da7c562bc43992c",
+      "output_sha256": "8992f5b128802fcaf7df92a54c6a7d4015c1927ec94ab4e068897e25bc7caf1b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.filesystems.userfsd",
+      "program": "/System/Library/PrivateFrameworks/UserFS.framework/userfsd",
+      "source_sha256": "6a363503d191823f6c1e9668c2fd3b2a591e0e4e9f0ca18fd2bc4337ee47e7bc",
+      "output_sha256": "9ef8866af4376caa9f56f5a30d1ae3dc9a52690368aa1be59873150ff7a4217d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.financed",
+      "program": "/System/Library/PrivateFrameworks/FinanceKit.framework/financed",
+      "source_sha256": "0ed573d0d1f5285eab1f44133b7112016d438ce74676852d242facf05164be33",
+      "output_sha256": "89a5237a8d7ed1053c5387afe094c2f7b015c6af324141aee901ed2931db2a9c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fitcore",
+      "program": "/System/Library/PrivateFrameworks/SeymourServices.framework/fitcored",
+      "source_sha256": "40cb49a12f5cb5a10d0a9dcc0007bb53323639ca3c06b0de28bf4b6805b96e1f",
+      "output_sha256": "02d67fd3e06676e788edf4cdbbd64b97365c6fedbf3b3a21da9aa9a71d758b07",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fitcore.session",
+      "program": "/System/Library/PrivateFrameworks/SeymourServices.framework/fitcoresessiond",
+      "source_sha256": "8347f335619af9031f5f898d26fa72945a1d44fde9b35da4622db8c681996d51",
+      "output_sha256": "424831794ed1c3468d6c7f0e959b50ff7185e3cbe1dff5b101194086f1d800e6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fitnesscoachingd",
+      "program": "/System/Library/PrivateFrameworks/FitnessCoachingServices.framework/fitnesscoachingd",
+      "source_sha256": "3c2e0380039db17a21f38af2f2c13260a4817ae04e70be9f6c871bbe839b14b3",
+      "output_sha256": "702265e97f67958e0c51c1910970f93f4be9bf35de3ff379bee9e914cb03d8a3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.followupd",
+      "program": "/System/Library/PrivateFrameworks/CoreFollowUp.framework/followupd",
+      "source_sha256": "aed55ae41254dc1af415c708f216086720bc81d6ed25ac2ccb722d372c5f250d",
+      "output_sha256": "dc4dd7efc7c6459adbb15b7423aed3a098b5201171743161ae4f260b9963db47",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fontservicesd",
+      "program": "/System/Library/PrivateFrameworks/FontServices.framework/Support/fontservicesd",
+      "source_sha256": "1040bf9fa1a1416e615130280d28a5c96317be1290993d0582f90a0bce1c351f",
+      "output_sha256": "baee79e8f1f556910ad8af043b6a139e2deffc8fb33d4105fa4cb67d97969303",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.fs_task_scheduler",
+      "program": "/usr/libexec/FSTaskScheduler",
+      "source_sha256": "20f66e7a7d6bdc5b690cf2d1f5941e7b10bbf1ad970fdd20bc91dc8e0183f9f6",
+      "output_sha256": "d4671c2e0bab458f911c2427776af16c133eab5d3886e5c9104f12c568e3ac81",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ftp-proxy-embedded",
+      "program": "/usr/libexec/ftp-proxy",
+      "source_sha256": "4976b45ca47b3a91249c0bad17c8eeb2c6cab368b937fb1f61e81f6d3602c6b5",
+      "output_sha256": "12f3a5fe3dc6c52bccd0f5f60af03d31c9fa2c4ad235c78dea05b6207f061bc9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.fullkeyboardaccess",
+      "program": "/System/Library/CoreServices/FullKeyboardAccess.app/FullKeyboardAccess",
+      "source_sha256": "59fb3eef7270ba344a4fa8115b2de4dacd9a8ef74a12fe4783d029d45f124b1e",
+      "output_sha256": "73d931f40f1abcda24abe196ed178b1d00b96418ad47029ebed947f28ba072b1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.fusiond",
+      "program": "/usr/libexec/fusiond",
+      "source_sha256": "70b1f424becf2e46da5377cce7fb04b3c2c1261736ebf7f991de19fb40ba17b3",
+      "output_sha256": "202503c0ccb300a7ffc1c28fcdc63da09809eb48073038b527226d10e1717319",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.GameController.gamecontrollerd",
+      "program": "/usr/libexec/gamecontrollerd",
+      "source_sha256": "6586bb16928c7231dbfa7d72867555714487b2f9b1c9abbacb2ab779cf5e5c36",
+      "output_sha256": "057c1591aca3f713be9a4d942f50ad902874ce54556fbae80f37ceeaa7630be5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.gamed",
+      "program": "/usr/libexec/gamed",
+      "source_sha256": "45ace63febf758133773593e317a802dd1a8db4bf41cc2ab4ce1078b9e09d56a",
+      "output_sha256": "91c671647dadc8374e4b92c474feae748cf05f824d94272b562beb3d65ae23fa",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.geod",
+      "program": "/System/Library/PrivateFrameworks/GeoServices.framework/geod",
+      "source_sha256": "93415fec84c4b4f3d092917539cffa4a3eea13f88edf1e2ecde6468f1df04ba6",
+      "output_sha256": "9db8f90339064c22b917ac6998a1149692d0092408910bd724361eecf129da9a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.gpsd",
+      "program": "/usr/libexec/gpsd",
+      "source_sha256": "2b48615ce7c02277e7c13b96ddddcf74401e3bad31d4723bbdfec5388c520fe5",
+      "output_sha256": "e395547c9e786c5ef6394a1111757d36e7e6b31571da5e10693186b91f1afab3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.griddatad",
+      "program": "/usr/libexec/griddatad",
+      "source_sha256": "4f42d7dfde00b409d73e7afcf8c7eda7355629c9233e632d282dd11ce7ae871b",
+      "output_sha256": "14e596548b10e1dd5bd85ae6e3d0af28e0f8f8b61b7b18a720c3f22295ff7fb7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.GSSCred",
+      "program": "/System/Library/Frameworks/GSS.framework/Helpers/GSSCred",
+      "source_sha256": "b4a748fa8e9e5ca8e6718f6ad8da70cc9da7c7dabdad90da1e47556c75c7653c",
+      "output_sha256": "d7e089a142a0db844fd3f502608d685e1d66dd3548786cd8ae10c4454411dfdb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.handwritingd",
+      "program": "/usr/libexec/handwritingd",
+      "source_sha256": "4bd9e6f3e677b17ff90a3756822d99a47971eec48acc334bf999ef882c0e1489",
+      "output_sha256": "8514d2c273a8f9e3028b39e384c3484c81890c50edbc2222e8aad2749e9afa58",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.hangreporter",
+      "program": "/usr/libexec/hangreporter",
+      "source_sha256": "1ac5c3f712e847526fce2f837865cc02a30fb0ab2d636ddd14fcb1655284edc7",
+      "output_sha256": "d44ac5ba1a4aced9be7ef5fba5e0e051e4d78c31325bb4aa35896bd894ddb9e1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart WatchPaths"
+      ]
+    },
+    {
+      "label": "com.apple.hangtracerd",
+      "program": "/usr/libexec/hangtracerd",
+      "source_sha256": "824eb4c365fafdc0a9c3e088f53782791d37ea669746ee662e5f9c4437be6c1b",
+      "output_sha256": "e51fcff1ed9786f3e817cc001cd976d013bdce136baa09166bf722a361ab17ff",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.healthappd",
+      "program": "/System/Library/PrivateFrameworks/HealthPluginHost.framework/healthappd",
+      "source_sha256": "5c0e540d4bcde5caf065604eb1043acf96a7f6407b88d63b2199198b3963140c",
+      "output_sha256": "e0e29f54d516c54ddd7a613f1d49de890010ac1ff8682c82e2b5be7f5d6a8ee3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.healthd",
+      "program": "/System/Library/Frameworks/HealthKit.framework/healthd",
+      "source_sha256": "fe3b919fd1f1fb66e60d590ce2b54ec1a6ec2018547e1d5f0d47b1f9e70f0c70",
+      "output_sha256": "a9617421e44d090b454c4f219ebcc25bf70cb104785264fa4c1a05b30b5f50eb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.healthrecordsd",
+      "program": "/System/Library/PrivateFrameworks/HealthRecordServices.framework/healthrecordsd",
+      "source_sha256": "4fef907a4a089b0feec69bb5d9b7ebceadf4b18c270266f2dae762707148e42e",
+      "output_sha256": "cd9e5a2b80e56c7d837e40fc38109d89eefcd3cf56f80080342afdbcb5dc0a6b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.homed",
+      "program": "/System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed",
+      "source_sha256": "984521a972ec17c595426bf6a1e9e9066319e05cb6eeaf9b0bb4e16ff8bf7d5e",
+      "output_sha256": "1e60940ca3f8ade4acf2fff3e69443e65d7da575db492a57c4344ef343cb51d1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.iap2d",
+      "program": "/System/Library/PrivateFrameworks/IAP.framework/Support/iap2d",
+      "source_sha256": "8b5eebde24635444d3487556f5682859e4877aa6ad1461503f6f1365313c9843",
+      "output_sha256": "53dbbdae9ca1248b7487e4f52be4a5b2bf526a48f66e9bd446739f1a6766985e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.iapauthd",
+      "program": "/System/Library/PrivateFrameworks/IAPAuthentication.framework/Support/iapauthd",
+      "source_sha256": "029ecbf0debe827fe33bfbd9952136dcb602c39e9a1f32bfb387344869b7e8a9",
+      "output_sha256": "d7fc33eead0ebf210b1629956b416ba15bf664a2693d5af67998cce79f0dfaeb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.iapd",
+      "program": "/System/Library/PrivateFrameworks/IAP.framework/Support/iapd",
+      "source_sha256": "0fa59887ecd76142673f9f68de669589aee5094447f01eb830470d9da5eb5d65",
+      "output_sha256": "535a58a3fe573dce98eaf96f7fc75a77a520fce9498df24ac2418b0e8484efd5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.icloud.findmydeviced",
+      "program": "/usr/libexec/findmydeviced",
+      "source_sha256": "48225cb4e5d828c0614b9324abb84eba74cff8133769fa4d0090781592618d86",
+      "output_sha256": "0521385fba13c110cf5951c00ec35c4bce7a668f32084dfcc7e67749adf402ea",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.icloud.fmfd",
+      "program": "/usr/libexec/fmfd",
+      "source_sha256": "90d24a86c319fb2c6fdcf946ab8c141e8990f6e17266566bdfea0b071bbd9fec",
+      "output_sha256": "6e24cdf098b0c8f6e387d83cb304c874992f095c884a2c9b26c594167e36afec",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.icloud.fmflocatord",
+      "program": "/usr/libexec/fmflocatord",
+      "source_sha256": "6a70265b90023ca754ea7b280b31edaa3337812fd7b3ba7158cc21a9b4210ea6",
+      "output_sha256": "6289d00cd674d8f07909bddc04b47c080542fc9380309ba0c52ea4d67229f8ee",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.icloudsubscriptionoptimizerd",
+      "program": "/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/icloudsubscriptionoptimizerd/icloudsubscriptionoptimizerd",
+      "source_sha256": "200b0f2f65f040c73e5474c5f7c9f2e418a76d354913276f09b1788dc66999fe",
+      "output_sha256": "192e9a699e917680de4ec3f3c9a88a5ae8f4e36677ed09d14e0db85f10400e7b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval"
+      ]
+    },
+    {
+      "label": "com.apple.idamd",
+      "program": "/usr/libexec/idamd",
+      "source_sha256": "a90320f06e2efb25ff69d22e31dd53a26443927bb6d8772c96f3af10a067ee63",
+      "output_sha256": "e31e8e8f7b27b70b3b12f9288d0c135867306c82d6ce02c7b27663a57aec0869",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.idcredd",
+      "program": "/usr/libexec/idcredd",
+      "source_sha256": "823ea4a758556539e4113aea9ab1aade2ec8926d97ac0762df5839a3b1fb46da",
+      "output_sha256": "c3cb2de98a324b490ba310637c41c3a2971eaf8f0ef7b723cd59dff7e5c90f0f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.imagent",
+      "program": "/System/Library/PrivateFrameworks/IMCore.framework/imagent.app/imagent",
+      "source_sha256": "1a30beffa70d4242d5bdc60623e68bf3aebdc47c413e6e60434d8643add9323c",
+      "output_sha256": "3d636fd84cd528f57187896e1353af0aa86ff1142d58b45af58bc347641d628e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.imautomatichistorydeletionagent",
+      "program": "/System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryDeletionAgent.app/IMAutomaticHistoryDeletionAgent",
+      "source_sha256": "df50b0fff23e311636ce895f3ae317ca5dbbf1110d5406944c095f6354b20686",
+      "output_sha256": "808a5e0cf83f7d2a0d82602fd6ec21f682ab4b8e187932e44f272ac668d7b3bd",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartCalendarInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.inboxupdaterd",
+      "program": "/usr/libexec/inboxupdaterd",
+      "source_sha256": "c9ceb4d2bd223916b13edc88d788d3a61a7a9904134bbef25063be4af39debc0",
+      "output_sha256": "24d3bcea95232f02df91790cfaf3d02233dccf8cfe0954367fd7c0debc288db0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.ind",
+      "program": "/System/Library/PrivateFrameworks/iCloudNotification.framework/ind",
+      "source_sha256": "57137024d7fc61f8a89091e116c9b7a02b54f4e65c81d670711eb63453905a5e",
+      "output_sha256": "b9c60fbeacb7c65450a1f0b4db009d97345f80e3cb72481f8ca5c8cd6d1e40e7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.installcoordination_proxy",
+      "program": "/System/Library/PrivateFrameworks/InstallCoordination.framework/Support/installcoordination_proxy",
+      "source_sha256": "6423773b18524bbd81e4f86d810a3e5e209e0ac40ca7f0e2414ad0fb10d724d4",
+      "output_sha256": "52b0ac30321356303760598ea97c3867483ffe2968dbff61588bc9981d20ce19",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.installcoordinationd",
+      "program": "/System/Library/PrivateFrameworks/InstallCoordination.framework/Support/installcoordinationd",
+      "source_sha256": "c4cc7f8a5769b0902f781e7a48cbb9b10f8a5fe8f8e84b60af039ef08e209a27",
+      "output_sha256": "80166c7360df5a970b5262d3dd34ce64d67081272c08e0fc115568d6ce20f102",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.intelligenceplatformd",
+      "program": "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/intelligenceplatformd",
+      "source_sha256": "48292acb6db93b5afc3db03902c6a5e4941b9114c53107b553376a85f346f3b7",
+      "output_sha256": "4e08487153509c47c012cb71211166793a7a0f96fc208eaf6bfdf4864810b7e5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.IOAccelMemoryInfoCollector",
+      "program": "/usr/libexec/IOAccelMemoryInfoCollector",
+      "source_sha256": "6f4eb3d8c36435a6fe178e7be7fcfe7ab470d3004920596fc831249965cd1fa8",
+      "output_sha256": "b8070e98dc3ff481807529d151aae9bb09bafbd8c10096bad5123a1ac8a686b7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.iomfb_bics_daemon",
+      "program": "/usr/libexec/IOMFB_bics_daemon",
+      "source_sha256": "9e2149fbbacef638480d1f1c5e91e342b0f1a08a9ea3940ef543c226106fbd75",
+      "output_sha256": "622eb87a8d2bf98cfecfa519fea63a8d62cdf1aca06057a54ad90dbceb2b97a6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.iomfb_fdr_loader",
+      "program": "/usr/bin/IOMFB_FDR_Loader",
+      "source_sha256": "48593c0ecc17415bd8f02c4f4667c0de497923f68f3545a7c530b4f2cde044ee",
+      "output_sha256": "e83b8b6dd44cfa1d96090b399f464879ea8b2f158c099c3a46bbdb16d54dfa6d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.iosdiagnosticsd",
+      "program": "/System/Library/PrivateFrameworks/iOSDiagnostics.framework/iosdiagnosticsd",
+      "source_sha256": "3c636daa0eb390098345cf889d180b693010aeda24d952c37207726b102b01d5",
+      "output_sha256": "3fd425c6bd7fc302f8115fc0c7a57a759ec92589bb41e21d33f5ff59d65bc55b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.ioupsd",
+      "program": "/usr/libexec/ioupsd",
+      "source_sha256": "d3ff2d04bb16fb7f19fe25e6a95a6ae863056ade1394f00a328b296a9fb4ca24",
+      "output_sha256": "bdeed3bf1d5d9467c862f1067ef9b9582f885b9d08799fb9eb86fb0ca4baead2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.itunescloudd",
+      "program": "/System/Library/PrivateFrameworks/iTunesCloud.framework/Support/itunescloudd",
+      "source_sha256": "f3443e72e20e7ceeea8412cfa90dcb2b4c5aa5d880f3eca3a74c83626b625b64",
+      "output_sha256": "f1fa4d40bca096b828fa9e0afa0563c572a2ff43a27cac23a327c1b357f646e6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.itunesstored",
+      "program": "/System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored",
+      "source_sha256": "0e03dd2cfd806a0abca8a4ba704a74ba547fdd59668d3482f3271fb760b42c0a",
+      "output_sha256": "2f3e9ea84c7e6a8f923fa55f531dd17e2bc13d0340d0655716006ab85f0a142d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.keychainsharingmessagingd",
+      "program": "/usr/libexec/keychainsharingmessagingd",
+      "source_sha256": "ace34129f7e829cd5f1fecaef357d7637d70efb71c77bb4fb9ff69be7aeab4b4",
+      "output_sha256": "4d657f78af135997044f72cad0e62f62d9a72dcb05fd05f676f35cf949d96825",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.knowledgeconstructiond",
+      "program": "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/knowledgeconstructiond",
+      "source_sha256": "3b0978ba045452db382cfb667fe4df77ddb3e728a13ae497e3de9478de35a74e",
+      "output_sha256": "3ab9783711cc3c41a2fb6f384bab05ca8bf5b3f8d9edb5e26ff0d41a8842751b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.languageassetd",
+      "program": "/usr/libexec/languageassetd",
+      "source_sha256": "efa4534728d1872de99a90ec21c1b37e8679573919a56edfd151cdd9743b3d37",
+      "output_sha256": "8edf7de1a0396b44991381b372136c22ee9015c1c65a7d9a9a422253c6bad582",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.linkd",
+      "program": "/usr/libexec/linkd",
+      "source_sha256": "61601b00963662b511c7ee897901657f1898bfe1c302a81df4ab10502c6a255c",
+      "output_sha256": "39c5283a27f1aad611cc0cd35cd7c6d9c757597ef6b11ca568a000b384504d13",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.localizationswitcherd",
+      "program": "/System/Library/PrivateFrameworks/IntlPreferences.framework/Support/localizationswitcherd",
+      "source_sha256": "92e0234e5c1051b2810edc5ffc32920f1c5285a91e4256783a3f8feee19cd9ee",
+      "output_sha256": "aa5d255860ada249af8856c437aa82f8de3cd7b75268534655eecfddb7094b5e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.locationpushd",
+      "program": "/usr/libexec/locationpushd",
+      "source_sha256": "4bfaee434c2be27a9b70e726f6ee35e412f473ab2a7cf978ade0bce332753558",
+      "output_sha256": "5835755380bb0cc1d383c5791103bababecdc271b83abc25a3b50e8233eac9eb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.lsd.system",
+      "program": "/usr/libexec/lsd",
+      "source_sha256": "1eacc2cda1535ee68e7f30efc97214e0365d63c68e033b9eba97f2eaf60a1f03",
+      "output_sha256": "99dc302a61fbd6d197563cd858b906c1912545e14eec1311dc72417098116eff",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.managedconfiguration.passcodenagd",
+      "program": "/usr/libexec/passcodenagd",
+      "source_sha256": "3e29b5ec6746be6809fe9390dc59b5848b7a281e374bd5ae0450c52a50942f32",
+      "output_sha256": "19130ceb44f9d2549ced06959079b5e756f90467c4476a0e0e0a63cc55771365",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.managedconfiguration.profiled",
+      "program": "/usr/libexec/profiled",
+      "source_sha256": "223f634a0102286459ccbd5c70071f394c47e4db6f8c07ea34c5694518a9869a",
+      "output_sha256": "6ce6fe95fe3c8e2511f207f2d514b2603fc3c59d81bdd08c7b61f89b1adbc1ea",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ManagedSettingsAgent",
+      "program": "/System/Library/Frameworks/ManagedSettings.framework/ManagedSettingsAgent",
+      "source_sha256": "822292d3630050785fbad29fcfa8ff8b6bcc9ab83e29c0bfc11ab46440e0ec67",
+      "output_sha256": "2805d96067233a2d41969e14ccac4aa3ebeda52d9579d1393286fdb0baa7b141",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.maps.destinationd",
+      "program": "/System/Library/PrivateFrameworks/MapsSuggestions.framework/destinationd",
+      "source_sha256": "b618978ff37a655c170d14b28cf377c7d3548a9a770549687cc33e1736f7a35b",
+      "output_sha256": "9b17d72be75bc4b871c7769db91051233cf16adfcc5830dfe7de6f393c17ac36",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.Maps.geocorrectiond",
+      "program": "/System/Library/PrivateFrameworks/MapsSupport.framework/geocorrectiond",
+      "source_sha256": "9d1c47c8c65ba728d8d0f94b9b84d94909db707be758fde8ef1c3d362a0b17a8",
+      "output_sha256": "b2944aed16442a65dc72da0fd6bcf37fa6aea42bd18b2ca3c0a18e20b074858d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.matd",
+      "program": "/System/Library/PrivateFrameworks/WelcomeKit.framework/matd",
+      "source_sha256": "94fbeaeb23d5bc1a3e273dc8ffeecd75c200481ed0f6dbf0762c5b1458b5224e",
+      "output_sha256": "e6978f6da0dbef4f283bb826de427b955f2eac2451506ef8d75625ec2b3984ee",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mdt",
+      "program": "/usr/libexec/transitd",
+      "source_sha256": "9f52fd7bf74d00baf5acbc3c8a02f42773760f0daa9504c9f56d85d7cca2a63d",
+      "output_sha256": "1d0d456fdda54fdd833c38ef22fb3b65b93d14a56a4920c666cfb54425921249",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mediaanalysisd",
+      "program": "/System/Library/PrivateFrameworks/MediaAnalysis.framework/mediaanalysisd",
+      "source_sha256": "f8fbfb38457dd7b281e988ddea16ed92c8eb75281bb63be25331e1bcaa2f57ba",
+      "output_sha256": "11b526177e1ba1ed59ca2a9213c3ac2ee15aa8c3a1b5aa06bc5a89c0db1e02d0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mediaanalysisd.service",
+      "program": "/System/Library/PrivateFrameworks/MediaAnalysis.framework/mediaanalysisd-service",
+      "source_sha256": "0e2a6e9c6d1b5373b2c5351a836f733c406cbba419b060cafbbf439e9cc0db14",
+      "output_sha256": "d453e4e5aefc5a3686816e24b80ffe3b35b213d855be7635e9d0bc8e293c8e55",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mediaartworkd",
+      "program": "/System/Library/PrivateFrameworks/MediaServices.framework/Support/mediaartworkd",
+      "source_sha256": "c8fcb8484f94c4e53a23a5f12723ccc401ccf2660a9c0b6d1cc029ee387f3b06",
+      "output_sha256": "6cbe317f3edec85a31c2f5868153ba80fcf59dff88938db80e533bdcfdc38dcc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.medialibraryd",
+      "program": "/System/Library/PrivateFrameworks/MusicLibrary.framework/Support/medialibraryd",
+      "source_sha256": "f36678024d16dd11e7680ef58675de979f9519bd9ed169c52ee7a43fbf275edc",
+      "output_sha256": "0bdc918aba1c01046c4601d29b0fdce5f21958725d2f124b9786488e00ebebbe",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mediaparserd",
+      "program": "/usr/libexec/mediaparserd",
+      "source_sha256": "50ec0c44be027549dd59a7c491253a94d9a801ab46e51babbaf898e74c3341dc",
+      "output_sha256": "5c49954590c1b02dd9f5a4b9e6c84c48b69cbf9e17b7e4ce760c1543e5eb56e3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mediaremoted",
+      "program": "/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted",
+      "source_sha256": "b2a4df504309131322d78809aba29b99d42a221afbc2232222f5b86c1ae3a437",
+      "output_sha256": "820d5dce8e5f19fb03b5f5fed3885f04912555b7a1340f89fb499830fb096dc2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mediaserverd",
+      "program": "/usr/sbin/mediaserverd",
+      "source_sha256": "3fb581d24c5c4a8aa5951331405586388436d2df3ec3cccf781ac179bb543ea3",
+      "output_sha256": "3294e3978bb90bad8c1a813cff29c025d0806397abe28ecfae0e7921ccd164f0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.mediasetupd",
+      "program": "/usr/libexec/mediasetupd",
+      "source_sha256": "70c572873402677c549d1a2a0bbffb21112015ca4e05611e15cd27eb6e576e98",
+      "output_sha256": "faec670d76d22e6ee7083c2739f39b71058416ca9348caff2b343a7349666c9c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mediastream.mstreamd",
+      "program": "/System/Library/PrivateFrameworks/MediaStream.framework/Support/mstreamd",
+      "source_sha256": "5f109ae49447e934190c9a0eca14179a2cda303eaafbd6e42094cd1fd78af56f",
+      "output_sha256": "489fb118a099a70bebd28c4345dad7abec1b479f9d92de79705f4c8e0f3b7090",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.memory-maintenance",
+      "program": "/usr/libexec/mmaintenanced",
+      "source_sha256": "61b43cec77e5491392bc6a235e1dbe2b29b7d985dee028eeaa06634a8ff4673d",
+      "output_sha256": "a01cafa400c0499d23ec0af6459e398d16320771ec1007dea4ea22115e780027",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.merchantd",
+      "program": "/System/Library/Frameworks/ProximityReader.framework/merchantd",
+      "source_sha256": "076409d99100a358cf31a16c52dd5e8d2ac21368e9a52827c7501f8fbbf4c84b",
+      "output_sha256": "c27447bd35ef74bebb0f686bbef2f488d863e917e69bf8d5322b53f02bc3cdba",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.metrickitd",
+      "program": "/usr/libexec/metrickitd",
+      "source_sha256": "1e392a49d36c1e975443ec7fe81461b3633a35c14ca8f460e653aa84e36fcb4d",
+      "output_sha256": "3c285221f86635c7001f056f612a8275b5dd303dc7057260486c2b77d60a8be8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.misagent",
+      "program": "/usr/libexec/misagent",
+      "source_sha256": "556e34639714b44f441643e58b8f79c303582041eac97ec5ce74dd415d440f19",
+      "output_sha256": "640da5a2feb10c5222f6eb347fd90d0ede1596e6632a94a3da7d9f7997560a5c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mlmodelingd",
+      "program": "/System/Library/PrivateFrameworks/BehaviorMiner.framework/Support/mlmodelingd",
+      "source_sha256": "dddae79eb42860467ab7d195139e30273832948e88804dedf7a19ed50e3a213f",
+      "output_sha256": "865153554fa34fea9048b0834609005650f6cc0558df6d72de1e5d8c471024cc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mlruntimed",
+      "program": "/usr/libexec/mlruntimed",
+      "source_sha256": "01a7e6831f98c7e7bd611171e1681380b0cc0a19f9871741ffcdb3198ba6d67e",
+      "output_sha256": "fac74d396126c7a8826e93731e029ffa8798032b99f057ad5a12216ef8386809",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.assertion_agent",
+      "program": "/usr/libexec/mobile_assertion_agent",
+      "source_sha256": "8a8caeb99fe9527816fb621875d52ae6d9a8a665339bed276849cbe1c44c1f30",
+      "output_sha256": "3e950f44060ceb71a89fc0cfbc116da9e0504e6219e32847205637cd745ce678",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.cache_delete_app_container_caches",
+      "program": "/System/Library/CoreServices/CacheDeleteAppContainerCaches",
+      "source_sha256": "acf64124062d00440f6726d40c9f5986239d69d70447c8615e0fdaffbbcd8873",
+      "output_sha256": "bc2f5d04a83d02db5e5f9267c07ba30e6c4afad4619c440fdebb17b46754b37b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.cache_delete_daily",
+      "program": "/System/Library/CoreServices/CacheDeleteDaily",
+      "source_sha256": "02c8953a24b9037493d71239d31a3838ab7ec3daa09c08fa1059bf7501c01e6c",
+      "output_sha256": "830c75f31c137c92fe979101f769b8f42672bab04171ae64254d54024e3901f4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.cache_delete_mobile_backup",
+      "program": "/System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackupCacheDeleteService",
+      "source_sha256": "c838c072873f97d562e98d38fd9ca41016337750f9b9718bfc23154faf74d6a6",
+      "output_sha256": "450958cffbfe57ef06210aa80239ebaac48c301df53cb9a7969ed41307c6b61a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.heartbeat",
+      "program": "/usr/libexec/heartbeatd",
+      "source_sha256": "fd3461386a081e53c3baf6552620d464d200dd5b00cfddc28eb08dea6a2a9e32",
+      "output_sha256": "fe68791c6de13ccb07670b62735b675c7208e17caae79f7f3b7359f42e46d88a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.house_arrest",
+      "program": "/usr/libexec/mobile_house_arrest",
+      "source_sha256": "f52c3eb9a4cffa472513baf2809651175e6a1d42ed5744c1a55907a2186ffa8b",
+      "output_sha256": "856b18b29495531167709e70084c97f26dc35ba2bea15af2d948b29bfe8fc5b8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.insecure_notification_proxy",
+      "program": "/usr/libexec/notification_proxy",
+      "source_sha256": "09bb2a6037483e0f8e35c3f80e23d3c2f5666af19bb4ce7ed466ec7eab1eaf9a",
+      "output_sha256": "56081819c2423b377ea681c17d4e3f4e658db37fa1aede02e1e900b772bdc38e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.installd",
+      "program": "/usr/libexec/installd",
+      "source_sha256": "4abce2ac51d7fe1bc4a6ec9011c33b3e0a889313f8b7ab09326846bb145edb2d",
+      "output_sha256": "9277ba9b1b915001556679285aff128ddd61865d4f6440b75468cdcad33b3dc9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.keybagd",
+      "program": "/usr/libexec/keybagd",
+      "source_sha256": "2271bbe918b68994cf7daa7534649912d08377efef08e9da47b11927c2daf8fd",
+      "output_sha256": "784afdf4eb3bef0e0e50026d28606e1634ed4a3e829023d34d34ba24d0c6312a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.lockdown",
+      "program": "/usr/libexec/lockdownd",
+      "source_sha256": "6a0052d65c58a6a39816f30f34794dde27b63bff97eda1ec82ba21669789b8de",
+      "output_sha256": "fd4f8f9b5df9d2dc94a70ef7e7e92f02d863bf834c41a3801fc284b38146870c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.MCInstall",
+      "program": "/usr/libexec/mc_mobile_tunnel",
+      "source_sha256": "55deab547f6ea2468c571e1527466540dfd63b02b7d66362b532437b8c69b423",
+      "output_sha256": "126aa4d5ca43e4bf5ff0a9d159b08a158fb2b1a261d4a3f14bc5d9ba978e587a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.notification_proxy",
+      "program": "/usr/libexec/notification_proxy",
+      "source_sha256": "8c29f471d1f99181b8041a165c9d09afec625ce53204adeffd73566cb8e8d9f6",
+      "output_sha256": "99106a197622ecc206f63b523d5c3b8be5542019cc7d06f2ecf7e8c913b51c38",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.obliteration",
+      "program": "/usr/libexec/mobile_obliterator",
+      "source_sha256": "6ca3027d60d1f8622aed4c67296343adedb606f2ee6b1118d6e4fa5792579f84",
+      "output_sha256": "4f9973715b26cd05f834dee6dc4d393622026727c370f9bc4df7381e4bb0e8cd",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.softwareupdated",
+      "program": "/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/softwareupdated",
+      "source_sha256": "2a34ef56c2402478a525bf4407a76692ef8699e61762139541ea4c30d20800f7",
+      "output_sha256": "b86de7f9ffc4a8de650044f6fddad18840c0c9790f6340a4042f613cac6f337e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.storage_mounter",
+      "program": "/usr/libexec/MobileStorageMounter",
+      "source_sha256": "c9bbc7e6221f6e34eb52c292a2b4e9725a2d19d7c57a9598a3c1bc2b83d56c44",
+      "output_sha256": "cbdb265b0e1a3adffd08b5c7f309129226d0fb9bb141b0550eada03976070689",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobile.storage_mounter_proxy",
+      "program": "/usr/libexec/mobile_storage_proxy",
+      "source_sha256": "c4b600f3b64aa8dc87d2ac533f0137d592666d37449735b06362d3c0f5e58538",
+      "output_sha256": "3312b087cb36bd6b0d69b1be868a94a8244144507158337aa34b5196f82616a7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobileassetd",
+      "program": "/usr/libexec/mobileassetd",
+      "source_sha256": "a3f8e5dad9a930821caa0d431e3cf00ef01790366871ed0ab80f733e1e5d032b",
+      "output_sha256": "7811962716ee19782d30209416f9d346d975fdf34b8e73403af940995ff1abc8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobilebackup2",
+      "program": "/usr/libexec/BackupAgent2",
+      "source_sha256": "3597d074f90cb4d00f01c64e65d115defb5295629d06cdb9a42b1d5faf9898ce",
+      "output_sha256": "edbee81c673ff695c7e2bd519f680bb33b6cc8245b5ffda3f552a6bf09ec3593",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobilecheckpoint.checkpointd",
+      "program": "/usr/libexec/checkpointd",
+      "source_sha256": "994d8e097e3c1c25aea460e3faee8d3c67ec74b74a9fe7774a5bd986d076b7bb",
+      "output_sha256": "22c8917ca093b6adb021ba41e1e6b225e014a72278e5502df99dec4fc66e957f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.MobileFileIntegrity",
+      "program": "/usr/libexec/amfid",
+      "source_sha256": "1d31589f510af1e2ddaae1c7fff6b60da113ce2829d976556bae0a2c0c0be295",
+      "output_sha256": "fff7af11865e49088343554e8f67212dcbc720cd1dd924e820a5b249081e3ef4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.MobileInternetSharing",
+      "program": "/usr/libexec/misd",
+      "source_sha256": "62ac6eb95d64ce57fcb1f270db4adfa05b8a0e9588092e10f1ad18e301c1a658",
+      "output_sha256": "2669e2aeb0dbcb96451f067a8cb4f190229a95964e7d9db06ba630ccbc5968ed",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.mobilerepaird",
+      "program": "/usr/libexec/mobilerepaird",
+      "source_sha256": "580ed25a461e7e7f131ca7059ea54afbf57ff540593af6334d016ebae6172e67",
+      "output_sha256": "3eade9c556cf6621f5a2ef6f8dd3e056785c500e9539c52f5046e4c85406232d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mobilestoredemod",
+      "program": "/usr/libexec/demod",
+      "source_sha256": "0cf3ee22546f45e87619bbe74704e4dd990290d6954b354ca40d4d46d5b9457d",
+      "output_sha256": "73c8a4022e175d03c6c46d03869804b63db6cb5a4bce0396c4651be2c1b6908c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.mobilestoredemodhelper",
+      "program": "/usr/libexec/demod_helper",
+      "source_sha256": "a3979854ecd2bc7edebab0f17680099d5eca0950b752f265f7e4114318a7e5a8",
+      "output_sha256": "5de43d0912cf9d88152c2a64d38dd8360e4f7cb2608cbb9c0edc24d4eb5dd965",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.mobiletimerd",
+      "program": "/System/Library/PrivateFrameworks/MobileTimer.framework/Executables/mobiletimerd",
+      "source_sha256": "dc5fe339b7663ebc5996e8f940bd9b890edc5e36df24df1ac29a47b4919f0c0c",
+      "output_sha256": "3cccad90e7fbefb4c94ceaf0c462fcf73133ff95cb961a19d7f4a2a19764ef03",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.momentsd",
+      "program": "/usr/libexec/momentsd",
+      "source_sha256": "903022e9f159cb2061cac2d4c3faae9898dc60bca063c081960194943b651978",
+      "output_sha256": "c534e4dd0d331cbb391d869225e6c8789dd11a3c86c04ec2c0f6711f95c2a246",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.MTLAssetUpgraderD",
+      "program": "/usr/libexec/MTLAssetUpgraderD",
+      "source_sha256": "6ffa6a483b3ae60dc83bb1255b290ab0e9689e4dba22074fd4f28a891f2c4b3d",
+      "output_sha256": "8b439a82a5ff5e7e9deb70c87eef3e952219cffe64a33ea05000a12b63c8ce72",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.mtmergeprops",
+      "program": "/usr/libexec/mtmergeprops",
+      "source_sha256": "9eb50c1637972efbc4e4a34d646ce961a19ca2a5d3c83ff097a185220c69452e",
+      "output_sha256": "bd8060d6de568334c77467b2f362180bfffc292b2d8c910c9c3916544da6bd5c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.nand.aspcarry",
+      "program": "/usr/libexec/ASPCarryLog",
+      "source_sha256": "e75b1dab7df65edaf9e55895737d68a94f3b5ce8f69768c8758b62e6b42ff867",
+      "output_sha256": "405167062304ddb524bf3342e8b4eb5ce8339756e74c717e222e7487ed00a5c2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nand_task_scheduler",
+      "program": "/usr/libexec/NANDTaskScheduler",
+      "source_sha256": "6c808f15719fad13f5ae0da4e0b2cb8173a83c875945ea35658445dc06760820",
+      "output_sha256": "2f546e634de29971ff15a8c5177440d2f7fe07c991d8d8b6e08afd13001fedc5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nanobackupd",
+      "program": "/System/Library/PrivateFrameworks/NanoBackup.framework/nanobackupd",
+      "source_sha256": "ed08903f1c8f58f73de2b5e79978cd8d7bb809e9c85d56639f50803090478eb6",
+      "output_sha256": "870a7a7b109ff9466f855bfcdd6aa443260a270b8ff4d20ef2f820ad4392998b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.nanoregistryd",
+      "program": "/usr/libexec/nanoregistryd",
+      "source_sha256": "87615cce4660f4a246ae8ddccff524a369512ac300cad032fffc4e85516b135a",
+      "output_sha256": "c7ab4478e8a06868c2e20c9cb5e6cdf8def0cbfbc6b2492c27704d90b6e788f3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nanoregistrylaunchd",
+      "program": "/usr/libexec/nanoregistrylaunchd",
+      "source_sha256": "b552a3a90bfbc773e53b08f1c52ac2fe7baccf67da2946cf6d201c7f9efd60f8",
+      "output_sha256": "7b94e5f890e38a1d52529b51d39bca0e69c1454dbcdbd48300b555e8e106bb90",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.nanotimekitcompaniond",
+      "program": "/System/Library/PrivateFrameworks/NanoTimeKit.framework/nanotimekitcompaniond",
+      "source_sha256": "2f3e3e81fa56861a0945f1d72f68483a5aec121024966112303007dc01fe4960",
+      "output_sha256": "7f0f0332999b57b934b7bed5300298a76ed5e36c45c6cef13ccc06c264505f4e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.naturallanguaged",
+      "program": "/usr/libexec/naturallanguaged",
+      "source_sha256": "8e041b7b9efcd6376ea44f5a170b822f0c49105f0da673cef68d836d28825cef",
+      "output_sha256": "d4145b2417f79aa82bf6b49a194532129d323b5452b47cd434247428c9737e9f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.navd",
+      "program": "/System/Library/PrivateFrameworks/MapsSupport.framework/navd",
+      "source_sha256": "c05a29ba7e667e0fe0f2f79fd47a5dc71f1cc3276ea859f38c6a8b37f85d1ab0",
+      "output_sha256": "ae8f9ea1f732b1e5f5c483790cf9dc6b725871a4f53811f6dc92855831460748",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ndoagent",
+      "program": "/System/Library/PrivateFrameworks/NewDeviceOutreach.framework/ndoagent",
+      "source_sha256": "676b1e85a2ac8d842ecef806bb433606b07556293c312ee339f1d94d34ec775e",
+      "output_sha256": "354499a3a61cfba2a24710f72bf65a1584df4d356836913df7c585e602590eb1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.neagent-ios",
+      "program": "/usr/libexec/neagent",
+      "source_sha256": "2a51a82308745fb59b781ae57df2ac27756953572742ab3d1126286d6284fffd",
+      "output_sha256": "a8017d3fb73ba92dca57a8d728abadb9fdda07ee0fdcca0c8b0c1224ea36fe3f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.nearbyd",
+      "program": "/usr/libexec/nearbyd",
+      "source_sha256": "4750f22d2bd9c31e427aad204e0307e3ffeeaa8a87f6165ec6ccfec74b20fdd6",
+      "output_sha256": "df6736824bf97847bba30307ab0b0c789177346a6866d587cc964c4618f75c18",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nesessionmanager",
+      "program": "/usr/libexec/nesessionmanager",
+      "source_sha256": "b740efe53219657ad7543eb2467c6ea1433aa854b817040c2bedf92df5633e89",
+      "output_sha256": "ea949d671b886304729549835b77b3829bb79dd12bfdafbdf98e26d80fa717dc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.networkserviceproxy",
+      "program": "/usr/libexec/networkserviceproxy",
+      "source_sha256": "95834705793053d71a6861f9fadc26867ac1a26e44510c4bd8bd1c04813b50d0",
+      "output_sha256": "5244c13990e6cd28cc920a872fbb06c73542fe61059e7ebbefe708b4424f8182",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.newsd",
+      "program": "/System/Library/PrivateFrameworks/NewsDaemon.framework/newsd",
+      "source_sha256": "df2f3d9a6365905b31254887eff44d52442d029f3470a9aa5fb44bc555676032",
+      "output_sha256": "b577fc51ce3f15985dc935604061a3783576c2a294b83d4df887012d1d6495d7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nexusd",
+      "program": "/usr/libexec/nexusd",
+      "source_sha256": "fb87e31116dac330569f55944f30be849bed460c2f91c69b711604eacd39df9f",
+      "output_sha256": "70fb6a3b5620a909cdffc18441925500441192832004c8c3bc6a440e61203ffe",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nfcd",
+      "program": "/usr/libexec/nfcd",
+      "source_sha256": "5da70b89f9b1396a2550dff94475ecfeaccf3fd5464902191a9eecc5172e151e",
+      "output_sha256": "e41651d8ff653d31e1f15d482a1bc5008f1c638041b0acca9661654839456d5b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.nfrestore",
+      "program": "/usr/libexec/nfrestore_service",
+      "source_sha256": "9203369b7e4e3a2a778778934c722c9aff83dcf23849a5f666fef9da0ed7caf3",
+      "output_sha256": "073d389c4fa43315d0924a71ddb66f7399de730196479fa165b2b5d0bc286abc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.nsurlsessiond",
+      "program": "/usr/libexec/nsurlsessiond",
+      "source_sha256": "b4067873d50d10c91233a3ab6674b4ab8e626f7fb58a52319129f7e197ac8660",
+      "output_sha256": "3c14fc9d4b7caa061137c0381bf9f2d37979adda0a0aa5557d31f04284f39339",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart QueueDirectories"
+      ]
+    },
+    {
+      "label": "com.apple.online-auth-agent.xpc",
+      "program": "/usr/libexec/online-auth-agent",
+      "source_sha256": "80ff7476accd4b48da36bc0310189bd19963bd828de43a2dc8c6b4a759c8e43e",
+      "output_sha256": "b23ea188cd5fd3a1fc126009f1ccf16fd9905bdfaffc20392e6e351d9c363203",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.osanalytics.osanalyticshelper",
+      "program": "/System/Library/CoreServices/osanalyticshelper",
+      "source_sha256": "bc9732478ed67fabd02473920883edd68733d841e8293da463e0fd84b09900d2",
+      "output_sha256": "2bef174dc45eebb5ac6a2c8fcfd822b6adf829b0cffdf03fd6c31893512d6444",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ospredictiond",
+      "program": "/usr/libexec/ospredictiond",
+      "source_sha256": "43a5d2cd44881486d6a6133c4e959cf6fe825e6a23f11dfeab97d99b5e514c3c",
+      "output_sha256": "9293ffc64e7080fdae63d003796dc345a346ca405bbedb6ec888d75a57ce7ba8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.OTACrashCopier",
+      "program": "/System/Library/CoreServices/OTACrashCopier",
+      "source_sha256": "87b4ad8a55edad8e8a048134900558cf41a58683b4969fe45577b879aefa0beb",
+      "output_sha256": "ab8efa2db5eb822ea964336bc7b75f9be806103d8b1cb668f64013f802e9206a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.OTATaskingAgent",
+      "program": "/usr/libexec/OTATaskingAgent",
+      "source_sha256": "3c4e8315246beb214f8895452346cdd2e9da7f82d4d2adda307ef181017eea76",
+      "output_sha256": "a1f296026fc3626fbf09efb321cbf5eb8f2e12242af7ad1af7c8ce8f4ab1862e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.parsec-fbf",
+      "program": "/System/Library/PrivateFrameworks/CoreParsec.framework/parsec-fbf",
+      "source_sha256": "758690befca8ebd642ebe3c63c1a9bc4e1198b20f49bf572730ab23d66e2ddcc",
+      "output_sha256": "8647cad00f3bc3eb2a6fbc739df50cfb7a92c5fad683c616e6e55d16c9649281",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.parsecd",
+      "program": "/System/Library/PrivateFrameworks/CoreParsec.framework/parsecd",
+      "source_sha256": "e4caff3bb4e69ff2f104977f21ee2fc318e7ec375c9b998506dbd7260f34b39c",
+      "output_sha256": "d54a5b6ebee449443cdc78e2b6930a6699d21f24c53da4ee5879752ed23346de",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.pasteboard.pasted",
+      "program": "/System/Library/PrivateFrameworks/Pasteboard.framework/Support/pasted",
+      "source_sha256": "7fbc2e78ee96811c61264aad9a177c5e501c3f692d53175e1607f037f98b778b",
+      "output_sha256": "bbc917cd653df2dae7b1f8e31ac1831667dde0b4382b019667c6a5a272422da9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.pcapd",
+      "program": "/usr/libexec/pcapd",
+      "source_sha256": "d56855f15803d18e21d9ad35986151ed1c508b6349db49d7cb4dab5e8c150f5f",
+      "output_sha256": "ba935c8c8ded56e3f6d8d35be04a4de34bb5e1289dbc224b81e20ddf49d772df",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.peakpowermanagerd",
+      "program": "/usr/libexec/peakpowermanagerd",
+      "source_sha256": "4b8a297115b717b1e44a93fdf25fed50b831c9a5cd4b4c94039fabe61403cb6a",
+      "output_sha256": "ed1d1962908ccb9fae511a652700bcf4a55f7a0925f44a8589b11f475c0f94d5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.peopled",
+      "program": "/System/Library/PrivateFrameworks/People.framework/peopled",
+      "source_sha256": "1218ee316fca3038b510f44d560f9d3cfddf87813416b77dbfa70aa26198c2c2",
+      "output_sha256": "ed464f3851f9787e82c2a0f5fa5fbb8f8c3abd9c0647c4707d51c6589f5652e8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.perfdiagsselfenabled",
+      "program": "/usr/libexec/perfdiagsselfenabled",
+      "source_sha256": "7486b320a5504322c204ef1e6d0adfec3b8e7e6e5bd9d5b0d7a860d6fa88726e",
+      "output_sha256": "2154435371b4ece9e35cf3ffacf08592a94162bc80bc6abca794857e1f0de7d5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.PerfPowerServicesExtended",
+      "program": "/usr/bin/PerfPowerServicesExtended",
+      "source_sha256": "22c0563b2c57a25503c372c2f2d673034f3e20fa86b6be48794fbac61ba389a4",
+      "output_sha256": "0d22119f19214a5461b782995646d1922d3f235cc9ebf065ad7542be4cc8536a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.pfd",
+      "program": "/usr/libexec/pfd",
+      "source_sha256": "c345baa3ff3f71be833c691015982282561e98a1f7741632a11e9c76ec6a6c56",
+      "output_sha256": "392e552b8cdd9d806b6c3e6456256d8aae861078c210518cdefd1089b2afc823",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.photoanalysisd",
+      "program": "/System/Library/PrivateFrameworks/PhotoAnalysis.framework/Support/photoanalysisd",
+      "source_sha256": "2abdcd02bd5efa0efdeff04656c2aff22110d0f6ce2ef7dfc5b521a2822445be",
+      "output_sha256": "fedfd3684bac59671999bc4d9ea2587aebba97f2d8df9a8a8699488cb657333e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.photos.ImageConversionService",
+      "program": "/System/Library/PrivateFrameworks/MediaConversionService.framework/XPCServices/com.apple.photos.ImageConversionService.xpc/com.apple.photos.ImageConversionService",
+      "source_sha256": "84b641c6412685e7872d9fb0d15c7b1bdf7384af286d47de4d50f86e0d690489",
+      "output_sha256": "566a21d1871f368cf7c93d3ee7a8841059a1fc767d7e26357206f6d2cec248d5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.photos.VideoConversionService",
+      "program": "/System/Library/PrivateFrameworks/MediaConversionService.framework/XPCServices/com.apple.photos.VideoConversionService.xpc/com.apple.photos.VideoConversionService",
+      "source_sha256": "0cce826213be48b46758f38f3859ee2064251983ee648a19e2a0ea1d5cba3431",
+      "output_sha256": "c2ee4956f4467a4aabfdc3bc768957061920577bd22ca4bf99a10a09860bb3b7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.pipelined",
+      "program": "/usr/libexec/pipelined",
+      "source_sha256": "48afc6faf5b1b4298c5c5a099030109822aacdf97dab136f7c55a7a1f5b1e7ac",
+      "output_sha256": "1c26a252512c236c3dd91e59d5ca36ae9cf173a19c4d900a307b614cae330120",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.pluginkit.pkreporter",
+      "program": "/usr/libexec/pkreporter",
+      "source_sha256": "369bf508cc23f3b95050ce4a9973234d3d5f5c9f5780164805ae03e937cc519c",
+      "output_sha256": "afb6e8675d69791765ad70505fb725b22aa8449e2aa1acde976731246a3a51a8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartCalendarInterval"
+      ]
+    },
+    {
+      "label": "com.apple.PointerUI.pointeruid",
+      "program": "/System/Library/PrivateFrameworks/PointerUIServices.framework/Support/pointeruid",
+      "source_sha256": "1ed803b6f15907b5c98aa6aeb3f71f727d3b5ba4ff8482c9293ec8f4da86fe49",
+      "output_sha256": "716b8053fbae9c2f1b6cba99790ea0e37d3917daa02cf548380455d59bbf77bb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.powerdatad",
+      "program": "/usr/libexec/powerdatad",
+      "source_sha256": "5310a41f30a05eca9f52b5f1733f3d05d792afa344acb145a667746d66041e9e",
+      "output_sha256": "0ca290e1f3fa2713f5bc94a95ac52e8fc4b60d711facaee31645765c6e91dc34",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.powerlogHelperd",
+      "program": "/usr/bin/powerlogHelperd",
+      "source_sha256": "4f85fde055276c95572895e1f11921e058da8dace67b54a8e0e4a727e0492dee",
+      "output_sha256": "85cdae253aa8203d0fc3e9b2027d53d2e32427153d8518e99750457c8ca7a699",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.PowerUIAgent",
+      "program": "/usr/libexec/PowerUIAgent",
+      "source_sha256": "f237f8efd7fd7eb72168d136c906c2cc9acc4210db80cf19d86d40506b596e57",
+      "output_sha256": "d93cff1bc91e7a6e02444a5b4a97d759da7bce34384dd6e62cd04b1ded1847c9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.preboardservice",
+      "program": "/usr/libexec/PreboardService",
+      "source_sha256": "e0c1adec5cf3a0dccc03e3502fa4a9f426c57ad0d5bd2a16f9fe82892a32ca95",
+      "output_sha256": "73fb5c846579794c86cb644a38a7e7b8485d4726554cec5494d392baf9f3fabc",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.preboardservice_v2",
+      "program": "/usr/libexec/PreboardService",
+      "source_sha256": "7b0cde14a3645eb225c67d36822032520cd0bb17c3eab6081bcbbac4c623352c",
+      "output_sha256": "6813c830e683758581529b736fd4a2b3116c2ad1b0a78195386723da204440b7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.printd",
+      "program": "/System/Library/PrivateFrameworks/PrintKit.framework/printd",
+      "source_sha256": "9c412d7904cc5bf559db97fa08c4002e194399c626f0a241a0d1475122476055",
+      "output_sha256": "75d0874fc8da5bd5e2e78cef9cf2538f3b05c0d82f93dfed5875080568bb5f04",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.privacyaccountingd",
+      "program": "/System/Library/PrivateFrameworks/PrivacyAccounting.framework/Versions/A/Resources/privacyaccountingd",
+      "source_sha256": "24282fdfa93023a8c8092d6316f962431850049f7d31fd90dc8ec7db4c876f59",
+      "output_sha256": "7a88b02699710119da17f7cea89acaf8ddb491ce303a2c50163435531c86f5f0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.proactiveeventtrackerd",
+      "program": "/usr/libexec/proactiveeventtrackerd",
+      "source_sha256": "c869aee4298e20ae41004ae4d7469ca5c959efd6c68715d7e1bc71c2ed4e822f",
+      "output_sha256": "8e6b16435a327009f2499d4d74e8094bdec08f1a623e35972cb9f186c10449b7",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.progressd",
+      "program": "/System/Library/Frameworks/ClassKit.framework/progressd",
+      "source_sha256": "3976082eb941df6435facca731b1bbce8472b2be4b027e57b96a2d7a9aeaf0d1",
+      "output_sha256": "b95d0bea6bb89999df71213942693e8c85dd96cd159c63952fd6cc8378ad4846",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.protectedcloudstorage.protectedcloudkeysyncing",
+      "program": "/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Helpers/ProtectedCloudKeySyncing",
+      "source_sha256": "4c5c0ea440b2fb2ec40453cb64e10f3b2bea67da6c7dc7f8d8816abc8a9e3a95",
+      "output_sha256": "c89800ed311ea37946f3b178e18a6654ebd457832a0576c497d82660ee684f21",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ProxiedCrashCopier.ProxyingDevice",
+      "program": "/usr/libexec/ProxiedCrashCopier",
+      "source_sha256": "31df4516f5a1dbe7597461ff1f1ccbbdf7de8cee3ad5f6a0a455a520bd595b9c",
+      "output_sha256": "21e664fe68f1d88f035fb278e4f259ead12c2fa803e3bbeb70caa5cc89b7ec7c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.proximitycontrold",
+      "program": "/usr/libexec/proximitycontrold",
+      "source_sha256": "7a3adb2cbfa3a0e3574e12c7d1fe65026759eddda7503190ba6ee2b5b5391ef1",
+      "output_sha256": "f63676d157463e8195f7f376f317cc1577fce545dd4adfae80bd83afccdb1943",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ptpcamerad",
+      "program": "/usr/libexec/ptpcamerad",
+      "source_sha256": "a6e5a8e82157fdccb4b74c44ad644f055e084ea6b5a8a8fc5617c6a9b0f3bce9",
+      "output_sha256": "715609900f37fb2c77285124f04101cde4c08ab12585dbd6351284cafc722312",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.ptpd",
+      "program": "/usr/libexec/ptpd",
+      "source_sha256": "ef527eb79b710e112b299dfaa29097d7d7664729f50ab8561543cf6d74144e48",
+      "output_sha256": "f58e92348a3bfff536cdd47fb1e8dff26f0877a255355fca8f58c3583b193f41",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.purplebuddy.budd",
+      "program": "/System/Library/PrivateFrameworks/SetupAssistant.framework/budd",
+      "source_sha256": "fe38411b204cfc5697e36c1a275c9618c537f36c974e7ebccc23d18d1b4eac45",
+      "output_sha256": "f51267274b9d64f856eb8e52ff8cbf6bd55d3b83abd75a2968289efb5ee03dc3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.PurpleReverseProxy",
+      "program": "/usr/libexec/PurpleReverseProxy",
+      "source_sha256": "2656ba520fb3c24ec90a069cc05328c7bdc03de25c012bf10546f44ec2d4c9f8",
+      "output_sha256": "26432a65eea2b819b47d4839abe835f3454ef9bd6a3babe8ff3fb383aeb2af59",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.quicklook.ThumbnailsAgent",
+      "program": "/System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent",
+      "source_sha256": "38369a1c272fdfecf08f09fad37a94b109a8694b945b8bd4910edc6dda797db8",
+      "output_sha256": "9fb34dc8d273027f757d46ff10864f4270b5f24092e2c27de3ab4b0b7a043c70",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.racoon",
+      "program": "/usr/sbin/racoon",
+      "source_sha256": "f0c50e59eecf853a5f80b281d65fd740b568d5f1509b68a0f587244b2b679782",
+      "output_sha256": "b40279c61a6f474a990073378df7124681f9c849fe9db867af6ffef97e5b880b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.rapportd",
+      "program": "/usr/libexec/rapportd",
+      "source_sha256": "aa342ac2b9f053652f8a14f725e901e1fd465986c7b09bb348409a7e020a740e",
+      "output_sha256": "567f00f1e4fc5d99b0c6cfd030eb5f949d1fc4f04c7442a1ebd63c5fd7d969bf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.recentsd",
+      "program": "/System/Library/PrivateFrameworks/CoreRecents.framework/recentsd",
+      "source_sha256": "4a02b950b74412a765f09c19d8fb042cd53b2977678eee2fa2304b233ebd4e2d",
+      "output_sha256": "193f427d8017da2f8b2246ee407183c14afabe250c61a9070d610e8e9638caa8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.relatived",
+      "program": "/usr/libexec/relatived",
+      "source_sha256": "035187ac123bfbd9a96239bcfbb4baa4cee3f3e58475c4853f394beace18b628",
+      "output_sha256": "320bea4c36683c8bfd7a26e29245ffe700015183fe9aa858eabaf01d8fedc394",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.remindd",
+      "program": "/usr/libexec/remindd",
+      "source_sha256": "76f9ed345ce95159f0bd03a9177e8d14542ae073f699c7308960ad488eaed667",
+      "output_sha256": "d2771fada91eebf91524c5e7002ff9f9a82da1a4d86148bbcba1272034533232",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.remoted",
+      "program": "/usr/libexec/remoted",
+      "source_sha256": "8bfcc43ed7442c08100071b579d4ec356ee56949f2e9375e84a19e960a82956a",
+      "output_sha256": "126fc5a3492f3fe2416e18380615a7215b61138e0515a4bb1b8bb3f07cd785fa",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.RemoteManagementAgent",
+      "program": "/System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagementAgent",
+      "source_sha256": "1dfafd01860da95687636c9e24b702d00a2a4e032bfce53b4a3006156c2822b8",
+      "output_sha256": "a9702f72dbba8fd8c1e172cf0fce249c098f64b0cb7e2fd953430b603426b940",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.remotemanagementd",
+      "program": "/System/Library/PrivateFrameworks/RemoteManagement.framework/remotemanagementd",
+      "source_sha256": "6c14c4f7a46fb4181ae8f7eb99c4dde4abc8526dfb7ec2fa890c4055bc6e5702",
+      "output_sha256": "3918e50ef1459bf1e95a217e4c92b0ae120416d0a4effb8faa10d4de82860f47",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.replayd",
+      "program": "/usr/libexec/replayd",
+      "source_sha256": "0528d85f1ef461e98b6d8173895c223be86323db0fb18a71d1ef6d07bc15fb37",
+      "output_sha256": "78509f1fa3601d3cdef0e7c8653db14cfecd2fd47739c531825aa8e275995245",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.ReportCrash",
+      "program": "/System/Library/CoreServices/ReportCrash",
+      "source_sha256": "38b602e5cfc95eb0ea4e9583bc8939683269ae30fcdc5cab9620fbab98131a83",
+      "output_sha256": "652d60dd5158fafb029b73ec5589ae869398560126648dc02f60d2756d1e9a23",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.ReportMemoryException",
+      "program": "/usr/libexec/ReportMemoryException",
+      "source_sha256": "ab9d50f84132dea8f0f5f2248bc06a33eb7377808a529700985afb121a7f038a",
+      "output_sha256": "5be6ff547eea2913e7141524b20987ff5be8aeb8b084741e6526dd2f840c4ef4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.RestoreRemoteServices.restoreserviced",
+      "program": "/usr/libexec/restoreserviced",
+      "source_sha256": "d705a06464dfc1f22034a1f9c2547a92587cbe273d6460ab6c414aa6ef84b7dd",
+      "output_sha256": "d2c8845155d02e28ef8cb56fca808282168413125778a9a70472861c96d79725",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.retimerd",
+      "program": "/usr/libexec/retimerd",
+      "source_sha256": "9c00edb84a15b2e201f797b4db29864836a714cb800cb6d0c5dd889836a88126",
+      "output_sha256": "2f7a573a13e258da1ebd9ec76df0bc6767adf96ebd581ea9f1372857c6ecd5b5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.reversetemplated",
+      "program": "/System/Library/PrivateFrameworks/CoreSuggestions.framework/reversetemplated",
+      "source_sha256": "376b9ad5d2b3540d63eca4c7e061389e064f84cb2633dbe3c477c0429f683b32",
+      "output_sha256": "d821f8051d45aa2f14137cad82b2801359ba3d3afade117bca4f3a0025a791ca",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.revisiond",
+      "program": "/System/Library/PrivateFrameworks/GenerationalStorage.framework/revisiond",
+      "source_sha256": "f8f6b36cd51d10f48ba0b283c3ca5588b002fc3b4d5e29024aec0ac7af8c05e2",
+      "output_sha256": "d69254b1221769c04914c0aa0425e3173ae4ea89786295fbff2224558826a849",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.routined",
+      "program": "/usr/libexec/routined",
+      "source_sha256": "161fff1d0655440ba8ac0f3aa05f9e680673357451064b572a020d34d4836737",
+      "output_sha256": "4e4e5ecfb4c10cf34b069e67a7a19b454831472c1a9dda332c9f0d5fec168644",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.rtcreportingd",
+      "program": "/usr/libexec/rtcreportingd",
+      "source_sha256": "3b8ca62886a26f4912c58a462826f1bed0c5cc789ec6547e0622c37fe6d822ad",
+      "output_sha256": "a4138b3cc023dc02884ddada24b21940fa5073b69faf843ce30629ce1b99947f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.Safari.History",
+      "program": "/System/Cryptexes/App/usr/libexec/com.apple.Safari.History",
+      "source_sha256": "6264c0b87d39186a49709b39a7e950d8e6f1844a796ce1e52731429bf72189e6",
+      "output_sha256": "104cb4833e5ca0672ccfccb790c2ccc5cf5f8189625672cc852b74eb08d1fd9b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.Safari.passwordbreachd",
+      "program": "/System/Cryptexes/App/usr/libexec/passwordbreachd",
+      "source_sha256": "887574cac7bde4fb406ce907a6b55956734ca38f586819dcda0400ac6d378ebd",
+      "output_sha256": "346a004763a2c846781b5ae89d9ba6bc04793a6ac74be99c662448131c49f8e3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.Safari.SafeBrowsing.Service",
+      "program": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.Safari.SafeBrowsing.Service",
+      "source_sha256": "e1dd2fd5326d95ea68d577f0d18ab3cd1b2e358762bb443c4375f853da906513",
+      "output_sha256": "effc32d9062eee4ced95352197e47c1d2f03244fdbdb6f59df8c162d4dbe91b3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.SafariBookmarksSyncAgent",
+      "program": "/System/Cryptexes/App/System/Library/CoreServices/SafariSupport.bundle/SafariBookmarksSyncAgent",
+      "source_sha256": "d78545cdf1a4c28708aff5d2aa36994977a0d46c09ec2e84bcba94a75aadd8bf",
+      "output_sha256": "c83f80835987447ad374cebed08583165b0fe20b74db8c1f37633599293eb268",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.safarifetcherd",
+      "program": "/System/Cryptexes/App/usr/libexec/safarifetcherd",
+      "source_sha256": "7d702735902f7861ec014aabeac0ca9de2b80639c2bcec44ee5da8e9f0170aa7",
+      "output_sha256": "22dab92d138e7546af6c6d16bd4a6e195d27a24cded8ca14793415164aec6123",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.safetyalertsd",
+      "program": "/usr/libexec/safetyalertsd",
+      "source_sha256": "6b92c6189557ccd1a494cc11a28238331de73e664dbdf962f8a580bcd0322126",
+      "output_sha256": "ebf3287d560f8c1ff046d9bb47b4587ce20bda78335ae343ff57e23b9f122760",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.SCHelper",
+      "program": "/System/Library/Frameworks/SystemConfiguration.framework/SCHelper",
+      "source_sha256": "d83914296e9d99e42005010fbc839e8970c668887df141f128a955da0c5d9e7b",
+      "output_sha256": "e2d0cbedb3aa3016f2f7df7c56577633d28067f0073c87d880ea00f81bec0f55",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.screensharingserver",
+      "program": "/System/Library/CoreServices/ScreenSharingServer.app/ScreenSharingServer",
+      "source_sha256": "be7f83c2f083422f97f60945382194c95a68206b83d2f9bedca8dfe27a3cd5cc",
+      "output_sha256": "4fc2c5106499d099cdd4a55e067b2a9b796ab699a67a633af83c87676ea0192f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ScreenTimeAgent",
+      "program": "/System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeAgent",
+      "source_sha256": "f78953235d5b89f6c8d45fac5fc9e66b8c48fe3bfd62c18f416cb0c7a7dc50d9",
+      "output_sha256": "8b97c17469b59f27043f502e62b7311d3e5a4f1247969e422d4e38dee1ca9c49",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.scrod",
+      "program": "/System/Library/CoreServices/VoiceOverTouch.app/scrod",
+      "source_sha256": "01e457870c08a20e72f4334e8ffd3a68c00b176c30879662b72a775945e8ddc0",
+      "output_sha256": "1ca9c6b28aaa821a0f6ff28a3b76db288fc24d0b3495987f16359db91c6f5a6f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.searchd",
+      "program": "/System/Library/PrivateFrameworks/Search.framework/searchd",
+      "source_sha256": "f2467b357c126bcd8cc091e1daa3d1364f88bceaf600bd701afcb73d29a96aa3",
+      "output_sha256": "651935e9e4458d780ee9c35f50b63d721841bb02f2b97e6e7abcacaafed5cd54",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.SecureBackupDaemon",
+      "program": "/System/Library/PrivateFrameworks/CloudServices.framework/Helpers/com.apple.sbd",
+      "source_sha256": "e219bef0e556b0c1cfbc36e47d634d0e9f6ca4a405c23bf6ccbb54ad2a2825fd",
+      "output_sha256": "1be3469db3530472a1528abc841f54a7e426e7c4a959650814d9654cb0f1c7de",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.security.CircleJoinRequested",
+      "program": "/System/Library/Frameworks/Security.framework/CircleJoinRequested/CircleJoinRequested",
+      "source_sha256": "258d50d7692d0def2e043107c10a60e350e13829d3ce8e8f4cdd2c506508c85d",
+      "output_sha256": "fa3cc094be8b3bc662e63b3154d5e12dcf265ee0ed01f8da383f9ac16124b97b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.security.cloudkeychainproxy3",
+      "program": "/System/Library/Frameworks/Security.framework/CloudKeychainProxy.bundle/CloudKeychainProxy",
+      "source_sha256": "99a2b1632fee2383fe7b9cec9212adc8c2f5e7e84371e1a34d8dbb2aa27df0d9",
+      "output_sha256": "77adc1bd79c44a9987b8c3dae72f18fd28b44950919236018357519563543fa8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.security.cryptexd",
+      "program": "/usr/libexec/cryptexd",
+      "source_sha256": "8bd01a11326b62a860dc1884e1697b9d93be7bafecc8c6fc90569a3ba108d8ea",
+      "output_sha256": "fb3364f34e7ddc15a8fbdeb05205ee481b468bca457641b7dfd1d3ab7d426279",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.security.swcagent",
+      "program": "/System/Library/Frameworks/Security.framework/swcagent",
+      "source_sha256": "1311e401212da38c83b89068c4886d93f090748fa5b5f251d6a7a0e16b4ada18",
+      "output_sha256": "3cc5c25a4e6cbf5fcd2df2fde99900085db40926f1f5ee27a7af76fcf0847415",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.securityd",
+      "program": "/usr/libexec/securityd",
+      "source_sha256": "9b7d4a6c75b9a4e69f31e779b0e91e142cd57f697de2c5497a79925dfbea6370",
+      "output_sha256": "85756309843accd170ad58bee73f300cf2d94c76fa0ed77db6ea412fc9935fc3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.securityuploadd",
+      "program": "/usr/libexec/securityuploadd",
+      "source_sha256": "58908c63892dfd38b5ab76e99d576301e5c29bc8c27876a80068e5f764470c11",
+      "output_sha256": "ae4e26fee2a23a8be2d55abca341d0f1c05e1cf870b7ff5fc24c54ad8386fc3e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.seld",
+      "program": "/usr/libexec/seld",
+      "source_sha256": "bb0201f90c81963fda5f3959f51eb9c973a238081a53245fa9b679cee239b3a1",
+      "output_sha256": "e003f978193df8443dc588b9503eb3cbed36278f43fc2844855d2d020eb61dd8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.SensorKitALSHelper",
+      "program": "/usr/libexec/SensorKitALSHelper",
+      "source_sha256": "90383499854d36e7871e011fc2166b84c12dd0e73c70f06ec4ac7dbe52d30650",
+      "output_sha256": "d30d0a4f4e4c432e2242d2731fbf2661828376b0641dc0e8366f2b925ceeeb97",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sensorkitd",
+      "program": "/usr/libexec/sensorkitd",
+      "source_sha256": "bd7dfbabd2757d9afcba81eea7363506238b7f98733eb6ba81bb0f97637d18b4",
+      "output_sha256": "e5b6f70a052f5a3dff568fe81e3b6e12743a79d0140f0c1224ae60bdd1f411ee",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.SepUpdateTimer",
+      "program": "/usr/libexec/seputil",
+      "source_sha256": "c9c7198571dde8426e65c81f32cb721bab9b685f6aa6e166d02a40cbb545b00b",
+      "output_sha256": "693b051bdbdeda0ec700e54bdd86ac564fc058a4db646f135e042f75fabc4876",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.seserviced",
+      "program": "/usr/libexec/seserviced",
+      "source_sha256": "a28090f26518de77500b6d6c14a571e0571095a5784274f06c06e7f3c0b59c9c",
+      "output_sha256": "dc8345b8cd38de2358848b7dee5cbf2612653d7923d6ef569efa5cb683e438e9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sharingd",
+      "program": "/usr/libexec/sharingd",
+      "source_sha256": "1d7d988a4b25a1169509ddc6881abd7cc2a11ed5c2536346011b78b8608a32ef",
+      "output_sha256": "8e2a250080ee6bed8e391e9dc7a3cc9c6d08f45f005af1d2eab0d0953e13bf90",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.shazamd",
+      "program": "/System/Library/Frameworks/ShazamKit.framework/shazamd",
+      "source_sha256": "be4154d4660619a579f8cf59442a10ed108a8360877eaffb716eb5a549f572e8",
+      "output_sha256": "51806b41420687942e2543e5141f8dd33c6c1e7eb4b556e4b41d997029fe638c",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.sidecar-relay",
+      "program": "/usr/libexec/SidecarRelay",
+      "source_sha256": "f38cdf32d9c500eee8604c63dc592bf5637c9d5ed77e7ed9afc6f176b861bbb9",
+      "output_sha256": "4907c22c878d49533448f0ee724292c04186e4177a9f12b9211f25c6585a09e1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.signpost.signpost_reporter",
+      "program": "/usr/libexec/signpost_reporter",
+      "source_sha256": "fe8adf533037739d612be234354c71f1f76eef9f109708474131c44ba7e616b3",
+      "output_sha256": "f8ecf6fd76a90b59fcf1c77bc276319cbf92eb6732e97ce61af92bd3f830ba91",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.siriactionsd",
+      "program": "/System/Library/PrivateFrameworks/VoiceShortcuts.framework/Support/siriactionsd",
+      "source_sha256": "50e5f2b6716ecfd1f7b19a807367f2c191b9811c7dbc455dff4959de58e3f578",
+      "output_sha256": "52518fb17bf4bd996fd3525bc71a757555c0c45378d10e9cc5a0050bdd204bb0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.siriinferenced",
+      "program": "/System/Library/PrivateFrameworks/SiriInference.framework/Support/siriinferenced",
+      "source_sha256": "be89a2cb6d7ed8e3c7db42ddb45381e2dee706277cd17a4c5060563260c314c5",
+      "output_sha256": "cbd3bc076f0e0667bddf328ba6508ac9e91e8ea8e7c470970fbb7bced8dedcbf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.siriknowledged",
+      "program": "/usr/libexec/siriknowledged",
+      "source_sha256": "ad25327b56659fcf4162f99657d8fb63774db0efa93588b309fb2b767296b73a",
+      "output_sha256": "bd48ac05c0144d787c73cb407b6324f21df0faaf6be8775c0a8e01cf35ea0e31",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sirittsd",
+      "program": "/System/Library/PrivateFrameworks/SiriTTSService.framework/sirittsd",
+      "source_sha256": "ef46319bc36e5a9492d5d79c13c4842776b6b9a25700ee869b9e5076acd82999",
+      "output_sha256": "b64552bac3d3f6c766caa638cab0b3b0f1a033cd95dd1e38165ca774da8e4ce8",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sleepd",
+      "program": "/System/Library/PrivateFrameworks/SleepDaemon.framework/sleepd",
+      "source_sha256": "0549e287f5bfff6eeceda5ffa34cc0375666b2d2fc25e7e34443d6ce998d0938",
+      "output_sha256": "28f61d2046e172a9ed2f3e6e4bfe537f422e4f10a215204736d0b60c098857e2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sociallayerd",
+      "program": "/System/Library/PrivateFrameworks/SocialLayer.framework/sociallayerd.app/sociallayerd",
+      "source_sha256": "06a30ac726a8909477d80f777ccee44c75ecf7d402cf63bb2afb0bcaaeb85819",
+      "output_sha256": "5c072bd1d8aa7f4c341af2cc760001cf72a2f78b692c70a8ad086b373eee7b43",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.softposreaderd",
+      "program": "/usr/libexec/softposreaderd",
+      "source_sha256": "7b3b4df454ea459d834727f9b1791ac1e5094ab487a933c9306a8cdd751e9c45",
+      "output_sha256": "7a7bcdb83543b91878cbda81f929e8063232d492de8e5a64e3a53060abb1bb1d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.softwareupdateservicesd",
+      "program": "/System/Library/PrivateFrameworks/SoftwareUpdateServices.framework/Support/softwareupdateservicesd",
+      "source_sha256": "78efa8b38cb87da7cada4b58b310ac753c8c6b3a026f97e6a84c3e45a3615fff",
+      "output_sha256": "9eb7a37121add711596dea78ec3b2557fbb4c4d5d1a7ae63a971d1e26d2868fb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart StartInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.sosd",
+      "program": "/System/Library/PrivateFrameworks/SOS.framework/sosd",
+      "source_sha256": "9915f279ac70a3d4677ab330938d965df73a04740ea2ccbbed4eeabef4bf24c1",
+      "output_sha256": "2780f1a1e02e6f67c690e98f895bd6ada440342a57b6dc130573074fde9a6550",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.speechmodeltrainingd",
+      "program": "/System/Library/PrivateFrameworks/CoreSpeech.framework/speechmodeltrainingd",
+      "source_sha256": "be4c2a6ec5e8b53d501203bd79f1c8f58d5c31c201c15a70c81e54394263c2be",
+      "output_sha256": "b42277841d3480f3d4300ecdb3a69166b9e425af27f597a52da0d0bdf321395e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.spindump",
+      "program": "/usr/sbin/spindump",
+      "source_sha256": "5dce9f0ac7ecec3e9b4f5ecd2713e6d43eecc19e0aafd82251d2f9a71e97d422",
+      "output_sha256": "a6172430508d1814a9ca1cfa1706335947adf93979654f723a7fb776b8e42f1e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.sportsd",
+      "program": "/usr/libexec/sportsd",
+      "source_sha256": "51493289a2466da566e15a517281b8a964f4ab32db87feac030c20a4b5088e2b",
+      "output_sha256": "bf52976d4b5695cc79b9437231257faa4cb6a95752f4cf7fe8318d1535bba074",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.spotlight.IndexAgent",
+      "program": "/System/Library/Frameworks/CoreSpotlight.framework/Support/com.apple.spotlight.IndexAgent",
+      "source_sha256": "fa02db07ce183d1183a2262200db4529592076e5c9baa1b96454be48039064b6",
+      "output_sha256": "7ec98bf36a53678559399edf3ce74d7e4e43e280fe1decff7f504f8b631cd492",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.spotlightknowledged",
+      "program": "/System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged",
+      "source_sha256": "d0e744bdaab569f55ad701cbb6ae13b71d23cad56c4c9d0a71899f5cea7132d5",
+      "output_sha256": "5adfe283f5bd2a84fb751f0e62c801fcb510d5b1ef77771c30d1d0b28c992946",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.StatusKitAgent",
+      "program": "/System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent",
+      "source_sha256": "63e19ae580cadeea96f5a72e150fe43beaaa04262973eacb0bbd65efcad220ae",
+      "output_sha256": "5a606d6da2345e3436696cb46a13b29879fdefd7e9e002cb4dee70e5221b115e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.storagedatad",
+      "program": "/usr/libexec/storagedatad",
+      "source_sha256": "6f0a791d8a71d6300c454660f586a5770783551c962ed484bd22cc1e1848f8ea",
+      "output_sha256": "b7c6baa387884087a74ae263e4650e9d686e8ba89448365341801d6921d13c07",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.storagekitd",
+      "program": "/usr/libexec/storagekitd",
+      "source_sha256": "0ae5a2553cec9468f8fee6e2e6df032d4cb40560fb03abfe911b0489d3630952",
+      "output_sha256": "0c888c1164fdcc6b9f6f002b9387429c1bccc4cdf40449414687d2299361a7ab",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.storebookkeeperd",
+      "program": "/System/Library/PrivateFrameworks/StoreBookkeeperClient.framework/Support/storebookkeeperd",
+      "source_sha256": "586150b2c1601f0ad062614ca76f7826e4202da6d2a10739c55b48e68bfd4e02",
+      "output_sha256": "e17e300a0ea7074ca9d29f374b00c8d89896c8df600c1c69e186001be1577def",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.storekitd",
+      "program": "/System/Library/Frameworks/StoreKit.framework/Support/storekitd",
+      "source_sha256": "a842dc876719b4cbf3396524ceb9dc775ba4af7277420425a9b5cb85d5391be1",
+      "output_sha256": "5bf998c300f9a4b16cf200c1efcdf5c89f099de40a40fed9ca3e500901d8d0a4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.streaming_zip_conduit",
+      "program": "/usr/libexec/streaming_zip_conduit",
+      "source_sha256": "8eb86cd470a6381bbeba5e3258a727474d4ea49604314cf86a4e40efc1a67814",
+      "output_sha256": "6506f453bda1b73b9bdfc0a231de4b3457ac0f6b3136e361b82b757e4d728f45",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.subridged",
+      "program": "/System/Library/PrivateFrameworks/SoftwareUpdateBridge.framework/Support/subridged",
+      "source_sha256": "2da14087c6372e2ac20c43d42d873972b36e979b9d3cc640578ce0b92d706af2",
+      "output_sha256": "21d30fd34eaec6b56fd8cf33616a332ccaeaccb7cbb7282a1c69bcb504546c45",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.suggestd",
+      "program": "/System/Library/PrivateFrameworks/CoreSuggestions.framework/suggestd",
+      "source_sha256": "5e80cb9702d2cc38a4ac47a421fbfa739293c2c46285d53ab01c60ec70c4824b",
+      "output_sha256": "c6b75fee0eec498a87b3e0f634f4f182bf30a908fa49aa7eda7cde29059723d9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.swcd",
+      "program": "/usr/libexec/swcd",
+      "source_sha256": "0f6a708b89eb746b9b0c70a8a12a9aca525c8d40b569fedb09ba25221316b782",
+      "output_sha256": "1e28f6640ea7a279484684e144362573b296d24dfe252f7074def0b6e54708ff",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.symptomsd-diag",
+      "program": "/usr/libexec/symptomsd-diag",
+      "source_sha256": "5a164518d4ff2a021637e335974d1314b2b97efd4d046241240975be8ee52b0d",
+      "output_sha256": "6124df34aec73a734e1d61cf6aa96bd6045031a3181a0e51eee32b5fa1ac79eb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.symptomsd.helper",
+      "program": "/usr/libexec/symptomsd-helper",
+      "source_sha256": "e57faf38db35407a35e822c0f629e94ffba9b83673f13efd669a26fad188518c",
+      "output_sha256": "a7b90a75f7a6b22c99cc7a9d2280744c87e98782b435372b98023fc93566df01",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.symptomsd",
+      "program": "/usr/libexec/symptomsd",
+      "source_sha256": "86931f46d0065f04b9c7d02de4c550b28e981027d2857e83214ec0f8531c02e9",
+      "output_sha256": "50f938f181e901335a6d76fd2874578cb336d9f8634cb663a9f36f7e2ae6d775",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart WatchPaths",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.synapse.contentlinkingd",
+      "program": "/System/Library/PrivateFrameworks/Synapse.framework/Support/contentlinkingd",
+      "source_sha256": "308295acd371c7820679115bd3452de8b5225bd754be4e72ee3e3ec23b87ab22",
+      "output_sha256": "499689698f7c0cee4faad17caa2aafb62a1ffbac70555102225f981fb9ade6ed",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.SyncAgent",
+      "program": "/usr/libexec/SyncAgent",
+      "source_sha256": "2ca269f43f3f0d970025aaf40eccffb9c64e76236080459c1fa25838d0386882",
+      "output_sha256": "9016632ca7219cf0a442471bdf76dd68f02a350ee62880c6c1bcdb716cf119ab",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.syncdefaultsd",
+      "program": "/System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd",
+      "source_sha256": "f53dcb66e5232a17ce27ce67582af1a3ceb57c351f285792093ae9915d3b8bca",
+      "output_sha256": "7a779fc9611bbdf39d389b4e9809022b450700ab4294f31f0b809277bfde31fd",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart StartInterval"
+      ]
+    },
+    {
+      "label": "com.apple.sysdiagnose",
+      "program": "/usr/bin/sysdiagnose",
+      "source_sha256": "25efc7b1a6b2e68bd5f4de4f38b217e2fa050f1439e6b9ed816be8b64d4e2df3",
+      "output_sha256": "ecbfb0b7021f6dd1b5fdd163640107f8edd8c92878ffe4180013ee09d44cc7e2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.sysdiagnose_helper",
+      "program": "/usr/libexec/sysdiagnose_helper",
+      "source_sha256": "1b12766100cd363d5325bb5e5283f668171b45e55732508028c343e63a5c01ff",
+      "output_sha256": "b885b79cf21013b1b3ebfde060277aff6f0aeef4d19f905f6f3e4a9e7a2647ba",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.systemstats.microstackshot_periodic",
+      "program": "/usr/libexec/microstackshot",
+      "source_sha256": "4dd5f95d63a9180877d62419ee387034ba9bf7b11dec6867623a300d41429f86",
+      "output_sha256": "121762ee1908b36b1e52ab9cb744d83a30651e45e27a68b3fc55ba42d052e075",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.tailspind",
+      "program": "/usr/libexec/tailspind",
+      "source_sha256": "8fc77cc84308835b2f11f530c51eafd2019d91d217fdfbfedd864bee36f3fa87",
+      "output_sha256": "f6191d58dbefd21fefc4fc04eb325f9c8add797a4d1a22ddb6e3522a68107f84",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.tccd",
+      "program": "/System/Library/PrivateFrameworks/TCC.framework/Support/tccd",
+      "source_sha256": "4d2c45ade66dbba2c22745d79a609308344d9aa4b72460fac23399ec4069077f",
+      "output_sha256": "ee0859d3507876d977fb8f4ded69abbf5491bda35ffc6cd6856d6e7e2e3f6704",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.terminusd",
+      "program": "/usr/libexec/terminusd",
+      "source_sha256": "ec7673d4167efda0952dbe2b1d7300c2274189f6a6766f85b3417f821cf2ac09",
+      "output_sha256": "422a1bb039d353e0334a65eb255a5c39c4271c0b95e406b042e915a8b6dba0c6",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.TextInput.kbd",
+      "program": "/System/Library/TextInput/kbd",
+      "source_sha256": "2f5f94ec26ac07af3a337fc163d8b14e1822aa99ec2bb46608ca5cd7ccd40cfb",
+      "output_sha256": "1692ae60d70f3f71d95f80a908bcb4a67fc3751dfddaf3251b387e1da87d1ad3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.thermalmonitord",
+      "program": "/usr/libexec/thermalmonitord",
+      "source_sha256": "dc5f94158acd35a66a4b3c94bd915d8d9a9522a3df050e97045751b33523e77e",
+      "output_sha256": "18a3aec9a110a714551446f5d0b0987692544b2a6093c2590ce739a7033c6eb2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.ThreadCommissionerService",
+      "program": "/System/Library/PrivateFrameworks/CoreThreadCommissionerService.framework/CoreThreadCommissionerServiced",
+      "source_sha256": "84d904e4c5492e3bdf73e7bd37c1890fba897e5317ba49742bafe0eea4831d52",
+      "output_sha256": "c82d991619277328143f1aa860fbac3c41a7bfc078a21a3a2e8e9f1237472004",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.timed",
+      "program": "/usr/libexec/timed",
+      "source_sha256": "902a3d1e723fb31d7bd0ab8a17ad07ff3dcb09fef1ef6b8db4cfd132939b651d",
+      "output_sha256": "c32ab62c9aa15e91b40205eac47cb7db52c7c8fb3a28e5be59215a15f376532f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive",
+        "removed autostart StartInterval",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.timesync.audioclocksyncd",
+      "program": "/usr/libexec/audioclocksyncd",
+      "source_sha256": "fff5a8435cbcd629e21f00d43815ceb048f034e16783aa69878a97a789a73eee",
+      "output_sha256": "bf52d326d3cf906b83d0431ebfd350c9f66773d2a89c40cd2dd7ac2d6518d4ee",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.timezoneupdates.tzd",
+      "program": "/usr/libexec/tzd",
+      "source_sha256": "dc4c6db3d0e24834b576310c1c72daedb82a68f4f2741a0e36ba8f02126628fc",
+      "output_sha256": "bef14f08f1b090e44cfbd03833a7c43e094f1cef48e7e3150b6bf8c717e7c214",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.tipsd",
+      "program": "/usr/libexec/tipsd",
+      "source_sha256": "ba6a85446f85badc677b727c7a4c405f8eb2aab6b2d76a4aaaad18ab543a3813",
+      "output_sha256": "19ade8497e22c30fb4f919862661c2976bcd5024880e44626b8da9d232225e6a",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.touchsetupd",
+      "program": "/System/Library/PrivateFrameworks/TouchRemote.framework/Support/touchsetupd",
+      "source_sha256": "98cba1578515e76f4779358c08b7a3f829b80e0248c00fe9e01b32cdb2808882",
+      "output_sha256": "874e42de7f1473e1d8128ba7c6244479ae7c68ebec70160ac07a5fc42f6bf94e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.translationd",
+      "program": "/System/Library/PrivateFrameworks/Translation.framework/translationd",
+      "source_sha256": "6fbfe56f4baf6f2cfa5f8f24003847ce0d9b635b27936c07da7496511fbef813",
+      "output_sha256": "669013959f8ebc1417cd17302c72f06085e1ad5994a486e417e077e00309d9ba",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.transparencyd",
+      "program": "/usr/libexec/transparencyd",
+      "source_sha256": "e94a5e6958ffb73d940c931c9a8a0b8d1de41ec307d207ade04bd22decd7caba",
+      "output_sha256": "6a59b1798ae1d5a85c8ea1cdd33f67240035d62b5e57b2ca5d0e50bd7d416941",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.transparencyStaticKey",
+      "program": "/usr/libexec/transparencyStaticKey",
+      "source_sha256": "f7f758369fbb62a8ef5e8917fa58c0483ccf49f288d3066543b9be01ab21cd2b",
+      "output_sha256": "9404de61a4556fa329cc420bd836b967d8b1fa176f433ee97515fb0f23a6af80",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.triald",
+      "program": "/usr/libexec/triald",
+      "source_sha256": "8a05f58a07bc66859eb77a507b90d0b2964c2ee7b5c9549462fc34ba7b95365f",
+      "output_sha256": "d7f5f6e22de9a470d9584e65b81b60f12660839ef65e330f52d30a4f68c9db18",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.trustd",
+      "program": "/usr/libexec/trustd",
+      "source_sha256": "7e1801383193e8fcfb1528b3695f4452ce065f3ed34e8acf64a7af0925ecbf92",
+      "output_sha256": "e1ecaec7d0912118556d9cbb16905587feaebf4928ffca95a93e49e989479efb",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.tvremoted",
+      "program": "/System/Library/PrivateFrameworks/TVRemoteCore.framework/Support/TVRemoteConnectionService",
+      "source_sha256": "cda53b12964df70b98aa5b9674e9572a8ed4fbbfe567d00c38476c5fb552d3f0",
+      "output_sha256": "d7a64b9820b8bd7ad22c1a7f42d8df3ffb4836410e81f6670b74622cbf9e486e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.tzlinkd",
+      "program": "/usr/libexec/tzlinkd",
+      "source_sha256": "ba3ebd5d43fe21e85907bfd0fcfd4a0c36a03936538a967c0293f8afe10e9dd8",
+      "output_sha256": "fe04b759b870d1ae8e983ae39a6ee775723e78cc158e5100c6908f2a4560d0a3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.uikit.eyedropperd",
+      "program": "/System/Library/PrivateFrameworks/Eyedropper.framework/Support/eyedropperd",
+      "source_sha256": "627283cc91827ebd8452682a2a62093481bc62396868e1c9ef382d3febbde3d0",
+      "output_sha256": "31eaaf57778d539860f2feed35b9f235a5bd28054ff9c493abcb586308dcc1c1",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.UsageTrackingAgent",
+      "program": "/System/Library/PrivateFrameworks/UsageTracking.framework/UsageTrackingAgent",
+      "source_sha256": "531233e798d2662e6f774fde85593f3c17c48d0d6a71a5d4f75a29535397bb36",
+      "output_sha256": "c31dbe3b0b8c86228c91ae5051b905ee9e092eea4f3ab4a25e7b118e001b2779",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.usb.networking.addNetworkInterface",
+      "program": "/usr/sbin/addNetworkInterface",
+      "source_sha256": "8de4fc67a0f038589635cd5c6caf83ef3d65ba5a7a9fc5853aaf0f3d294d3edd",
+      "output_sha256": "611acf6979914dbc3bae6e0d90d11377157746fc37de87d97816ba5fb99c1e52",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.usbsmartcardreaderd",
+      "program": "/System/Library/CryptoTokenKit/usbsmartcardreaderd.slotd/usbsmartcardreaderd",
+      "source_sha256": "42014f2585197a071bd4297e34bcc42a9e30320388c7e053788a8bb2724adffe",
+      "output_sha256": "d19dc2a1bb170bbeaf2bab4d1d8113a083b168cd0a0bf3a41a257c499042858f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.UserEventAgent-System",
+      "program": "/usr/libexec/UserEventAgent",
+      "source_sha256": "aeb5d439e8ce6a53af6e2265acecf7bfcd65b45d2b9647a68a884465e8f00d65",
+      "output_sha256": "a0b34829afe2dc2b63ef9f0a4a36435e6edb6b67e3f0bf808b0992a9096826c9",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.videosubscriptionsd",
+      "program": "/usr/libexec/videosubscriptionsd",
+      "source_sha256": "e98f38d462c2435e0aaa3be8ccb005b540e8ea469cf17e4b65d201a1ed42f62a",
+      "output_sha256": "f1781378b7f9396ab7be4c99937a33cc2b27186eee43e411c454beb7516f6caa",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.voiced",
+      "program": "/System/Library/PrivateFrameworks/VoiceServices.framework/Support/voiced",
+      "source_sha256": "7666706a46ae1a59729b410b0477b332189444e110ad60f3c08a2ad64b1a5e33",
+      "output_sha256": "c790937efe85811b00c88e2b9654eedcafa1f767957b0b3028670fdd3092a9ee",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.voicemail.vmd",
+      "program": "/System/Library/PrivateFrameworks/VisualVoicemail.framework/vmd",
+      "source_sha256": "1c50ca17ae9b18273372d7011e09e2c19e082711dc72b58ba33d93c4a83340eb",
+      "output_sha256": "f0e39b4683753e076a2165f7dd9b0b7dc004abf7debd404b80c38490245478bf",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.voicememod",
+      "program": "/System/Library/PrivateFrameworks/VoiceMemos.framework/Support/voicememod",
+      "source_sha256": "21f69a437d70eed20092653b8ac8163b0b009bf5aac01b56e17b75f765e39777",
+      "output_sha256": "62c646492f0495d9b92a7aa5ab284f78cb5d62d2cbeaa8b2daa3ddb8e13988a2",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.VoiceOverTouch",
+      "program": "/System/Library/CoreServices/VoiceOverTouch.app/vot",
+      "source_sha256": "eece7b9d8280f3a8e8dad798663f1c7b5b0e4de3225b82cb1678ab136c3331f0",
+      "output_sha256": "24a14dd1ebd5346a93ede16665741ceb6452f34d48ed1676691c755577801eb0",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.watchdogd",
+      "program": "/usr/libexec/watchdogd",
+      "source_sha256": "3c05ece7df5ee24898e719b3f68d710eef7f2f71c153ab8c5e1634d82d50486a",
+      "output_sha256": "b172c9c368a9158f654b1cff623b603367203c4e69a017d7a3bb18c2552b990b",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.watchlistd",
+      "program": "/System/Library/PrivateFrameworks/WatchListKit.framework/Support/watchlistd",
+      "source_sha256": "bf98981ab85a85ca66fde0611677bafe8845a04a0e05141ee8ec71f66a79809a",
+      "output_sha256": "d53e28b513d5e1f450d0dd011d8a0e8067acf4af0faf07961eefd390ed97b57d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.watchpresenced",
+      "program": "/usr/libexec/watchpresenced",
+      "source_sha256": "09a5df09c6358a7533e6012dc0906a92d579d3257776f1d13a69672524efe704",
+      "output_sha256": "2d7ef03e215b06edebe6fa800a7d67aa9c6f84c6b4450b504e35c817ef17ca9f",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.wcd",
+      "program": "/usr/libexec/wcd",
+      "source_sha256": "ad256c6d8a5b0c21131a33fde8c8d74318897702d8a534707dc101dc47bf38a2",
+      "output_sha256": "9640545d98c17abadb5c40d013a51efff41e5531b4035e4230aaef8bed59cd8d",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.weatherd",
+      "program": "/System/Library/PrivateFrameworks/WeatherDaemon.framework/weatherd",
+      "source_sha256": "bd7017824e7047a2cc543462fd4fe11861bd0e1058cfa0697afcc77c51075200",
+      "output_sha256": "45def0a16fdc8128633789caa844cff2a8c65f35c78d67dc6f2a2aa64661ea10",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.WebBookmarks.webbookmarksd",
+      "program": "/System/Cryptexes/App/usr/libexec/webbookmarksd",
+      "source_sha256": "a80eb31241e1514990a301a3d878a8dd81a514980386fef47e169ebb5beb315e",
+      "output_sha256": "51cd6abc964a1276d4c8c48965e687b91c45d93e4e89b63ff8ec4cf2db2c1ea4",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.webinspectord",
+      "program": "/System/Cryptexes/App/usr/libexec/webinspectord",
+      "source_sha256": "45017c906e8b9246916da445b489d55160b515decac1a76f4508abaa91d555d4",
+      "output_sha256": "ee883375f43e20bb80eff30ab6df04dc5dafa7822ec42d41bee5e7a7de285b31",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.webkit.adattributiond",
+      "program": "/System/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/Daemons/adattributiond",
+      "source_sha256": "6f71c75e7c7707627f75808553907e74c25be4deb9dbf2a62439d4b627b0c1ac",
+      "output_sha256": "fa036933fc53d5343d9fb1219cd2bd703d304aec28d08820f3bedbf89905abae",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.webkit.webpushd",
+      "program": "/System/Cryptexes/App/usr/libexec/webpushd",
+      "source_sha256": "41ae26d173740fa44457583879481cfa3eb30902395c7fd94d23112decfb3fc1",
+      "output_sha256": "425bef29e877bcf297a5c27463df01545db3a1bc8762a52b618a4ae9b22f8e26",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.wifi.hostapd",
+      "program": "/usr/libexec/hostapd",
+      "source_sha256": "5ee7281f8f1a447a771bd4bc123c9e8eb6434641616f16d5be626f29fc3e9eef",
+      "output_sha256": "7a93093e72c76157e2ee7571d32db4e3bb70ddfe97af96d46dfead3a76f5baa3",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.wifi.wapic",
+      "program": "/usr/libexec/wapic",
+      "source_sha256": "73806fba6cfc6078aca03b918b17b80fd4fbac0995b5f990397efed80be536e1",
+      "output_sha256": "b74b594b87a3a5ee66fb6c9322b0ec51bf99d675bb9713c756b18b17bf7a09db",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad"
+      ]
+    },
+    {
+      "label": "com.apple.wifianalyticsd",
+      "program": "/usr/libexec/wifianalyticsd",
+      "source_sha256": "6b7fb09d7cafec00bde1e3c42a6b44522ea8e06ffa1e2a7f8ff8fdead8294f59",
+      "output_sha256": "136750d268ea21b11890a2c5663c9453b2165ea40b244172858ed08aeb333e92",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.wifid",
+      "program": "/usr/sbin/wifid",
+      "source_sha256": "3fe7d52d7c51c40b4bdc05800504b89e2554a1608c1418da145873b9d8f424aa",
+      "output_sha256": "938ad763d175cb99c84a85c65d4ee1973401abc9622f61db6d4efad17e6de418",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart RunAtLoad",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.wifiFirmwareLoader",
+      "program": "/usr/libexec/wifiFirmwareLoader",
+      "source_sha256": "6d0fbbfb2ed38bca7d1cb6f011189b4d74dcb940e439560e052c03f024efc4bf",
+      "output_sha256": "a3a2a59a27d1c3b57e9cd180f6ba9ab395779853c63982c52b12728130959d57",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive",
+        "removed autostart LaunchEvents"
+      ]
+    },
+    {
+      "label": "com.apple.wifip2pd",
+      "program": "/usr/libexec/wifip2pd",
+      "source_sha256": "6d02e9b23bd7744a7290093e51a0cb7a3bd3626f3c4a988691072a226e0fc9cb",
+      "output_sha256": "8f1cda9975315780ef3d186278e24ad231f101c1ddec281ffb482574856d158e",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.wifivelocityd",
+      "program": "/usr/libexec/wifivelocityd",
+      "source_sha256": "9a9fc4d7705f541979d8a1f946a98015331de6038a154d215a1c6df8f19b725d",
+      "output_sha256": "2f4a6e29ea434153c60a7b2e4015b6865d3ce22808a8d75f0a5d22f6851c7479",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    },
+    {
+      "label": "com.apple.WirelessRadioManager",
+      "program": "/usr/sbin/WirelessRadioManagerd",
+      "source_sha256": "931349c64f11e751bd67be74b387007fbb548d3c7c2f4f4ad919f60ad2902ecc",
+      "output_sha256": "685032c2c9767dd45ed3e514fdca3109805410f0400c0d52ae928dfd442c27e5",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE",
+        "removed autostart KeepAlive"
+      ]
+    },
+    {
+      "label": "com.apple.xpc.roleaccountd",
+      "program": "/usr/libexec/xpcroleaccountd",
+      "source_sha256": "a9141b9707bc889fbae3a74c870c4a3d3be4e2a08c52c91458a5884320c9e258",
+      "output_sha256": "553cb23406f67b1409e5a952661816cc4c68a5ea9ff25b2013a52a6723d01553",
+      "changes": [
+        "EnvironmentVariables.OS_ACTIVITY_DT_MODE"
+      ]
+    }
+  ],
+  "publish_on_demand": true,
+  "skipped_jobs": [
+    {
+      "file": "bootps.plist",
+      "label": "com.apple.bootpd",
+      "program": "/usr/libexec/bootpd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.assistantd.plist",
+      "label": "com.apple.assistantd",
+      "program": "/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.bluetoothuiservice.plist",
+      "label": "com.apple.BluetoothUIService",
+      "program": "/System/Library/CoreServices/BluetoothUIService.app/BluetoothUIService",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.CloudSettingsSyncAgent.plist",
+      "label": "com.apple.cloudsettingssyncagent",
+      "program": "/System/Library/CoreServices/CloudSettingsSyncAgent",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.CommCenter-noncellular.plist",
+      "label": "com.apple.CommCenter",
+      "program": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.dietapplecamerad.plist",
+      "label": "com.apple.dietapplecamerad",
+      "program": "/usr/sbin/dietapplecamerad",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.dietappleh13camerad.plist",
+      "label": "com.apple.dietappleh13camerad",
+      "program": "/usr/sbin/dietappleh13camerad",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.fairplayd.H2.plist",
+      "label": "com.apple.fairplayd.H2",
+      "program": "/usr/sbin/fairplayd.H2",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.familynotificationd.plist",
+      "label": "com.apple.familynotification",
+      "program": "/System/Library/PrivateFrameworks/FamilyNotification.framework/familynotificationd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.icloud.searchpartyd.plist",
+      "label": "com.apple.icloud.searchpartyd",
+      "program": "/usr/libexec/searchpartyd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.identityservicesd.plist",
+      "label": "com.apple.identityservicesd",
+      "program": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/identityservicesd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.idscredentialsagent.plist",
+      "label": "com.apple.ids.IDSCredentialsAgent",
+      "program": "/System/Library/PrivateFrameworks/IDSFoundation.framework/IDSCredentialsAgent.app/IDSCredentialsAgent",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.idsremoteurlconnectionagent.plist",
+      "label": "com.apple.idsfoundation.IDSRemoteURLConnectionAgent",
+      "program": "/System/Library/PrivateFrameworks/IDSFoundation.framework/IDSRemoteURLConnectionAgent.app/IDSRemoteURLConnectionAgent",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.imtransferagent.plist",
+      "label": "com.apple.imcore.imtransferagent",
+      "program": "/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferAgent.app/IMTransferAgent",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.jetsamproperties.D22.plist",
+      "label": null,
+      "program": null,
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.jetsamproperties.D221.plist",
+      "label": null,
+      "program": null,
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.locationd.plist",
+      "label": "com.apple.locationd",
+      "program": "/usr/libexec/locationd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.lskdd.plist",
+      "label": "com.apple.lskdd",
+      "program": "/usr/libexec/lskdd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.Maps.pushdaemon.plist",
+      "label": "com.apple.Maps.mapspushd",
+      "program": "/System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.mDNSResponder.plist",
+      "label": "com.apple.mDNSResponder.reloaded",
+      "program": "/usr/sbin/mDNSResponder",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.mDNSResponderHelper.plist",
+      "label": "com.apple.mDNSResponderHelper.reloaded",
+      "program": "/usr/sbin/mDNSResponderHelper",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.midiserver-ios.plist",
+      "label": "com.apple.midiserver",
+      "program": "/System/Library/Frameworks/CoreMIDI.framework/MIDIServer",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.mobile_installation_proxy.plist",
+      "label": "com.apple.mobile.installation_proxy",
+      "program": "/usr/libexec/mobile_installation_proxy",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.nanoprefsyncd.plist",
+      "label": "com.apple.nanoprefsyncd.2",
+      "program": "/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/nanoprefsyncd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.nehelper-embedded.plist",
+      "label": "com.apple.nehelper",
+      "program": "/usr/libexec/nehelper",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.NetworkLinkConditioner.plist",
+      "label": "com.apple.nlcd",
+      "program": "/usr/libexec/nlcd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.passd.plist",
+      "label": "com.apple.passd",
+      "program": "/System/Library/PrivateFrameworks/PassKitCore.framework/passd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.sntpd.plist",
+      "label": "com.apple.sntpd",
+      "program": "/usr/sbin/sntpd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.splashboardd.plist",
+      "label": "com.apple.splashboard",
+      "program": "/usr/libexec/splashboardd",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.sysdiagnose.darwinos.plist",
+      "label": "com.apple.sysdiagnose",
+      "program": "/usr/bin/sysdiagnose",
+      "reason": "No matching original label or executable in this root"
+    },
+    {
+      "file": "com.apple.telephonyutilities.callservicesd.plist",
+      "label": "com.apple.telephonyutilities.callservicesd",
+      "program": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd",
+      "reason": "No matching original label or executable in this root"
+    }
+  ],
+  "standard_shared_cache_path_supplied": true,
+  "diagnostic_console_stderr": false,
+  "data_volume_mounted": false,
+  "device_commands_executed": false,
+  "scope": "Host QEMU service-loading fixture; not a phone desktop image"
+}
