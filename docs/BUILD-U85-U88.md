@@ -193,7 +193,6 @@ upstream/build/xnu/ios-obj/DEVELOPMENT_ARM64_BCM2837/iokit/DEVELOPMENT/IOPlatfor
 
 已公开：本页涉及的 profile、实际 Make / 链接脚本、Clang 包装器、关键编译命令、CoreCrypto / pthread import receipt、prelink roots、运行配置、介质哈希和帧缓冲约束。
 
-SDK 与完整 IIG 缓存现已作为 [构建依赖 Release](https://github.com/chenmingjie1/UniXNU-odin/releases/tag/build-inputs-ios16.5-xnu8796-20261107) 公开，含 `libcc_kext.a`、`libfirehose_kernel.a`、`native8796/generated` 和 `legacy-headers`；详见 [安装与来源](BUILD-INPUTS.md)。[`system-host-input-u80.apfs` 获取与生成说明](SYSTEM-HOST-INPUT-U80.md) 公开 Apple 输入地址、历史转换链、辅助程序及校验值。
 
 系统与原版驱动介质、厂商固件数据、其他历史 ABI 生成输入，以及相应阶段的 provider 编译产物仍须按流程单独取得或重新生成。SDK / IIG 附件并未补齐其余全部依赖。
 

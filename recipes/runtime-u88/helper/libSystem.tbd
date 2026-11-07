@@ -1,8 +1,0 @@
---- !tapi-tbd-v3
-archs: [ arm64 ]
-platform: ios
-install-name: /usr/lib/libSystem.B.dylib
-exports:
-  - archs: [ arm64 ]
-    symbols: [ _open, _dprintf, _close, _getpid, _dispatch_time, _dispatch_after_f, __dispatch_main_q, dyld_stub_binder, _free, _sysctlbyname ]
-...
