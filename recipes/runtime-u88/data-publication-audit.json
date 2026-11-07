@@ -1,0 +1,17 @@
+{
+  "scope": "Live allocated files in offline QEMU-generated test Data; no physical phone Data partition was used",
+  "data_sha256": "07b5e68dba65b202911eee6c34d3016cb030cd5cb758021b47cae48f52c5854e",
+  "files": 967,
+  "account_rows": 0,
+  "credential_rows": 0,
+  "keychain_items": 0,
+  "keychain_private_keys": 0,
+  "known_wifi_networks": 0,
+  "complete_private_key_pem_blocks": 0,
+  "github_token_matches": 0,
+  "pem_label_match": {
+    "path": "/db/uuidtext/dsc/E5420DB330D033AA8B7E05B5038BB46D",
+    "classification": "Shared-cache uuidtext log-format strings; no complete private key PEM body"
+  },
+  "synthetic_state": "Contains offline-generated simulator UUIDs, system subscription metadata and logs; no signed-in account. Not a personal backup."
+}

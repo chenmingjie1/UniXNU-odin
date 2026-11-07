@@ -1,5 +1,7 @@
 # system-host-input-u80.apfs 获取与生成
 
+> 如需直接运行现有桌面，请使用 [u88 完整运行包与启动说明](DESKTOP-U88-RUNTIME.md)。本页保留构建 / 历史生成资料，不能替代完整运行环境。
+
 `system-host-input-u80.apfs` 是本项目逐步生成的 RAM System 介质。**它没有对应的 Apple 官方同名下载文件。** 这里公开原始介质来源、实际转换链、历史辅助程序、配置和校验值；完整 APFS 不在本次附件中。
 
 ## 1. 从 Apple 获取 20F66 输入

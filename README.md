@@ -8,6 +8,8 @@
 
 > **依赖文件补充（2026-11-07）：** 已上传 [SDK 与完整 IIG 缓存 Release](https://github.com/chenmingjie1/UniXNU-odin/releases/tag/build-inputs-ios16.5-xnu8796-20261107)，含 `libcc_kext.a`、`libfirehose_kernel.a`、`native8796/generated` 和 `legacy-headers`。参见 [下载与安装](docs/BUILD-INPUTS.md) 及 [u80 APFS 获取、生成与配置](docs/SYSTEM-HOST-INPUT-U80.md)。
 
+> **完整桌面运行包（2026-11-07）：** 已提供固定 u88 的内核、core7 驻留启动固件、ADT、System / 测试 Data / trust 和 USB 供盘工具。[下载运行包](https://github.com/chenmingjie1/UniXNU-odin/releases/tag/desktop-u88-runtime-20261107) · [中文启动说明](docs/DESKTOP-U88-RUNTIME.md)。适用于 MIX 4 / odin；其他设备未经验证，u88 底部 Home 手势和桌面 GPU 合成仍有已知限制。
+
 ## 项目情况
 
 | 项目 | 当前情况 |
@@ -19,7 +21,7 @@
 | 最新已记录实机版本 | u91，2026-11-07 |
 | 测试方式 | 临时 RAM 启动，System / Data 介质位于内存中 |
 | 源码范围 | 板级适配、显示与触摸驱动、实验性 GPU 后端、固件衔接及开发工具 |
-| 发布范围 | 源码与文档，以及 Release 中的 SDK / IIG 构建输入；不包含完整 Apple 系统镜像、原版驱动二进制、厂商固件数据或账号凭据 |
+| 发布范围 | 源码、SDK / IIG，以及独立 Release 中的 u88 完整 RAM 桌面运行文件；不含个人手机备份、已登录账号或私钥 |
 
 本项目与参考仓库 [HakiOS / raphael](https://github.com/HeliumStudio-Dev/hackios-xnu-kernel) 的目标设备和实现路径不同。该仓库的 Redmi K20 Pro / Mi 9T Pro 启动包、GPU / Wi-Fi 结论及操作步骤，不能直接作为 MIX 4 的测试结果或使用说明。
 
@@ -86,13 +88,13 @@ python scripts/check_touch_bridge.py --cc /path/to/clang --clang /path/to/clang
 
 这项检查验证协议与触摸报告桥接逻辑，不证明实机 Home 手势、滚动性能或桌面 GPU 渲染已经可用。
 
-当前实机验证基于临时 RAM 启动。本仓库尚未提供面向新环境的完整启动教程或受支持的永久刷入步骤，请勿套用其他机型的镜像、分区写入命令或固件。
+当前实机验证基于临时 RAM 启动。使用已构建文件可按 [u88 完整运行包教程](docs/DESKTOP-U88-RUNTIME.md) 下载、校验并启动；从源码重建全部相同文件的闭环仍未完成。本项目不提供永久刷入步骤。
 
 ## 常见问题
 
 **能否直接下载后刷入，作为日常系统使用？**
 
-当前不能。本仓库发布开发源码与记录，尚未提供完整的可刷入发行版。
+可以下载 u88 运行包做临时 RAM 桌面启动，但它仍有已知功能限制，不是可日常使用或永久刷入的发行版。
 
 **现在是否已经有桌面 GPU 加速？**
 

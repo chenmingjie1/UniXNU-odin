@@ -1,0 +1,264 @@
+{
+  "efi_sha256": "ca1b72f1d6fabb5160b0e6490a8aa994b4f7b86dccb9e93acff8ff2441f31e48",
+  "bytes": 362496,
+  "shared_sources_modified": false,
+  "app_guid": "9B665204-A133-47A2-9396-9E2B370A4E25",
+  "inputs": [
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\build\\odin-unixnu-bds-u88\\OdinUniXNU.c",
+      "sha256": "6ddc308a1850759ef2a5287cd7336d20cf2ea16d5582b334456f056dc3cfb223"
+    },
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\odinPkg\\Library\\BootManagerLib\\BootManagerLib\\OUTPUT\\BootManager.obj",
+      "sha256": "f9fed7a0ed19106e16d0ef3030512eb8d2deeee8d5e25398b850b9bdea2ea12e"
+    },
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\odinPkg\\Library\\BootManagerLib\\BootManagerLib\\OUTPUT\\KeyCallback.obj",
+      "sha256": "ae84dcedc0afdcde7f42d9d31372df775457c762820acc6acaa514bc7588f5b6"
+    },
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\build\\odin-unixnu-bds-u88\\OdinUniXNU.obj",
+      "sha256": "80a536a5e210688b32ba4a3f83a5483dbb400f7744812e6b57eefe295cc6c5c1"
+    },
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\build\\odin-unixnu-bds-u88\\OdinRemoteMedia.obj",
+      "sha256": "4c4fc49c94c8c998d1e79a69845bb184e5825ce80a97ae25a191a7a73b8d18a7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Universal\\BdsDxe\\BdsDxe\\OUTPUT\\BdsDxe.lib",
+      "sha256": "21639108752e13496cdca31618ce2dae6d1997e758f91c0073f47b63406c0aff"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\DxePcdLib\\DxePcdLib\\OUTPUT\\DxePcdLib.lib",
+      "sha256": "9dc716ecb95856beb0166e5791be452683f5b9a972829d289463dba4ce0267c1"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseDebugLibNull\\BaseDebugLibNull\\OUTPUT\\BaseDebugLibNull.lib",
+      "sha256": "4bc07d0758974b25fbeecf47b14f509e508c9c4eac5ca6ba5ade9ecfeafb7009"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseMemoryLib\\BaseMemoryLib\\OUTPUT\\BaseMemoryLib.lib",
+      "sha256": "adb0fdd1c94b2ba2fc2d598cad3f8aa29439587ea07e4eeb8cd787ddb2e82916"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseLib\\BaseLib\\OUTPUT\\BaseLib.lib",
+      "sha256": "9b58dd91740e5df76079d8495870d49639a9956dffda3fe1b2a6c194f20ee808"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiBootServicesTableLib\\UefiBootServicesTableLib\\OUTPUT\\UefiBootServicesTableLib.lib",
+      "sha256": "869bd5c2837ae205ce430a60d5102577abfae1106be7c85bb67dcd0336d42653"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BasePrintLib\\BasePrintLib\\OUTPUT\\BasePrintLib.lib",
+      "sha256": "2f352822ec9dade5eeabf0a53bd3db0270c6b305a3888324eb97c676361f5b7e"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiMemoryAllocationLib\\UefiMemoryAllocationLib\\OUTPUT\\UefiMemoryAllocationLib.lib",
+      "sha256": "eee58e55ea1883ce43b4bdd941c1dff0529a1af14780012b4b17c89fdd60468c"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiDevicePathLib\\UefiDevicePathLib\\OUTPUT\\UefiDevicePathLib.lib",
+      "sha256": "a25b9c5c92ec6b0ab38e633a65bad8117c57fb15ba486c630cc6b2881eed89bc"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiRuntimeServicesTableLib\\UefiRuntimeServicesTableLib\\OUTPUT\\UefiRuntimeServicesTableLib.lib",
+      "sha256": "1520b7af63ddfb5d439673c21367540b76182395da63692f76fff26577bfa4ff"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\FrameBufferBltLib\\FrameBufferBltLib\\OUTPUT\\FrameBufferBltLib.lib",
+      "sha256": "cf152fede315c992bafb09c9994b56002fc1a535b82fbb277f341b18cec6518b"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\DxeReportStatusCodeLib\\DxeReportStatusCodeLib\\OUTPUT\\DxeReportStatusCodeLib.lib",
+      "sha256": "11d3a72e73e1e4e11fb6e7024a0dae126fbc6b7519dd40b25fc1fa18b0559885"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiLib\\UefiLib\\OUTPUT\\UefiLib.lib",
+      "sha256": "b7a578fff84c2f87d9491b5c239dd2d507ace5c72a89f1ffaf90e93b55f3ed48"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsGraphicsPkg\\Library\\FrameBufferMemDrawLib\\FrameBufferMemDrawLibDxe\\OUTPUT\\FrameBufferMemDrawLibDxe.lib",
+      "sha256": "73387bba41648344b1e8da9f6cf1c8fe7674379ad34e60453466de408b7bf587"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsWheaPkg\\Library\\MuTelemetryHelperLib\\MuTelemetryHelperLib\\OUTPUT\\MuTelemetryHelperLib.lib",
+      "sha256": "3bd0ecd3ca8032643e2ca51165d3a0e766b4ae62f4c47714805c08b411edafa3"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\UefiHiiServicesLib\\UefiHiiServicesLib\\OUTPUT\\UefiHiiServicesLib.lib",
+      "sha256": "7b379b1449f172f041fccd5cfb2ba1c3b4c4d7794a632e1188a7202b8fedfe6f"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseSafeIntLib\\BaseSafeIntLib\\OUTPUT\\BaseSafeIntLib.lib",
+      "sha256": "76b14df4746d0043bb20a3e1076391b50361a9291798ce5a46589b1b8c35cb9f"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SecurityPkg\\Library\\PlatformPKProtectionLibVarPolicy\\PlatformPKProtectionLibVarPolicy\\OUTPUT\\PlatformPKProtectionLibVarPolicy.lib",
+      "sha256": "e131976de5d935b8952fd01c77f2b4030254142216777dc2a27ddb205959ed59"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\odinPkg\\Library\\MemoryMapLib\\MemoryMapLib\\OUTPUT\\MemoryMapLib.lib",
+      "sha256": "d5d45fb5886284785592206d4625cc98c035a9fbc960d43bdd76484bc4ac1848"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\DxeServicesLib\\DxeServicesLib\\OUTPUT\\DxeServicesLib.lib",
+      "sha256": "5c6a9d5d05e8c06fb0fcbb41541727a3109f06068101dece4622d1f192d1d9f3"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\DeviceStateLib\\DeviceStateLib\\OUTPUT\\DeviceStateLib.lib",
+      "sha256": "fc1f15e2f50902efaf35a63524bec0a7b0f6840f0ff19df355dd729b3ccb5ba8"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsGraphicsPkg\\Library\\BaseUiRectangleLib\\BaseUiRectangleLib\\OUTPUT\\BaseUiRectangleLib.lib",
+      "sha256": "d6bdcb081914578bdc8840e5d875993fcb1698a890d125daa0197286abf86896"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsCorePkg\\Library\\MemoryTypeInformationChangeLib\\MemoryTypeInformationChangeLib\\OUTPUT\\MemoryTypeInformationChangeLib.lib",
+      "sha256": "333aab73c286d43f9c1f1e4b6334d08c9696f5fd20bd4aced2f1e388453bc8d9"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\UefiSortLib\\UefiSortLib\\OUTPUT\\UefiSortLib.lib",
+      "sha256": "830e8a2204ced1ecb24413ba22be5f4551035ca956bba0e659bcf4222917c789"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\UefiHiiLib\\UefiHiiLib\\OUTPUT\\UefiHiiLib.lib",
+      "sha256": "8fe17838e77d22aed8ed30a8e0c5c4ad312191675801ccdced18e476f197c0fa"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\DxeServicesTableLib\\DxeServicesTableLib\\OUTPUT\\DxeServicesTableLib.lib",
+      "sha256": "89abb2d8258cf648dce35aba2cea400eae1a5230712c2b61b39b8e6e22a10e73"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BasePeCoffGetEntryPointLib\\BasePeCoffGetEntryPointLib\\OUTPUT\\BasePeCoffGetEntryPointLib.lib",
+      "sha256": "aa5fb45d617d9bb4dc6f3291a2d56cef75682f0bbcc9a284dd214f9f733e7507"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\DxeHobLib\\DxeHobLib\\OUTPUT\\DxeHobLib.lib",
+      "sha256": "98346b374e21257803f60fc6cb466091451cf659b883682e9fb7426d5c3a1adb"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BasePerformanceLibNull\\BasePerformanceLibNull\\OUTPUT\\BasePerformanceLibNull.lib",
+      "sha256": "49d92e1bab4c7f371af5d85c3eb8bdeb7e57c886fa82ea60311b095a3718c828"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\VariablePolicyHelperLib\\VariablePolicyHelperLib\\OUTPUT\\VariablePolicyHelperLib.lib",
+      "sha256": "f91283a51794d4c3357cd39519f90212827e848bedc573c2d3b74c34b434799a"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsCorePkg\\Library\\SecureBootKeyStoreLibNull\\SecureBootKeyStoreLibNull\\OUTPUT\\SecureBootKeyStoreLibNull.lib",
+      "sha256": "917e765cd7ca303e3833d613063911e259cf78b5f8b9505967324b2dd395adbb"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SecurityPkg\\Library\\SecureBootVariableLib\\SecureBootVariableLib\\OUTPUT\\SecureBootVariableLib.lib",
+      "sha256": "6afcce503515888f7a21f852305f9b416ed1a02e8acd8ab510576a3e4b38dfde"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\MemoryMapHelperLib\\MemoryMapHelperLib\\OUTPUT\\MemoryMapHelperLib.lib",
+      "sha256": "f6cc9abf0f5f3426c9c357f426a414299b2c8f41165bfdf2af2dd1a758aaccd3"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\ArmLib\\ArmBaseLib\\OUTPUT\\ArmBaseLib.lib",
+      "sha256": "1908e29c1e7ba9e723b8a67f913e858e4a025d0a060553bde4490c6d199d0ab7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\BaseBmpSupportLib\\BaseBmpSupportLib\\OUTPUT\\BaseBmpSupportLib.lib",
+      "sha256": "e65ef5c39b57524a5133fb0ebe3ed0036d565e44f1bbecc905fc670fa0e2f05c"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\BootGraphicsProviderLib\\BootGraphicsProviderLib\\OUTPUT\\BootGraphicsProviderLib.lib",
+      "sha256": "f1d252e61e78cc5086ca5acd03fe0b08e5857b08d5b8c033476ecf703c9a23fe"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsGraphicsPkg\\Library\\ColorBarDisplayDeviceStateLib\\ColorBarDisplayDeviceStateLib\\OUTPUT\\ColorBarDisplayDeviceStateLib.lib",
+      "sha256": "ece3ebe82a8b4168a3ee017df8f1957fd62a36af9b6a56ff3a9195109e59ab16"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\QcomPkg\\Library\\PlatformBootOptionsLib\\PlatformBootOptionsLib\\OUTPUT\\PlatformBootOptionsLib.lib",
+      "sha256": "fea201eef2292e6e45d9009a596588fe65f6a785a1d34a6e06d72fed4f5bd7a0"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdeModulePkg\\Library\\UefiBootManagerLib\\UefiBootManagerLib\\OUTPUT\\UefiBootManagerLib.lib",
+      "sha256": "8be6540648bb461a34f0b8c124b0bceeddd54a69227cbe284dd39978fb43cc12"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsCorePkg\\Library\\MuSecureBootKeySelectorLib\\MuSecureBootKeySelectorLib\\OUTPUT\\MuSecureBootKeySelectorLib.lib",
+      "sha256": "2b08c570eb6f6fdba3b96c34ee1d54ba8711ad0cf081bc3a48a1e92ad91094f4"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\CryptoPkg\\Library\\BaseCryptLibNull\\BaseCryptLibNull\\OUTPUT\\BaseCryptLibNull.lib",
+      "sha256": "1053103a809772b00bb77bc9f5028ef84047a3147627985b6ea4754253f0d096"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\QcomPkg\\Library\\RfsProtectionLib\\RfsProtectionLib\\OUTPUT\\RfsProtectionLib.lib",
+      "sha256": "8ab07e47a86350330856db7c5ad99f8e88eec3dcb24eb5b063bfbd478f4b60d8"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\AslUpdateLib\\AslUpdateLib\\OUTPUT\\AslUpdateLib.lib",
+      "sha256": "19fde0101d1fe47591c32112cad4f1bffc73e3365aed35be9849f72bc573aea7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\ArmPkg\\Library\\ArmCacheMaintenanceLib\\ArmCacheMaintenanceLib\\OUTPUT\\ArmCacheMaintenanceLib.lib",
+      "sha256": "fb02e0e5cad7bac5d413ecdb3ca51a43fe2a3b694f8e6e24cd1afae324bb0fb7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\StackCheckLibNull\\StackCheckLibNull\\OUTPUT\\StackCheckLibNull.lib",
+      "sha256": "d0602fd252d843ffe170ce50808feb26380f69171f68d70ef4a8f4effb003b4e"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MsGraphicsPkg\\Library\\BootGraphicsLib\\BootGraphicsLib\\OUTPUT\\BootGraphicsLib.lib",
+      "sha256": "6564a2f19f7c969f2767f3eb1b05a9cd921cc647c97c9d8890043dc5aa3f43d1"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\MsBootOptionsLib\\MsBootOptionsLib\\OUTPUT\\MsBootOptionsLib.lib",
+      "sha256": "8400ccaa17590a56ed43fe82515a9c086faec792bec00ec455d0901f2848861f"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\SecureBootHandlerLib\\SecureBootHandlerLib\\OUTPUT\\SecureBootHandlerLib.lib",
+      "sha256": "786088326e6dd5df4b3740b650d60da953f7790ee0b7236d95ec257b2c4e4aca"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\QcomPkg\\Library\\PlatformBootManagerLib\\PlatformBootManagerLib\\OUTPUT\\PlatformBootManagerLib.lib",
+      "sha256": "f489de9194e691b507a6dd86540672dc5b070afc473a2367959533946028eddc"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\LahainaPkg\\Library\\AcpiTableUpdateLib\\AcpiTableUpdateLib\\OUTPUT\\AcpiTableUpdateLib.lib",
+      "sha256": "0beed207d641cb1aeb3ab4db20f33be43dd3aaae5af269e7c3c1aa9c9cb893aa"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\QcomPkg\\Library\\ErrataPatchesLib\\ErrataPatchesLib\\OUTPUT\\ErrataPatchesLib.lib",
+      "sha256": "c4066be0f49d0e18ed5af0728a94a030122e0febcc1390067829c25f416e3f76"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiDriverEntryPoint\\UefiDriverEntryPoint\\OUTPUT\\UefiDriverEntryPoint.lib",
+      "sha256": "4214cde222cd368a0814ec8bae2c1b0181ef68e3883ce062add86fdc88cea734"
+    },
+    {
+      "path": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\build\\odin-unixnu-bds-u88\\BootManagerLib.lib",
+      "sha256": "9f1f87fc9e86a1991fb89cc8aabfb6f241563c3d7d1c1b276eac0c246c89db0f"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\CompilerIntrinsicsLib\\CompilerIntrinsicsLib\\OUTPUT\\CompilerIntrinsicsLib.lib",
+      "sha256": "75119315b320893e27a231a26f74fb8b9d1689c13d0ba09c5ee8593e75745e39"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\SiliciumPkg\\Library\\KernelErrataPatcherLib\\KernelErrataPatcherLib\\OUTPUT\\KernelErrataPatcherLib.lib",
+      "sha256": "a74c0a09fbde7f13efe60aadb79f96e39f46756dd6a5a3a7292bcafa514be008"
+    }
+  ],
+  "device_tested": false,
+  "diagnostic_revision": "u65",
+  "remote_media": true,
+  "retains_return_status": true,
+  "falls_through_to_bds": false,
+  "status_rows": {
+    "0400": "install read-only remote filesystem",
+    "0401": "USB handshake",
+    "0402": "disable diagnostic watchdog",
+    "0403": "get FV section",
+    "0404": "LoadImage",
+    "0405": "loaded image protocol",
+    "0406": "before StartImage",
+    "0407": "StartImage returned"
+  },
+  "loader_failure_recovery": "Intercept DarwinBoot return before menu; retain EFI status and pump read-only USB with reboot support. No recovery after ExitBootServices."
+}

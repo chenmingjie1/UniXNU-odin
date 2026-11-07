@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "release": "u88",
+  "device": "odin",
+  "os": "iOS16.5/20F66",
+  "runtime_tag": "desktop-u88-runtime-20261107",
+  "boot": {
+    "path": "boot/MIX4-UniXNU-desktop-u88-boot.img",
+    "bytes": 2105344,
+    "sha256": "a77af91958c3fe2ede4f6da1e6fae9f9424f99b8dce2ffc39e0e9ea854a4676e"
+  },
+  "remote_serial": "odin-unixnu-u64",
+  "files": [
+    {
+      "id": 0,
+      "uefi_path": "\\",
+      "bytes": 0,
+      "path": null
+    },
+    {
+      "id": 1,
+      "uefi_path": "\\EFI",
+      "bytes": 0,
+      "path": null
+    },
+    {
+      "id": 2,
+      "uefi_path": "\\EFI\\UniXNU",
+      "bytes": 0,
+      "path": null
+    },
+    {
+      "id": 3,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads",
+      "bytes": 0,
+      "path": null
+    },
+    {
+      "id": 4,
+      "uefi_path": "\\EFI\\UniXNU\\DarwinBoot.efi",
+      "path": "esp/EFI/UniXNU/DarwinBoot.efi",
+      "bytes": 95232,
+      "sha256": "a1b34117b59c10921253b7ab1e0d3080b243b8bf98a3402cbc23e2337d789040"
+    },
+    {
+      "id": 5,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads\\kernel.macho",
+      "path": "esp/EFI/UniXNU/Payloads/kernel.macho",
+      "bytes": 56590336,
+      "sha256": "3f95a57bbd346cf8a8c493d365cd98299ce17d21255fa3f5400c133f72bd9d1b"
+    },
+    {
+      "id": 6,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads\\kernel.macho.adt",
+      "path": "esp/EFI/UniXNU/Payloads/kernel.macho.adt",
+      "bytes": 12528,
+      "sha256": "8f85d0186be39386e68f1fd5b1abf505c315a5e523fd33df6f6a5dbfd362d622"
+    },
+    {
+      "id": 7,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads\\kernel.macho.data",
+      "path": "esp/EFI/UniXNU/Payloads/kernel.macho.data",
+      "bytes": 504795136,
+      "sha256": "07b5e68dba65b202911eee6c34d3016cb030cd5cb758021b47cae48f52c5854e"
+    },
+    {
+      "id": 8,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads\\kernel.macho.system",
+      "path": "esp/EFI/UniXNU/Payloads/kernel.macho.system",
+      "bytes": 2478948352,
+      "sha256": "d9c63f216eed64877c28697e3372de6b5339275acc6ab91afecf032ab82149c2"
+    },
+    {
+      "id": 9,
+      "uefi_path": "\\EFI\\UniXNU\\Payloads\\kernel.macho.trustcache",
+      "path": "esp/EFI/UniXNU/Payloads/kernel.macho.trustcache",
+      "bytes": 52232,
+      "sha256": "fa6199056880898147dab84bad83e715c04c615aa2f3cc6d064f3e6a93827805"
+    },
+    {
+      "id": 10,
+      "uefi_path": "\\EFI\\UniXNU\\unixnu.toml",
+      "path": "esp/EFI/UniXNU/unixnu.toml",
+      "bytes": 628,
+      "sha256": "73e272c6bc887114e01adb388a30f986e95ff63f061706672c794afd86a4740c"
+    }
+  ],
+  "resident_core7": true,
+  "startup_command": "ui-wake after kernel-postvm stage >= 0x4e and before SpringBoard helper startup",
+  "device_evidence": {
+    "desktop_capture": true,
+    "continued_operation_confirmed": true,
+    "bottom_home_gesture_verified": false,
+    "desktop_gpu_composition_verified": false
+  },
+  "scope": "Same immutable inputs used in retained MIX4 u88 tests; execution on another device remains unverified."
+}

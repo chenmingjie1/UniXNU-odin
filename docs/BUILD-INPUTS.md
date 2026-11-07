@@ -1,5 +1,7 @@
 # SDK、IIG 与 u80 系统生成资料
 
+> 如需直接运行现有桌面，请使用 [u88 完整运行包与启动说明](DESKTOP-U88-RUNTIME.md)。本页保留构建 / 历史生成资料，不能替代完整运行环境。
+
 本页补充 u85～u88 实际构建曾依赖、此前没有随源码提供的 SDK 和 IIG 缓存。文件已作为公开 Release 附件提供，源码与生成记录也可在仓库审阅。
 
 **[下载构建依赖 Release](https://github.com/chenmingjie1/UniXNU-odin/releases/tag/build-inputs-ios16.5-xnu8796-20261107)**

@@ -1,5 +1,7 @@
 # 构建输入补充
 
+> 如需直接运行现有桌面，请使用 [u88 完整运行包与启动说明](DESKTOP-U88-RUNTIME.md)。本页保留构建 / 历史生成资料，不能替代完整运行环境。
+
 SDK、完整 IIG 缓存与历史审计包已上传公开 Release，见 [中文下载与安装说明](BUILD-INPUTS.md)。`system-host-input-u80.apfs` 的 [原始输入获取、生成与配置](SYSTEM-HOST-INPUT-U80.md) 也已公开。以下是其余开发环境要求。
 
 > 中文详解：[u85～u88 实际构建命令、profile、编译记录与启动参数](BUILD-U85-U88.md)。实际链接闭包与历史基础配方的区别也在该文逐项说明。

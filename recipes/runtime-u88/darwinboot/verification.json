@@ -1,0 +1,92 @@
+{
+  "artifact": "D:\\Codex\\Workspaces\\2026-10-26\\n\\work\\UniXNU-odin\\build\\darwinboot-u88\\DarwinBoot.efi",
+  "bytes": 95232,
+  "sha256": "a1b34117b59c10921253b7ab1e0d3080b243b8bf98a3402cbc23e2337d789040",
+  "source_revision": "3c75734014cdab0acd9541e88057b7606ee7ae08",
+  "arm64_pe_verified": true,
+  "efi_boot_service_driver": true,
+  "device_tested": false,
+  "phone_boot_image": false,
+  "libraries": [
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseLib\\BaseLib\\OUTPUT\\BaseLib.lib",
+      "sha256": "9b58dd91740e5df76079d8495870d49639a9956dffda3fe1b2a6c194f20ee808"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseMemoryLib\\BaseMemoryLib\\OUTPUT\\BaseMemoryLib.lib",
+      "sha256": "adb0fdd1c94b2ba2fc2d598cad3f8aa29439587ea07e4eeb8cd787ddb2e82916"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\DxePcdLib\\DxePcdLib\\OUTPUT\\DxePcdLib.lib",
+      "sha256": "9dc716ecb95856beb0166e5791be452683f5b9a972829d289463dba4ce0267c1"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BaseDebugLibNull\\BaseDebugLibNull\\OUTPUT\\BaseDebugLibNull.lib",
+      "sha256": "4bc07d0758974b25fbeecf47b14f509e508c9c4eac5ca6ba5ade9ecfeafb7009"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiBootServicesTableLib\\UefiBootServicesTableLib\\OUTPUT\\UefiBootServicesTableLib.lib",
+      "sha256": "869bd5c2837ae205ce430a60d5102577abfae1106be7c85bb67dcd0336d42653"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiMemoryAllocationLib\\UefiMemoryAllocationLib\\OUTPUT\\UefiMemoryAllocationLib.lib",
+      "sha256": "eee58e55ea1883ce43b4bdd941c1dff0529a1af14780012b4b17c89fdd60468c"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\BasePrintLib\\BasePrintLib\\OUTPUT\\BasePrintLib.lib",
+      "sha256": "2f352822ec9dade5eeabf0a53bd3db0270c6b305a3888324eb97c676361f5b7e"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\StackCheckLibNull\\StackCheckLibNull\\OUTPUT\\StackCheckLibNull.lib",
+      "sha256": "d0602fd252d843ffe170ce50808feb26380f69171f68d70ef4a8f4effb003b4e"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\ArmLib\\ArmBaseLib\\OUTPUT\\ArmBaseLib.lib",
+      "sha256": "1908e29c1e7ba9e723b8a67f913e858e4a025d0a060553bde4490c6d199d0ab7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiRuntimeServicesTableLib\\UefiRuntimeServicesTableLib\\OUTPUT\\UefiRuntimeServicesTableLib.lib",
+      "sha256": "1520b7af63ddfb5d439673c21367540b76182395da63692f76fff26577bfa4ff"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiDevicePathLib\\UefiDevicePathLib\\OUTPUT\\UefiDevicePathLib.lib",
+      "sha256": "a25b9c5c92ec6b0ab38e633a65bad8117c57fb15ba486c630cc6b2881eed89bc"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\ArmPkg\\Library\\ArmCacheMaintenanceLib\\ArmCacheMaintenanceLib\\OUTPUT\\ArmCacheMaintenanceLib.lib",
+      "sha256": "fb02e0e5cad7bac5d413ecdb3ca51a43fe2a3b694f8e6e24cd1afae324bb0fb7"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\UefiLib\\UefiLib\\OUTPUT\\UefiLib.lib",
+      "sha256": "b7a578fff84c2f87d9491b5c239dd2d507ace5c72a89f1ffaf90e93b55f3ed48"
+    },
+    {
+      "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-26\\n\\work\\Mu-Silicium-odin\\Build\\odinPkg\\RELEASE_CLANGPDB\\AARCH64\\MdePkg\\Library\\CompilerIntrinsicsLib\\CompilerIntrinsicsLib\\OUTPUT\\CompilerIntrinsicsLib.lib",
+      "sha256": "75119315b320893e27a231a26f74fb8b9d1689c13d0ba09c5ee8593e75745e39"
+    }
+  ],
+  "boot_args_abi": {
+    "kernel": "8796.101.5",
+    "command_line_bytes": 608,
+    "structure_bytes": 736,
+    "actual_memory_offset": 728
+  },
+  "desktop_media_sidecar": true,
+  "resident_core7": true,
+  "odin_touch_power": true,
+  "staged_sources": {
+    "BootArgs.h": "297f33d2632e5ff1606c7e7b833f753f0dba9b1f05e27a029115cd438c195337",
+    "BootVideo.h": "8d25e85a166b272a1cbc0a5238288670e2707303f4cd97aef180ebf0c42246c4",
+    "DarwinBoot.c": "6d943ad0b3d76b5d04ac07f9653fec1b07e7115322f9c586fe3784e3e87bf48c",
+    "DiagFont.h": "d2a3687db67b069f4e34a961e17fd28b0242986e3fa8dd8a7545cab70834fa8e",
+    "Entry.S": "e2582f1eea9fd61d810011147a256b486476645956ebacfcf792f1e62d3a70ea",
+    "OdinDesktopMedia.h": "70e36a80d1baa6f182cf6f1717ec18e89427baf76edf066e6ce75fb3861a46c6",
+    "OdinResident.c": "c3920a2ca5111c9e9bd2f597cf4b14216f1b14fb0ce9ebb316a873dba68b9613",
+    "OdinResident.h": "f955e7741aa112f41d3eef787780a0a2e1ec0ca313f6e45e68c3e22c1cbfa2c6",
+    "OdinSecondary.S": "c5912fc6861b5aefff4c7f29257acdac8feb5f170459458860eb75016701c21f",
+    "OdinTouchPower.h": "d11ea452397373074357773a27c3cb90fb46873f34a8d5d0cb94856ace1115fc",
+    "OdinTouchRpmhFingerprint.h": "6cbf73318a417e847b24d0eb5c2285f46bcf6d28b7c470cf9f0879359181b320",
+    "PackedRamdisk.h": "197c265dd1735307c1a533bf9b6a9a229dbe5ba44d6438c9f5b5533d1c01ee3a",
+    "WindowSize.h": "6f78303c54252eae722be7c9b33869e4e8251ee3569736511790170d499b58cb"
+  }
+}
